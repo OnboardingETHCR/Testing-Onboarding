@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "2.a. Evaluación – Módulo 1"
-nav_order: 6
+title: "Evaluación – Blockchain y Web3"
+nav_order: 2.1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
