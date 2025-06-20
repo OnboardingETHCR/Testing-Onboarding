@@ -19,8 +19,9 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 - Diferenciar los mecanismos de consenso PoW y PoS
 - Reconocer la evolución hacia Web3 y sus aplicaciones
 
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo1-actividad">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio</a>
 </div>
+
 
