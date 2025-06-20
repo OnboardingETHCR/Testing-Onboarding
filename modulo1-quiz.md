@@ -15,6 +15,8 @@ Al completarlo, podrás validar tu comprensión de los conceptos esenciales.
 
 ---
 
-<div style="display: flex; justify-content: flex-start;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte2">⬅️ Volver a Blockchain</a>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo1-parte2">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1-parte3">Siguiente ➡️</a>
 </div>
+
