@@ -7,7 +7,7 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 ## 4. Cierre del módulo
 
-🎥 Video institucional sobre Ethereum Costa Rica  
+🎥 Video Ethereum Costa Rica  
 *(Insertar enlace cuando esté disponible)*
 
 ---
