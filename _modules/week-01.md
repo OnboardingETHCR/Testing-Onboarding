@@ -1,5 +1,6 @@
 ---
 title: Módulo 1 – Introducción a Blockchain y Web3
+permalink: /calendario/semana-1/
 ---
 
 Día 1  
