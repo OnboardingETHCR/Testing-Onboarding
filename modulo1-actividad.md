@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Actividad – Casos de Uso Web3"
-nav_order: 3.1
+title: "4.a. Actividad – Casos de Uso Web3"
+nav_order: 4.1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
@@ -13,31 +13,44 @@ En esta actividad aplicarás lo aprendido sobre Web3 explorando casos de uso rea
 
 ### 🧮 Parte 1 – Tabla comparativa
 
-Seleccioná al menos **tres proyectos Web3 reales** (pueden ser de sectores distintos o similares) e investigá la siguiente información para cada uno. Completá una tabla comparativa incluyendo:
+Seleccioná al menos **tres proyectos Web3 reales** (de distintos sectores si es posible) e investigá la siguiente información clave para cada uno:
 
 | Proyecto | Categoría o Sector | Tecnología Web3 usada | Problema que resuelve / Valor agregado | Mecanismo de descentralización |
 |----------|--------------------|------------------------|----------------------------------------|---------------------------------|
 | Ejemplo  | DeFi               | Smart Contracts, PoS   | Alternativa a préstamos bancarios      | Gobernanza mediante DAO         |
 
-Podés crear la tabla en Notion, Google Sheets o Markdown. Lo importante es documentar y comparar los casos con base en los siguientes criterios:
+Podés entregar esta tabla en cualquiera de los siguientes formatos:
 
-- **Categoría o Sector** (e.g., Finanzas, Identidad, Supply Chain)
-- **Tecnología Web3 usada** (e.g., NFTs, Smart Contracts, PoS, IPFS)
-- **Problema que resuelve o valor que aporta**
-- **Nivel de descentralización o gobernanza comunitaria**
+- Documento en **PDF** generado desde **Word, Google Docs, Notion, Excel o Google Sheets**
+
 
 ---
 
 ### 🎤 Parte 2 – Pitch del caso más relevante
 
-Elegí uno de los proyectos de tu tabla y elaborá un breve pitch (oral o escrito) para presentarlo. El pitch debe cubrir:
+Elegí uno de los proyectos analizados y elaborá un pitch breve para presentarlo. El pitch puede ser escrito, grabado o diseñado como una presentación. Debe responder:
 
 - ¿Cuál es el problema que resuelve?
 - ¿Cómo funciona y qué tecnología Web3 usa?
 - ¿En qué contexto o industria se aplica?
 - ¿Qué lo hace descentralizado?
 
-💡 Podés grabar un video corto, hacer una presentación tipo Canva o escribir un resumen convincente en menos de 300 palabras.
+💡 Podés usar herramientas como Notion, Canva, PowerPoint o grabar un video corto.
+
+---
+📝 Entrega de la Actividad
+Una vez completadas ambas partes de la actividad (tabla comparativa y pitch), debés subir tus archivos a tu repositorio personal de GitHub relacionado al programa de onboarding.
+
+📂 ¿Cómo hacerlo?
+1. Creá una carpeta específica dentro de tu repositorio (por ejemplo:/modulo1/actividades/).
+
+2. Subí los archivos generados, asegurándote de incluir tu nombre y apellido en cada uno. Por ejemplo:
+tabla_comparativa_web3_Juan_Perez.pdf
+pitch_defi_uniswap_Juan_Perez.pdf
+
+3. Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
+
+🔐 Recordá mantener el repositorio público o al menos accesible a quienes deban revisar tu trabajo.
 
 ---
 
