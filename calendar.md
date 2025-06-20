@@ -6,8 +6,9 @@ description: Calendario de trabajo.
 
 # 🗓️ Calendario
 
-## Semana 1
-[Módulo 1 – Introducción a Blockchain y Web3](/_modules/week-01.md)
+## Semana 1  
+[Módulo 1 – Introducción a Blockchain y Web3](/calendario/semana-1/)
+
 
 <!-- 
 ## Semana 2
