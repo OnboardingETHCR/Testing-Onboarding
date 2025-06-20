@@ -14,10 +14,10 @@ Este módulo se compone de cuatro secciones: Bitcoin, Blockchain, Web3 y un cier
 
 ### 📄 Lectura: ¿Qué es Bitcoin?
 
-[📄 Ver PDF](../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf)
+[📄 Ver PDF – ¿Qué es Bitcoin?](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf)
 
-<iframe src="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf" width="100%" height="600px">
-  Tu navegador no puede mostrar el PDF. <a href="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf">Descargar aquí</a>.
+<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf" width="100%" height="600px">
+  Tu navegador no puede mostrar el PDF. <a href="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf">Descargar aquí</a>.
 </iframe>
 
 ### 🎥 Video explicativo
