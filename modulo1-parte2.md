@@ -22,7 +22,8 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 👉 [Acceder al quiz en Typeform](https://form.typeform.com/to/jyRkTk6Y)
 
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo1-parte1">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo1-quiz">Siguiente ➡️</a>
 </div>
+
