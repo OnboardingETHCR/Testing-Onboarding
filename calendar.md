@@ -1,12 +1,11 @@
 ---
 layout: page
 title: Calendario
-description: Calendario de trabajo.
+description: Calendario de trabajo
 ---
 
-# 🗓️ Calendario
+# Calendario
 
-## Semana 1  
-[Módulo 1 – Introducción a Blockchain y Web3](/modules/week-01)
-
-
+{% for module in site.modules %}
+{{ module.content }}
+{% endfor %}
