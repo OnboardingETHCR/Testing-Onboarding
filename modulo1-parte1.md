@@ -17,6 +17,6 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/bBC-nXj3Ng4" frameborder="0" allowfullscreen></iframe>
 
-<div style="display: flex; justify-content: flex-end;">
+<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo1-parte2">Siguiente ➡️</a>
 </div>
