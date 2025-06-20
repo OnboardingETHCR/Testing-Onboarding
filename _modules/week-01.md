@@ -11,11 +11,8 @@ Dia 1
 Dia 1 
 : **Evaluación**{: .label .label-blue } Quiz Blockchain y Web3
 
----
-
 Dia 2  
 : [Introducción a Web3](#)  
-
 
 Dia 2  
 : **Actividad**{: .label .label-green } [Casos de Uso Web3](modulo1-actividad.md)  
