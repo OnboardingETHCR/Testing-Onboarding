@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "4.a. Actividad – Casos de Uso Web3"
+title: "Actividad – Casos de Uso Web3"
 nav_order: 4.1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
@@ -38,10 +38,12 @@ Elegí uno de los proyectos analizados y elaborá un pitch breve para presentarl
 💡 Podés usar herramientas como Notion, Canva, PowerPoint o grabar un video corto.
 
 ---
-📝 Entrega de la Actividad
+### 📝 Entrega de la Actividad
+
 Una vez completadas ambas partes de la actividad (tabla comparativa y pitch), debés subir tus archivos a tu repositorio personal de GitHub relacionado al programa de onboarding.
 
-📂 ¿Cómo hacerlo?
+### 📂 ¿Cómo hacerlo?
+
 1. Creá una carpeta específica dentro de tu repositorio (por ejemplo:/modulo1/actividades/).
 
 2. Subí los archivos generados, asegurándote de incluir tu nombre y apellido en cada uno. Por ejemplo:
@@ -50,7 +52,7 @@ pitch_defi_uniswap_Juan_Perez.pdf
 
 3. Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
 
-🔐 Recordá mantener el repositorio público o al menos accesible a quienes deban revisar tu trabajo.
+### 🔐 Recordá mantener el repositorio público o al menos accesible a quienes deban revisar tu trabajo.
 
 ---
 
