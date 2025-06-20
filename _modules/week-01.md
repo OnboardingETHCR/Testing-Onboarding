@@ -1,24 +1,23 @@
 ---
-title: Introduction to Java
+title: Módulo 1 – Introducción a Blockchain y Web3
 ---
 
-Dia 1
-: [Java & Git](#)
-  : [1.1](#)
+Dia 1  
+: [Introducción a Bitcoin](#)  
+  : Lectura y video introductorio  
 
-Dia 2
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: [Fundamentos de Blockchain](#)  
+  : Lectura + Videos sobre consenso, inmutabilidad y PoS/PoW
 
-Dia 3
-: [Variables & Objects](#)
-  : [1.2](#), [2.1](#)
+: **Evaluación**{: .label .label-blue } Quiz Blockchain y Web3
 
-Dia 4
-: **Lab**{: .label .label-purple } [Intro to Java](#)
+---
 
-Dia 5
-: [Tracing, IntLists, & Recursion](#)
-  : [2.1](#)
-: **HW 1 due**{: .label .label-red }
+Dia 2  
+: [Introducción a Web3](#)  
+  : Lecturas: Evolución de la Web y Casos de uso Web3
 
+: **Actividad**{: .label .label-green } [Casos de Uso Web3](modulo1-actividad.md)  
+  : Tabla comparativa + pitch
+
+: [Video institucional Ethereum Costa Rica](#)
