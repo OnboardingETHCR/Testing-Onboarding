@@ -5,16 +5,39 @@ nav_order: 5
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
-## Actividad: Identificación de Casos de Uso en Web3
+## Actividad: Casos de Uso en Web3
 
-El objetivo de esta actividad es que identifiques un caso de uso real de tecnología Web3 y prepares un breve pitch explicando:
+En esta actividad aplicarás lo aprendido sobre Web3 explorando casos de uso reales. La actividad se compone de dos partes:
+
+---
+
+### 🧮 Parte 1 – Tabla comparativa
+
+Seleccioná al menos **tres proyectos Web3 reales** (pueden ser de sectores distintos o similares) e investigá la siguiente información para cada uno. Completá una tabla comparativa incluyendo:
+
+| Proyecto | Categoría o Sector | Tecnología Web3 usada | Problema que resuelve / Valor agregado | Mecanismo de descentralización |
+|----------|--------------------|------------------------|----------------------------------------|---------------------------------|
+| Ejemplo  | DeFi               | Smart Contracts, PoS   | Alternativa a préstamos bancarios      | Gobernanza mediante DAO         |
+
+Podés crear la tabla en Notion, Google Sheets o Markdown. Lo importante es documentar y comparar los casos con base en los siguientes criterios:
+
+- **Categoría o Sector** (e.g., Finanzas, Identidad, Supply Chain)
+- **Tecnología Web3 usada** (e.g., NFTs, Smart Contracts, PoS, IPFS)
+- **Problema que resuelve o valor que aporta**
+- **Nivel de descentralización o gobernanza comunitaria**
+
+---
+
+### 🎤 Parte 2 – Pitch del caso más relevante
+
+Elegí uno de los proyectos de tu tabla y elaborá un breve pitch (oral o escrito) para presentarlo. El pitch debe cubrir:
 
 - ¿Cuál es el problema que resuelve?
-- ¿Qué tecnología Web3 utiliza?
-- ¿En qué industria o sector se aplica?
-- ¿Cómo se manifiesta la descentralización en su funcionamiento?
+- ¿Cómo funciona y qué tecnología Web3 usa?
+- ¿En qué contexto o industria se aplica?
+- ¿Qué lo hace descentralizado?
 
-💡 Podés usar herramientas como Canva o cualquier otro formato que facilite tu presentación.
+💡 Podés grabar un video corto, hacer una presentación tipo Canva o escribir un resumen convincente en menos de 300 palabras.
 
 ---
 
@@ -22,4 +45,3 @@ El objetivo de esta actividad es que identifiques un caso de uso real de tecnolo
   <a class="btn" href="/Testing-Onboarding/modulo1-parte3">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo1-parte4">Siguiente ➡️</a>
 </div>
-
