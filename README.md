@@ -17,12 +17,12 @@ A lo largo del programa, adquirirás conocimientos teóricos y prácticos necesa
 
 ---
 
-## ¿Qué incluye este curso?
+## ¿Qué incluye este programa?
 
-- 🧠 Lecturas introductorias  
-- 🎥 Videos explicativos  
-- 🧪 Actividades de autoevaluación  
-- 📁 Recursos descargables y prácticos  
+- 🧠 Lecturas en formato de artículos académicos, infogramas y documentos PDF  
+- 🎥 Videos explicativos sobre temas clave  
+- 🧪 Actividades evaluativas para reforzar el aprendizaje  
+- 📁 Recursos prácticos para aplicar lo aprendido 
 
 ---
 
