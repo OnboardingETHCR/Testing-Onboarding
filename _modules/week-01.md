@@ -1,24 +1,24 @@
 ---
-title: Módulo 1 – Introducción a Blockchain y Web3
-permalink: /calendario/semana-1/
+title: Introduction to Java
 ---
 
-Día 1  
-: **Tema**{: .label .label-purple } Introducción a Bitcoin  
-  : Lectura, video introductorio
+Sep 28
+: [Java & Git](#)
+  : [1.1](#)
 
-: **Tema**{: .label .label-purple } Fundamentos de Blockchain  
-  : Lectura, videos explicativos sobre consenso e inmutabilidad
+Sep 29
+: **Section**{: .label .label-purple }[Intro to Java](#)
+  : [Solution](#)
 
-: **Evaluación**{: .label .label-blue } Quiz Blockchain y Web3
+Sep 30
+: [Variables & Objects](#)
+  : [1.2](#), [2.1](#)
 
----
+Oct 1
+: **Lab**{: .label .label-purple } [Intro to Java](#)
 
-Día 2  
-: **Tema**{: .label .label-purple } Introducción a Web3  
-  : Lecturas sobre evolución de la web y casos de uso
+Oct 2
+: [Tracing, IntLists, & Recursion](#)
+  : [2.1](#)
+: **HW 1 due**{: .label .label-red }
 
-: **Actividad**{: .label .label-green } [Casos de Uso Web3](modulo1-actividad.md)  
-  : Tabla comparativa + pitch de proyecto
-
-: **Cierre**{: .label .label-purple } Video institucional – Ethereum Costa Rica
