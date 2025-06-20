@@ -1,50 +1,52 @@
 ---
 layout: page
-title: "Módulo 1: Introducción a Blockchain y Web3"
+title: Módulo 1: Introducción a Blockchain y Web3
 nav_order: 2
 ---
 
-
 # Módulo 1: Introducción a Blockchain y Web3
 
-Este módulo explora los orígenes, fundamentos y evolución del ecosistema blockchain, desde Bitcoin hasta las aplicaciones Web3 modernas. Se compone de tres segmentos principales: Bitcoin, Blockchain, y Web3.
+Este módulo se compone de cuatro secciones: Bitcoin, Blockchain, Web3 y un cierre con un video sobre Ethereum Costa Rica. A través de lecturas, videos y actividades, conocerás los conceptos y tecnologías clave que dan forma al ecosistema Web3.
 
 ---
 
 ## 1. Introducción a Bitcoin
 
-### 📄 Lectura
+### 📄 Lectura: ¿Qué es Bitcoin?
 
-[Ver PDF – ¿Qué es Bitcoin?](../assets/modulo1/1-bitcoin/que-es-bitcoin.pdf)
+[📄 Ver PDF](../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf)
 
-<iframe src="../assets/modulo1/1-bitcoin/que-es-bitcoin.pdf" width="100%" height="600px">
-  Tu navegador no puede mostrar el PDF. <a href="../assets/modulo1/1-bitcoin/que-es-bitcoin.pdf">Descargar aquí</a>.
+<iframe src="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf" width="100%" height="600px">
+  Tu navegador no puede mostrar el PDF. <a href="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf">Descargar aquí</a>.
 </iframe>
 
-### 🎥 Video
+### 🎥 Video explicativo
 
-[Ver video introductorio a Bitcoin](https://www.youtube.com/watch?v=bBC-nXj3Ng4)
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/bBC-nXj3Ng4" frameborder="0" allowfullscreen></iframe>
 
 ---
 
 ## 2. Fundamentos de Blockchain
 
-### 📄 Lectura
+### 📄 Lectura: Fundamentos de Blockchain
 
-[Ver PDF – Fundamentos de Blockchain](../assets/modulo1/2-blockchain/fundamentos-de-blockchain.pdf)
+[📄 Ver PDF](../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf)
 
-<iframe src="../assets/modulo1/2-blockchain/fundamentos-de-blockchain.pdf" width="100%" height="600px">
-  Tu navegador no puede mostrar el PDF. <a href="../assets/modulo1/2-blockchain/fundamentos-de-blockchain.pdf">Descargar aquí</a>.
+<iframe src="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf" width="100%" height="600px">
+  Tu navegador no puede mostrar el PDF. <a href="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf">Descargar aquí</a>.
 </iframe>
 
 ### 🎥 Videos
 
-- [¿Cómo funciona Blockchain?](https://www.youtube.com/watch?v=m2K8cjHV1VY)  
-- [Proof of Work vs Proof of Stake](https://www.youtube.com/watch?v=q-Amim7sGco)
+- <iframe width="100%" height="400" src="https://www.youtube.com/embed/m2K8cjHV1VY" frameborder="0" allowfullscreen></iframe>
+- <iframe width="100%" height="400" src="https://www.youtube.com/embed/q-Amim7sGco" frameborder="0" allowfullscreen></iframe>
 
-### 🧪 Evaluación
+---
 
-👉 [Acceder al quiz del módulo 1 (Bitcoin + Blockchain)](https://form.typeform.com/to/jyRkTk6Y)
+### 🧪 Evaluación: Quiz
+
+Este quiz abarca los contenidos de Bitcoin y Blockchain.  
+👉 [Acceder al quiz en Typeform](https://form.typeform.com/to/jyRkTk6Y)
 
 ---
 
@@ -52,33 +54,28 @@ Este módulo explora los orígenes, fundamentos y evolución del ecosistema bloc
 
 ### 📄 Lecturas
 
-- [Evolución de la Web](../assets/modulo1/3-web3/evolucion-web.pdf)  
-- [Aplicaciones y casos de uso](../assets/modulo1/3-web3/aplicaciones-casos-de-uso.pdf)
+- [Evolución de la Web](../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/1.Evolucion-web.pdf)
+- [Aplicaciones y casos de uso](../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/2.Aplicaciones-casos-de-uso.pdf)
 
-<iframe src="../assets/modulo1/3-web3/evolucion-web.pdf" width="100%" height="500px"></iframe>  
-<iframe src="../assets/modulo1/3-web3/aplicaciones-casos-de-uso.pdf" width="100%" height="500px"></iframe>
+<iframe src="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/1.Evolucion-web.pdf" width="100%" height="500px"></iframe>  
+<iframe src="../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/2.Aplicaciones-casos-de-uso.pdf" width="100%" height="500px"></iframe>
 
-### 🧩 Actividad
+### 🧩 Actividad práctica
 
-[Actividad: Identificación de casos de uso en Web3](../assets/modulo1/3-web3/Actividad_web3_usecases_pitch_.md.txt)
-
----
-
-## 4. Cierre del módulo
-
-### 🎥 Video
-
-Video corto sobre la comunidad Ethereum Costa Rica.  
-*(Próximamente disponible o insertar link aquí)*
+[Acceder a la actividad Web3 – Identificación de casos de uso](../assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/Actividad_web3_usecases_pitch_.md.txt)
 
 ---
 
-## ✅ Objetivos alcanzados
+## 4. Cierre: Comunidad Ethereum Costa Rica
 
-Al finalizar este módulo, deberías ser capaz de:
+🎥 Video institucional sobre Ethereum Costa Rica  
+*(insertar link de YouTube o video embebido si lo tenés)*
 
-- Explicar los conceptos básicos de blockchain y Bitcoin
-- Diferenciar entre los mecanismos de consenso PoW y PoS
-- Comprender la evolución de la Web hacia Web3
-- Identificar aplicaciones reales y casos de uso de Web3
+---
 
+## ✅ Al finalizar este módulo, serás capaz de:
+
+- Comprender el origen y propósito de Bitcoin
+- Explicar los fundamentos técnicos de Blockchain
+- Diferenciar los mecanismos de consenso PoW y PoS
+- Reconocer la evolución hacia Web3 y sus aplicaciones
