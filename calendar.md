@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Calendar
-description: Listing of course modules and topics.
+title: Calendario
+description: Calendario de trabajo.
 ---
 
-# Calendar
+# 🗓️ Calendario
 
-{% for module in site.modules %}
-{{ module }}
-{% endfor %}
+## Semana 1  
+[Módulo 1 – Introducción a Blockchain y Web3](/modules/week-01)
+
 
