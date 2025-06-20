@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Módulo 1: Introducción a Blockchain y Web3
+title: "Módulo 1: Introducción a Blockchain y Web3"
 nav_order: 2
 ---
+
 
 # Módulo 1: Introducción a Blockchain y Web3
 
