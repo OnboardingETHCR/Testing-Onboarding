@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Actividad – Casos de Uso Web3"
-nav_order: 4.1
+nav_order: 3.1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
