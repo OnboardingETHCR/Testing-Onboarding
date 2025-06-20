@@ -10,9 +10,10 @@ seo:
 
 # Bienvenido al Programa de Onboarding de Ethereum Costa Rica
 
-Este curso está diseñado para prepararte en los fundamentos esenciales de **Blockchain, Ethereum, contratos inteligentes (smart contracts)** y el ecosistema **Web3**.
+Este curso autodirigido ha sido diseñado para brindar una introducción estructurada a los fundamentos esenciales de la **tecnología blockchain**, el ecosistema de **Ethereum**, el desarrollo de **contratos inteligentes (smart contracts)** y los principios clave de la **Web3**.
 
-A lo largo del programa, desarrollarás conocimientos técnicos y prácticos necesarios para integrarte de forma efectiva en proyectos del entorno descentralizado de Ethereum.
+A lo largo del programa, adquirirás conocimientos teóricos y prácticos necesarios para comprender y desenvolverte en proyectos relacionados con entornos descentralizados, utilizando herramientas, lenguajes y marcos tecnológicos propios del ecosistema Ethereum.
+
 
 ---
 
