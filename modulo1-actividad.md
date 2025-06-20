@@ -18,6 +18,8 @@ El objetivo de esta actividad es que identifiques un caso de uso real de tecnolo
 
 ---
 
-<div style="display: flex; justify-content: flex-start;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte3">⬅️ Volver a la sección Web3</a>
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo1-parte3">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1-parte4">Siguiente ➡️</a>
 </div>
+
