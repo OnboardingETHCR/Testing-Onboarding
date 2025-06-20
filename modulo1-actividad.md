@@ -47,10 +47,12 @@ Una vez completadas ambas partes de la actividad (tabla comparativa y pitch), de
 1. Creá una carpeta específica dentro de tu repositorio (por ejemplo:/modulo1/actividades/).
 
 2. Subí los archivos generados, asegurándote de incluir tu nombre y apellido en cada uno. Por ejemplo:
+```
 tabla_comparativa_web3_Juan_Perez.pdf
 pitch_defi_uniswap_Juan_Perez.pdf
+```
 
-3. Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
+4. Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
 
 ### 🔐 Recordá mantener el repositorio público o al menos accesible a quienes deban revisar tu trabajo.
 
