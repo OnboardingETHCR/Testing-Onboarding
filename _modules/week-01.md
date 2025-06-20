@@ -2,22 +2,22 @@
 title: Introduction to Java
 ---
 
-Sep 28
+Dia 1
 : [Java & Git](#)
   : [1.1](#)
 
-Sep 29
+Dia 2
 : **Section**{: .label .label-purple }[Intro to Java](#)
   : [Solution](#)
 
-Sep 30
+Dia 3
 : [Variables & Objects](#)
   : [1.2](#), [2.1](#)
 
-Oct 1
+Dia 4
 : **Lab**{: .label .label-purple } [Intro to Java](#)
 
-Oct 2
+Dia 5
 : [Tracing, IntLists, & Recursion](#)
   : [2.1](#)
 : **HW 1 due**{: .label .label-red }
