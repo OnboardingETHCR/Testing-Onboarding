@@ -9,7 +9,7 @@ Dia 1
 : [Fundamentos de Blockchain](#)  
 
 Dia 1 
-: **Evaluación**{: .label .label-blue } Quiz Blockchain y Web3
+: **Evaluación**{: .label .label-blue } [Quiz Blockchain y Web3](modulo1-quiz.md)  
 
 Dia 2  
 : [Introducción a Web3](#)  
