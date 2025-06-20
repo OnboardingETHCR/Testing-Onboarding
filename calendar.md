@@ -7,5 +7,5 @@ description: Calendario de trabajo
 # Calendario
 
 {% for module in site.modules %}
-{{ module.content }}
+{{ module }}
 {% endfor %}
