@@ -7,11 +7,11 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 ## 2. Fundamentos de Blockchain
 
-### 📄 Lectura
-
-[📄 Ver PDF](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf)
+### 📄 Lectura: Fundamentos de Blockchain
 
 <iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf" width="100%" height="600px"></iframe>
+
+[📥 Descargar PDF – Fundamentos de Blockchain](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf){:target="_blank"}
 
 ### 🎥 Videos
 
