@@ -1,0 +1,41 @@
+# Web3 Use Cases – Comparative Table & Pitch
+
+📝 **Instructions:**  
+Research at least **three real-world Web3 projects or platforms**. Complete the table with your findings and choose your favorite to write a short pitch.
+
+Each row must include:
+- Project Name
+- Category or Sector (e.g., DeFi, DAOs, Supply Chain)
+- Web3 Technology Used (e.g., Smart Contracts, NFTs, Layer‑1/L‑2 Blockchains, Consensus Mechanisms)
+- Problem it Solves or Value it Brings
+- Governance and Community Participation (e.g., DAO voting, open governance)
+- Official Link
+
+---
+
+### 🔍 Comparative Table:
+
+| Project Name | Category / Sector | Web3 Technology Used | Problem Solved / Value | Governance and Community Participation    | Official Link  |
+|--------------|-------------------|----------------------|------------------------|-------------------------------------------|----------------|
+|              |                   |                      |                        |                                           |                |
+|              |                   |                      |                        |                                           |                |
+|              |                   |                      |                        |                                           |                |
+
+---
+
+### 🎤 Mini Pitch
+
+**Choose one of the projects above** and write a short pitch (max. 100 words):
+
+📣 *Why do you think this project represents a great use case of Web3? What makes it special or relevant?*
+
+```
+[Write your pitch here...]
+```
+
+---
+
+💾 Save this file as:  
+`web3_usecases_pitch_[your_name].md`  
+📤 Upload it to your GitHub folder:  
+`/Modulo1/Actividades/[your_name]/web3_usecases/`
