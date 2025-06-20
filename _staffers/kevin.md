@@ -1,11 +1,10 @@
 ---
-name: Kevin Lin
+name: Ethereum Costa Rica
 role: Instructor
-email: me@example.com
-website: https://kevinl.info
-photo: kevin.jpg
-meta:
-  Office Hours: Somewhere on the internet
+email: EthereumCR@gmail.com
+website: https://ethereum.cr/
+photo: ethcr.jpg
+
 ---
 
-[Schedule an appointment](#){: .btn .btn-outline }
+
