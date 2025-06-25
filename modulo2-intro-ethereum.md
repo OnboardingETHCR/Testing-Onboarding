@@ -7,56 +7,69 @@ nav_order: 1
 
 # Introduction to Ethereum
 
-Ethereum is an open-source, decentralized blockchain platform that enables developers to build and deploy smart contracts and decentralized applications (dApps). It was launched in 2015 by Vitalik Buterin and a group of co-founders to extend blockchain functionality beyond simple transfers of value like Bitcoin.
+Ethereum is an open-source, decentralized blockchain platform that enables developers to build and deploy smart contracts and decentralized applications (dApps).
+
+Launched in 2015, Ethereum expands blockchain functionality beyond simple value transfers like Bitcoin, enabling programmable logic through code that lives on-chain.
 
 ---
 
-## Why is Ethereum important?
+## 💡 Why is Ethereum important?
 
-Ethereum aims to create a more open, secure, and permissionless internet — often referred to as **Web3**.
+Ethereum is the foundation of Web3 — a more open, permissionless, and censorship-resistant internet.
 
-Key features:
-- **Programmable**: Anyone can create complex logic via smart contracts.
-- **Decentralized**: No central authority controls the network.
-- **Permissionless**: Anyone can participate, develop, or use apps.
-- **Secure**: Thousands of nodes validate and store the same state.
+Its key characteristics include:
 
-Ethereum is the backbone of decentralized applications (dApps), decentralized finance (DeFi), non-fungible tokens (NFTs), and DAOs (Decentralized Autonomous Organizations).
+- ✅ **Programmability**: Write logic into smart contracts
+- ✅ **Decentralization**: No central control or failure point
+- ✅ **Permissionless access**: Anyone can use or build on Ethereum
+- ✅ **Security**: Thousands of nodes maintain a shared state
 
----
-
-## What can you do with Ethereum?
-
-- Send and receive ETH (the native cryptocurrency).
-- Create your own tokens.
-- Deploy smart contracts that enforce logic automatically.
-- Interact with dApps in finance, gaming, identity, and more.
-- Participate in decentralized governance.
+Ethereum enables use cases like:
+- DeFi (decentralized finance)
+- NFTs (non-fungible tokens)
+- DAOs (decentralized autonomous organizations)
+- Identity and digital governance
 
 ---
 
-## Ethereum after "The Merge"
+## 🔗 What can you do with Ethereum?
 
-In 2022, Ethereum transitioned from Proof of Work (PoW) to **Proof of Stake (PoS)**. In PoS, validators secure the network by staking ETH. This upgrade:
-- Reduced energy consumption by over 99%.
-- Introduced validator roles instead of mining.
-- Strengthened Ethereum’s sustainability and scalability roadmap.
+As a user or developer, you can:
+
+- 💸 Send and receive ETH (Ethereum’s native currency)
+- 🪙 Create your own tokens
+- 📜 Deploy smart contracts that run automatically
+- 🎮 Interact with dApps (games, finance, productivity)
+- 🗳 Participate in decentralized governance
 
 ---
 
-## Video introduction
+## ⚡ The Merge and Ethereum’s evolution
 
-> 🎥 *This video provides a general overview of Ethereum and core blockchain concepts like smart contracts, gas, and decentralization. All of these topics will be explored in detail throughout this module.*
+In 2022, Ethereum transitioned from Proof of Work (PoW) to **Proof of Stake (PoS)** — a major upgrade known as **The Merge**.
+
+As a result:
+- 🔋 Energy usage dropped by over 99%
+- ✅ Miners were replaced by validators who stake ETH
+- 🔄 Ethereum now supports a more scalable and eco-friendly architecture
+
+---
+
+## 🎥 Video Introduction
+
+> *This video provides a beginner-friendly overview of Ethereum and related blockchain concepts. Topics such as smart contracts, decentralization, gas, and wallets will be covered in greater depth throughout this module.*
 
 [![Ethereum Explained – Crypto Casey](https://img.youtube.com/vi/pR4Q52UxiAU/0.jpg)](https://www.youtube.com/watch?v=pR4Q52UxiAU)
 
 ---
 
-## Coming up next
+## ✅ What’s next?
 
-In the next section, you'll learn about the Ethereum Virtual Machine (EVM) — the computational layer that makes Ethereum programmable.
+In the next section, you’ll explore the **Ethereum Virtual Machine (EVM)** — the computation layer that powers all smart contracts and on-chain logic.
 
 ---
 
 ### 🔁 Navegación
+
 [⬅ Volver al módulo](modulo2.md) | [Siguiente ➡ EVM](evm.md)
+
