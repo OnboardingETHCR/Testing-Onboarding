@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Modulo 2: Ethereum, Ecosistema y Herramientas"
+title: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 3
 has_children: true
 ---
