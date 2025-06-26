@@ -69,6 +69,12 @@ Staking is one way to **participate** actively in Ethereum’s ecosystem. Others
 
 ---
 
+### 💧 Liquid staking
+
+Protocols like Lido issue **staking derivatives** (e.g., stETH) which represent your staked ETH. This allows you to earn staking rewards while retaining liquidity for DeFi usage.
+
+---
+
 ## ✅ What’s next?
 
 You're almost done! Time to check your understanding with the Módulo 2 quiz.

@@ -61,6 +61,12 @@ Most Ethereum wallets (like MetaMask, Ledger, or mobile apps) help you create an
 
 ---
 
+### 🔐 Signature algorithm
+
+Ethereum uses the **ECDSA (Elliptic Curve Digital Signature Algorithm)** for signing transactions. Your wallet uses this algorithm to create a cryptographic signature that proves you own the private key controlling your address.
+
+---
+
 ## ✅ What’s next?
 
 Now that you understand how Ethereum accounts work, let’s explore **how gas fees are calculated** and why they exist.

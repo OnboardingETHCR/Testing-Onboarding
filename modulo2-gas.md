@@ -74,6 +74,12 @@ You can monitor gas prices using tools like:
 
 ---
 
+### 🛠️ MEV (Miner/Maximal Extractable Value)
+
+MEV refers to profits that validators can earn by reordering, including, or excluding transactions in a block. This can impact how your transaction is processed and the final gas paid.
+
+---
+
 ## ✅ What’s next?
 
 You’ve learned how computation is paid for on Ethereum. Next, we’ll look at the **nodes and clients** that make the Ethereum network function.
