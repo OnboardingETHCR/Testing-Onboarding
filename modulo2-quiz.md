@@ -24,7 +24,7 @@ Responde todas las preguntas antes de continuar con la actividad práctica del m
 
 ### 📝 Quiz interactivo
 
-<iframe src="https://form.typeform.com/to/REEMPLAZAR_LINK" width="100%" height="600px" frameborder="0"></iframe>
+<iframe src="https://form.typeform.com/to/gdwC24CO" width="100%" height="600px" frameborder="0"></iframe>
 
 [🔗 Abrir quiz en una nueva pestaña](https://form.typeform.com/to/gdwC24CO){:target="_blank"}
 
