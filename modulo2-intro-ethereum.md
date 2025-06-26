@@ -74,5 +74,3 @@ In the next section, you’ll explore the **Ethereum Virtual Machine (EVM)** —
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2-evm">Siguiente ➡️</a>
 </div>
-
-

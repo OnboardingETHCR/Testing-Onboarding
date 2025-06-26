@@ -1,0 +1,90 @@
+---
+layout: page
+title: "8. Aplicaciones en Ethereum"
+parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
+nav_order: 8
+---
+
+# Aplicaciones en Ethereum
+
+Ethereum is more than a blockchain — it’s a platform for building decentralized applications (dApps) that run on smart contracts. These apps are open, transparent, and censorship-resistant.
+
+---
+
+## 💻 ¿Qué es una dApp?
+
+A **dApp** (decentralized application) is an application built on Ethereum that:
+
+- Uses smart contracts for backend logic  
+- Stores data on the blockchain  
+- Is open-source and runs without a central server
+
+> 🎮 dApps look like regular apps but use Ethereum as their infrastructure.
+
+Common categories:
+- DeFi (finance)
+- Games and collectibles
+- Social networks
+- Governance platforms
+
+---
+
+## 🧩 NFTs (Non-Fungible Tokens)
+
+An NFT is a unique token that represents ownership of something — digital or physical.
+
+Key features:
+- 🎨 Digital art, music, identity, certificates
+- ✅ Verifiable ownership on-chain
+- 📦 Follows token standards (ERC-721, ERC-1155)
+
+Popular NFT platforms:
+- [OpenSea](https://opensea.io)
+- [Zora](https://zora.co)
+- [Foundation](https://foundation.app)
+
+> 💡 Artists, game developers, and communities use NFTs to create value and engagement.
+
+---
+
+## 💸 Stablecoins
+
+Stablecoins are cryptocurrencies designed to maintain a stable value, often pegged to the US Dollar.
+
+Types:
+- 💰 **Collateralized** (e.g. USDC, USDT)
+- 🧠 **Algorithmic** (e.g. DAI)
+
+Use cases:
+- Reduce volatility
+- On-ramp to crypto
+- Enable DeFi protocols
+
+> 🔁 Stablecoins are the backbone of most DeFi transactions and cross-border payments.
+
+---
+
+## 🔎 Exploring dApps
+
+You can discover new dApps through platforms like:
+- [DappRadar](https://dappradar.com)
+- [State of the dApps](https://www.stateofthedapps.com)
+- [DeFi Llama](https://defillama.com)
+
+Most dApps require:
+- A wallet (like MetaMask)
+- A supported network (Mainnet, Arbitrum, etc.)
+- ETH or tokens to interact
+
+---
+
+## ✅ What’s next?
+
+Now that you know what Ethereum enables, let’s learn about the nodes and clients that power the network behind the scenes.
+
+---
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo2-layer2">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-nodos-clientes">Siguiente ➡️</a>
+</div>

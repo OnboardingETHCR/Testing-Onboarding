@@ -1,54 +1,59 @@
 ---
 layout: page
-title: "Evaluación – Ethereum y su Ecosistema"
-nav_order: 8.1
+title: "15. Actividad práctica – Ethereum en acción"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
+nav_order: 15
 ---
 
-## 🧪 Evaluación – Módulo 2
+# 🧪 Actividad práctica – Ethereum en acción
 
-Esta evaluación cubre los temas de:
-
-- Introducción a Ethereum  
-- Ethereum Virtual Machine (EVM)  
-- Cuentas  
-- Gas y tarifas  
-- Nodos y clientes  
-- Exploradores de bloques  
-- Herramientas de desarrollo
-
-Responde todas las preguntas antes de continuar con la actividad práctica del módulo.
+Esta actividad te permitirá poner en práctica los conceptos aprendidos durante el módulo, utilizando herramientas reales del ecosistema Ethereum en un entorno seguro de prueba.
 
 ---
 
-### 📝 Quiz interactivo
+## 🦊 Parte 1: Crear una wallet en MetaMask
 
-<iframe src="https://form.typeform.com/to/REEMPLAZAR_LINK" width="100%" height="600px" frameborder="0"></iframe>
+1. Instalá [MetaMask](https://metamask.io) en tu navegador o dispositivo móvil.  
+2. Creá una nueva cuenta (wallet).  
+3. Anotá y guardá tu frase de recuperación en un lugar seguro (no digital).  
+4. Cambiá la red a **Sepolia testnet** desde la configuración de MetaMask.  
+5. Solicitá ETH de prueba en [https://sepoliafaucet.com](https://sepoliafaucet.com).
 
-[🔗 Abrir quiz en una nueva pestaña](https://form.typeform.com/to/REEMPLAZAR_LINK){:target="_blank"}
+📸 **Evidencia a entregar**:
+- Captura de pantalla de tu wallet activa y configurada con Sepolia.
+- Captura de pantalla del ETH recibido desde el faucet.
 
 ---
 
-### 📝 Entrega de la evaluación
+## 🔍 Parte 2: Leer datos desde un explorador de bloques
 
-Una vez completado el quiz, debés subir una **captura de pantalla con tu resultado final** a tu repositorio personal de GitHub relacionado al programa de onboarding.
+1. Copiá tu dirección pública de MetaMask.  
+2. Visitá [https://sepolia.etherscan.io](https://sepolia.etherscan.io).  
+3. Pegá tu dirección para visualizar:
+   - Balance actual
+   - Historial de transacciones
+   - Consumo de gas
 
-### 📂 ¿Cómo hacerlo?
+4. Analizá otra dirección (por ejemplo, la del faucet) y compará.
 
-- Creá una carpeta específica dentro de tu repositorio (por ejemplo: `/modulo2/evaluacion/`).  
-- Subí el archivo con tu nombre y apellido. Ejemplo:
-```
-resultado_quiz_modulo2_Juan_Perez.png
-```
+📸 **Evidencia a entregar**:
+- Captura de pantalla de tu dirección en Etherscan.  
+- Breve explicación (2–3 oraciones) de lo que observaste.
 
-- Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
+---
 
-> 🔐 Asegurate de mantener el repositorio público o accesible para quienes revisan tu trabajo.
+## 📤 Entrega
+
+Creá una carpeta en tu repositorio personal llamada `modulo2-actividad` y subí:
+
+- Las capturas de pantalla solicitadas  
+- Un archivo `README.md` con tus observaciones escritas
+
+> 🔐 Asegurate de que tu repositorio esté accesible para revisión por parte del equipo de Ethereum Costa Rica.
 
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-herramientas">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-actividad">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-quiz">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-glosario">Siguiente ➡️</a>
 </div>
-
