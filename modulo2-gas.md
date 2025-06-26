@@ -82,7 +82,9 @@ You’ve learned how computation is paid for on Ethereum. Next, we’ll look at 
 
 ### 🔁 Navegación
 
-<div style="display: flex; justify-content: flex-start; margin-top: 2em;">
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2-cuentas">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-blocks">Siguiente ➡️</a>
 </div>
+
 

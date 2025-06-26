@@ -88,3 +88,4 @@ Now that you know what Ethereum enables, let’s learn about the nodes and clien
   <a class="btn" href="/Testing-Onboarding/modulo2-layer2">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-nodos-clientes">Siguiente ➡️</a>
 </div>
+

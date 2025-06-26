@@ -96,3 +96,4 @@ Now let’s look at one of the most impactful forms of participation: **staking*
   <a class="btn" href="/Testing-Onboarding/modulo2-herramientas">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-staking">Siguiente ➡️</a>
 </div>
+

@@ -90,5 +90,6 @@ Este glosario recopila los términos clave abordados en el módulo. Usalo como r
 ---
 
 <div style="display: flex; justify-content: flex-start; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-actividad">⬅️ Volver a la actividad</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-quiz">⬅️ Anterior</a>
 </div>
+

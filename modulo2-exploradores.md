@@ -71,3 +71,4 @@ Now that you can inspect blockchain data, it’s time to explore the **developer
   <a class="btn" href="/Testing-Onboarding/modulo2-nodos-clientes">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-herramientas">Siguiente ➡️</a>
 </div>
+

@@ -82,3 +82,4 @@ Next, we’ll explore **Layer 2 solutions**, which help Ethereum scale by proces
   <a class="btn" href="/Testing-Onboarding/modulo2-blocks">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-layer2">Siguiente ➡️</a>
 </div>
+

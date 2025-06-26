@@ -88,5 +88,5 @@ You’re now equipped with knowledge of the tools used to build on Ethereum. Nex
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2-exploradores">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-actividad">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-gobernanza">Siguiente ➡️</a>
 </div>

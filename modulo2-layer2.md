@@ -82,3 +82,5 @@ Now that you know how Ethereum can scale with Layer 2s, let's explore real-world
   <a class="btn" href="/Testing-Onboarding/modulo2-networks">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-aplicaciones">Siguiente ➡️</a>
 </div>
+
+

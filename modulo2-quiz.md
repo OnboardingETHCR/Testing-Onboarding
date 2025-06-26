@@ -53,8 +53,9 @@ resultado_quiz_modulo2_Juan_Perez.png
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-staking">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-actividad">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-actividad">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-glosario">Siguiente ➡️</a>
 </div>
+
 
 

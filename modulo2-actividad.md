@@ -54,6 +54,7 @@ Creá una carpeta en tu repositorio personal llamada `modulo2-actividad` y subí
 ---
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-quiz">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-glosario">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-staking">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2-quiz">Siguiente ➡️</a>
 </div>
+

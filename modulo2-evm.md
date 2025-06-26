@@ -73,3 +73,4 @@ In the next section, you’ll learn about **Ethereum accounts** — the building
   <a class="btn" href="/Testing-Onboarding/modulo2-intro-ethereum">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-cuentas">Siguiente ➡️</a>
 </div>
+
