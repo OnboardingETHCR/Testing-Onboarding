@@ -3,6 +3,7 @@ layout: page
 title: "Módulo 1: Introducción a Blockchain y Web3"
 nav_order: 2
 has_children: true
+has_toc: false
 ---
 
 # Módulo 1: Introducción a Blockchain y Web3
