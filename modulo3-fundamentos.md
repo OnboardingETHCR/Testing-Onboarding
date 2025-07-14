@@ -35,7 +35,7 @@ Solidity was proposed in 2014 by **Dr. Gavin Wood**, one of Ethereum’s co-foun
 
 The Ethereum team recognized early on that developers would need a simple, expressive way to build smart contracts — programs that execute exactly as written, without relying on centralized servers.
 
-The Solidity language has since evolved under the stewardship of the **Solidity team at the Ethereum Foundation**, with regular updates and community contributions. It has become the **de facto standard** for building smart contracts on Ethereum and many **EVM-compatible** chains like Polygon, Arbitrum, Avalanche C-Chain, and Optimism.
+The Solidity language has since evolved under the stewardship of the **Solidity team at the Ethereum Foundation**, with regular updates and community contributions. It has become the **de facto standard** for building smart contracts on Ethereum and many **EVM-compatible** chains like Base, Arbitrum, Avalanche, Polygon, and Optimism.
 
 ### ✨ Why Solidity?
 
@@ -186,6 +186,13 @@ contract HelloWorld {
     }
 }
 ```
+You can deploy and test this contract in Remix:
+
+<a class="remix-link reference external" 
+   href="https://remix.ethereum.org/?#language=solidity&version=0.8.20&code=...base64..." 
+   target="_blank">
+   👉 Open in Remix
+</a>
 
 ---
 
