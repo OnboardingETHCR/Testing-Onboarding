@@ -189,10 +189,11 @@ contract HelloWorld {
 You can deploy and test this contract in Remix:
 
 <a class="remix-link reference external" 
-   href="https://remix.ethereum.org/?#language=solidity&version=0.8.20&code=...base64..." 
+   href="https://remix.ethereum.org/#code=//%20SPDX-License-Identifier%3A%20MIT%0Apragma%20solidity%20%5E0.8.20%3B%0A%0A///%20%40title%20HelloWorld%20-%20A%20simple%20message%20storage%20contract%0Acontract%20HelloWorld%20%7B%0A%0A%20%20%20%20string%20public%20message%3B%0A%0A%20%20%20%20constructor(string%20memory%20_initialMessage)%20%7B%0A%20%20%20%20%20%20%20%20message%20%3D%20_initialMessage%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20getMessage()%20public%20view%20returns%20(string%20memory)%20%7B%0A%20%20%20%20%20%20%20%20return%20message%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20updateMessage(string%20memory%20_newMessage)%20public%20%7B%0A%20%20%20%20%20%20%20%20message%20%3D%20_newMessage%3B%0A%20%20%20%20%7D%0A%7D&lang=en&compiler=0.8.20" 
    target="_blank">
    👉 Open in Remix
 </a>
+
 
 ---
 
