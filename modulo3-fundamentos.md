@@ -213,8 +213,69 @@ You can deploy and test this contract in [Remix IDE](https://remix.ethereum.org/
 
 ```
 
+---
 
+## 🧠 Reflective Questions
 
+> Take a moment to reflect before revealing the answers. These are not absolute truths — but rather key insights to guide your understanding.
+
+---
+
+### 1. Why does Solidity require developers to explicitly declare data types and visibility?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+Solidity is a statically-typed language that prioritizes **clarity, security, and predictability**. Explicit types prevent ambiguity and help the compiler catch errors early. Visibility (`public`, `private`, etc.) is crucial in a decentralized environment because **accidentally exposing a function or variable could result in loss of funds or security breaches**.
+
+</details>
+
+---
+
+### 2. What is the difference between a `view` and a `pure` function?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+- `view`: can read **state variables**, but cannot modify them.
+- `pure`: **cannot read or modify** any state — it uses only input arguments and internal logic.
+
+These distinctions help manage **gas efficiency**, security, and clarity in how contracts interact with the blockchain.
+
+</details>
+
+---
+
+### 3. What does it mean for a smart contract to be *deterministic*?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+A deterministic contract produces the **same output given the same inputs, across all nodes**. This is vital in Ethereum because every node must **reach consensus** — all must produce the same result to validate a transaction. Non-determinism could break consensus and threaten the entire network.
+
+</details>
+
+---
+
+### 4. How does your mindset change knowing your code is immutable and public?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+It encourages **rigorous testing, caution, and transparency**. There's no "hotfix" once deployed — every mistake costs gas and reputation. It also changes how developers handle **security, naming, and documentation**, knowing that **anyone can read and interact** with the contract indefinitely.
+
+</details>
+
+---
+
+### 5. What differences between Solidity and other languages might lead to mistakes?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+Solidity introduces concepts like `storage` vs `memory`, gas costs, immutability, and visibility that **don't exist in most traditional languages**. Developers used to dynamic or garbage-collected languages may struggle with **manual data location handling** and the cost of each instruction. Forgetting visibility defaults or misunderstanding `msg.sender` can lead to critical vulnerabilities.
+
+</details>
 
 ---
 
