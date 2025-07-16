@@ -1,14 +1,10 @@
 ---
 
 layout: page
-
 title: "Fundamentos de Solidity"
-
-nav\_order: 1
-
+nav_order: 1
 parent: "Módulo 3: Programando en Solidity"
 
-has\_toc: false
 
 ---
 

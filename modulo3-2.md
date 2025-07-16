@@ -1,14 +1,9 @@
 ---
 
 layout: page
-
 title: "Anatomía de un Contrato"
-
-nav\_order: 2
-
+nav_order: 2
 parent: "Módulo 3: Programando en Solidity"
-
-has\_toc: false
 
 ---
 
