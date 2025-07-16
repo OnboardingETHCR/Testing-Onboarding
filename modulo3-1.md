@@ -275,7 +275,11 @@ Solidity introduces concepts like `storage` vs `memory`, gas costs, immutability
 
 ---
 
-⬅️ [Back to Module 3](modulo3.md) | [Continue to 3.2 Anatomy of a Contract →](modulo3-2.md)
+### 🔁 Navegación
+
+<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo3-2">Siguiente ➡️</a>
+</div>
 
 
 

@@ -443,4 +443,11 @@ In this section, you've explored the complete anatomy of a smart contract:
 
 ---
 
-⬅️ [Back to 3.1: Solidity Fundamentals](modulo3-1.md) | [Continue to 3.3: Types, Functions & Control Flow →](modulo3-3.md)
+---
+
+### 🔁 Navegación
+
+<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo3-3">Siguiente ➡️</a>
+</div>
+
