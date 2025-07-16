@@ -443,11 +443,11 @@ In this section, you've explored the complete anatomy of a smart contract:
 
 ---
 
----
-
 ### 🔁 Navegación
 
-<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo3-1">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo3-3">Siguiente ➡️</a>
 </div>
+
 
