@@ -54,7 +54,6 @@ contract MessageBoard {
     }
 }
 ```
----
 
 You can deploy and test this contract in Remix:
 
