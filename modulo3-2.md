@@ -54,6 +54,12 @@ contract MessageBoard {
     }
 }
 ```
+---
+
+You can deploy and test this contract in Remix:
+
+[👉 Open in Remix](https://remix.ethereum.org/#url=https://onboardingethcr.github.io/Testing-Onboarding/contracts/MessageBoard.sol){:target="_blank" .btn}
+
 
 ---
 
