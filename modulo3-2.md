@@ -70,11 +70,9 @@ contract MessageBoard {
 | `readMessage()`      | View function for external reads |
 | `deleteMessage()`    | Restricted to owner, reverts otherwise |
 
----
 
 In the following sections, we'll analyze each of these parts in more depth: starting with **state variables** and why they matter in the context of gas, visibility, and security.
 
-```
 
 ---
 

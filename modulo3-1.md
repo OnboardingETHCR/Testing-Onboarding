@@ -109,7 +109,7 @@ contract HelloWorld {
 }
 ```
 
-### 🧱 Anatomy Breakdown
+### 🧱 Key Elements in a Simple Contract
 
 | Element       | Purpose                                             |
 |---------------|-----------------------------------------------------|
@@ -148,6 +148,7 @@ Solidity uses explicit visibility for functions and variables:
 
 ✅ Solidity is strict with types and visibility, which improves security and reduces ambiguity — but it also requires the developer to be very clear about their intent.
 
+> ℹ️ *We’ll explore a more complete contract structure in the next section.*
 ---
 
 ## 🚀 Your First Smart Contract
