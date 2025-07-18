@@ -144,11 +144,9 @@ Solidity uses explicit visibility for functions and variables:
 | `internal`  | This contract and contracts inheriting it       |
 | `external`  | Only external accounts or contracts             |
 
----
 
 ✅ Solidity is strict with types and visibility, which improves security and reduces ambiguity — but it also requires the developer to be very clear about their intent.
 
-> ℹ️ *We’ll explore a more complete contract structure in the next section.*
 ---
 
 ## 🚀 Your First Smart Contract
@@ -206,9 +204,6 @@ Unlike traditional applications, smart contracts:
 * Are **immutable** once deployed (unless specifically designed to be upgradeable)
 * Are **transparent** and auditable by anyone
 
-You can deploy and test this contract in [Remix IDE](https://remix.ethereum.org/) — a browser-based Solidity editor.
-
-```
 
 ---
 
