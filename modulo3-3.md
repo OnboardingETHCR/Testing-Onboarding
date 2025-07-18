@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "3.3 Tipos, Funciones y Flujo de Control"
+title: "Tipos, Funciones y Flujo de Control"
 nav_order: 3
 parent: "Módulo 3: Programando en Solidity"
 ---
