@@ -5,7 +5,7 @@ nav_order: 3
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 🧮 3.3 Types, Functions and Control Flow
+## 🧮 Types, Functions and Control Flow
 
 Understanding how Solidity manages data, defines behavior, and controls execution flow is essential to writing robust and efficient smart contracts.
 
