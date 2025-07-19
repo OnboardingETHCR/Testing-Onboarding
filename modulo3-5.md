@@ -228,15 +228,17 @@ Solidity does not store keys in mappings, so you cannot loop through them. You m
 
 ---
 
-### 3. What does the `_` symbol do in a modifier?
+### 3. How do modifiers improve code quality and security?
 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-It acts as a placeholder for the function body that uses the modifier.  
-The logic before `_` runs first; then the actual function is executed in that spot.
+Modifiers help you avoid code duplication by centralizing checks like access control or preconditions.  
+They also reduce the risk of forgetting critical validations, since the logic is defined once and reused consistently.  
+This improves both **readability** and **security** in your contracts.
 
 </details>
+
 
 ---
 
@@ -256,5 +258,5 @@ Interfaces only define **function signatures** — they do not contain logic and
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo3-4">⬅️ Previous</a>
-  <a class="btn" href="/Testing-Onboarding/modulo3-cheatsheet">Next ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-actividad">Next ➡️</a>
 </div>
