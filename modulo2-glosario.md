@@ -5,89 +5,90 @@ parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 16
 ---
 
-# 📘 Glosario de Ethereum
+# 📘 Ethereum Glossary
 
-Este glosario recopila los términos clave abordados en el módulo. Usalo como referencia rápida para reforzar tu comprensión del ecosistema Ethereum.
-
----
-
-### 📚 Términos fundamentales
-
-- **Ethereum**: Plataforma blockchain descentralizada que permite crear smart contracts y aplicaciones descentralizadas (dApps).
-
-- **ETH**: Criptomoneda nativa de Ethereum, utilizada para pagar gas y transferir valor.
-
-- **Gas**: Unidad que mide el esfuerzo computacional para ejecutar operaciones en la red. Se paga en ETH.
-
-- **Wallet**: Aplicación o dispositivo que permite gestionar claves privadas y firmar transacciones.
-
-- **Address**: Identificador único de una cuenta en Ethereum, utilizado para enviar y recibir activos.
-
-- **Transaction**: Acción enviada a la red (como transferir ETH o llamar un contrato).
-
-- **Block**: Conjunto de transacciones verificadas agrupadas cronológicamente en la cadena de bloques.
-
-- **Mainnet**: Red principal de Ethereum donde las transacciones tienen valor real.
-
-- **Testnet**: Redes de prueba que simulan Ethereum sin usar ETH real (ej: Sepolia, Goerli).
+This glossary collects the key terms covered throughout the module. Use it as a quick reference to reinforce your understanding of the Ethereum ecosystem.
 
 ---
 
-### ⚙️ Cuentas y contratos
+### 📚 Core Concepts
 
-- **Externally Owned Account (EOA)**: Cuenta controlada por una clave privada, usada por personas.
+- **Ethereum**: A decentralized blockchain platform that enables the creation of smart contracts and decentralized applications (dApps).
 
-- **Contract Account**: Cuenta controlada por código (smart contract), no puede iniciar transacciones.
+- **ETH**: Ethereum’s native cryptocurrency, used to pay for gas and transfer value.
 
-- **Smart Contract**: Programa que vive en Ethereum y se ejecuta automáticamente según sus reglas codificadas.
+- **Gas**: A unit that measures the computational effort required to execute operations on the network. Paid in ETH.
 
-- **EVM (Ethereum Virtual Machine)**: Entorno de ejecución para contratos inteligentes en Ethereum.
+- **Wallet**: An app or device that manages private keys and signs transactions.
 
----
+- **Address**: A unique identifier for an Ethereum account, used to send and receive assets.
 
-### 🧱 Infraestructura
+- **Transaction**: An action sent to the network (such as transferring ETH or calling a contract).
 
-- **Node**: Computadora que participa en la red de Ethereum verificando y difundiendo información.
+- **Block**: A batch of verified transactions grouped chronologically into the blockchain.
 
-- **Client**: Implementación de software de un nodo (ej: Geth, Nethermind, Besu).
+- **Mainnet**: Ethereum’s main network where transactions have real value.
 
-- **Explorer**: Herramienta para visualizar transacciones, contratos y bloques (ej: Etherscan).
-
-- **RPC**: Protocolo para que apps (como wallets) se conecten a nodos de Ethereum.
+- **Testnet**: Testing networks that simulate Ethereum without real ETH (e.g., Sepolia, Goerli).
 
 ---
 
-### 🔄 Escalabilidad y Layer 2
+### ⚙️ Accounts and Contracts
 
-- **Layer 2 (L2)**: Soluciones construidas sobre Ethereum para aumentar velocidad y reducir costos (ej: Optimism, Arbitrum).
+- **Externally Owned Account (EOA)**: An account controlled by a private key, typically used by individuals.
 
-- **Rollup**: Tipo de L2 que agrupa muchas transacciones fuera de la cadena y las publica como una sola.
+- **Contract Account**: An account controlled by code (smart contract), which cannot initiate transactions.
 
----
+- **Smart Contract**: A program that lives on Ethereum and executes automatically according to its coded rules.
 
-### 📲 Aplicaciones y tokens
-
-- **dApp**: Aplicación descentralizada que corre sobre Ethereum (ej: juegos, DeFi, marketplaces).
-
-- **NFT (Non-Fungible Token)**: Token único que representa propiedad digital.
-
-- **Stablecoin**: Token cuyo valor está vinculado a otro activo (ej: USDC).
-
-- **ERC-20 / ERC-721**: Estándares de tokens para interoperabilidad y funcionalidad común.
+- **EVM (Ethereum Virtual Machine)**: The execution environment for smart contracts on Ethereum.
 
 ---
 
-### 🗳 Gobernanza y participación
+### 🧱 Infrastructure
 
-- **DAO (Decentralized Autonomous Organization)**: Organización que toma decisiones colectivas mediante contratos inteligentes y votaciones.
+- **Node**: A computer participating in the Ethereum network, validating and propagating information.
 
-- **EIP (Ethereum Improvement Proposal)**: Propuesta técnica para mejorar Ethereum.
+- **Client**: Software implementation of a node (e.g., Geth, Nethermind, Besu).
 
-- **Staking**: Proceso de bloquear ETH para participar como validador y asegurar la red.
+- **Explorer**: A tool to visualize transactions, contracts, and blocks (e.g., Etherscan).
 
-- **Validator**: Nodo que propone y valida bloques en Ethereum PoS, ganando recompensas por su trabajo honesto.
+- **RPC**: A protocol that allows applications (like wallets) to connect to Ethereum nodes.
 
 ---
+
+### 🔄 Scalability and Layer 2
+
+- **Layer 2 (L2)**: Solutions built on top of Ethereum to increase speed and reduce costs (e.g., Optimism, Arbitrum).
+
+- **Rollup**: A type of L2 that aggregates many off-chain transactions and posts them as one on-chain.
+
+---
+
+### 📲 Applications and Tokens
+
+- **dApp**: A decentralized application that runs on Ethereum (e.g., games, DeFi, marketplaces).
+
+- **NFT (Non-Fungible Token)**: A unique token representing digital ownership.
+
+- **Stablecoin**: A token whose value is pegged to another asset (e.g., USDC).
+
+- **ERC-20 / ERC-721**: Token standards that ensure interoperability and common functionality.
+
+---
+
+### 🗳 Governance and Participation
+
+- **DAO (Decentralized Autonomous Organization)**: An organization that makes collective decisions through smart contracts and voting.
+
+- **EIP (Ethereum Improvement Proposal)**: A technical proposal to improve Ethereum.
+
+- **Staking**: The process of locking ETH to participate as a validator and secure the network.
+
+- **Validator**: A node that proposes and validates blocks in Ethereum’s PoS system, earning rewards for honest work.
+
+---
+
 
 <div style="display: flex; justify-content: flex-start; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2-quiz">⬅️ Anterior</a>

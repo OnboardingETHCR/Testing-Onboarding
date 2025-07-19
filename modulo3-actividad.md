@@ -37,7 +37,7 @@ By the end of this activity, you should feel confident building and deploying ba
    Complete the following levels:
  Complete the following:
    - 🟢 Level 0: 🧠 [Simple NFT](https://speedrunethereum.com/challenge/simple-nft-example)
-   - 🟡 Level 1: 📝 [Decentralized Staking App](https://speedrunethereum.com/challenge/decentralized-staking-app)
+   - 🟡 Level 1: 📝 [Decentralized Staking App](https://speedrunethereum.com/challenge/decentralized-staking)
    - 🟠 Level 2: 🧾 [Token Vendor](https://speedrunethereum.com/challenge/token-vendor)
    - 🔵 Level 3: 🛂 [Dice Game](https://speedrunethereum.com/challenge/dice-game)
 

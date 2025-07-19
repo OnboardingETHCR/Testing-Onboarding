@@ -267,7 +267,7 @@ It improves developer experience, supports frontend integration, and provides cl
 ### 🔁 Navigation
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3-1">⬅️ Previous</a>
-  <a class="btn" href="/Testing-Onboarding/modulo3-3">Next ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-1">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-3">Siguiente ➡️</a>
 </div>
 
