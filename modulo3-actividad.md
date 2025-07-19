@@ -24,3 +24,37 @@ You will:
 By the end of this activity, you should feel confident building and deploying basic smart contracts in a real-world environment.
 
 ---
+
+## 🧭 Instructions (Step-by-Step)
+
+1. **Visit SpeedRunEthereum**  
+   Go to: [https://speedrunethereum.com](https://speedrunethereum.com)
+
+2. **Sign in with your wallet**  
+   Use MetaMask or your preferred wallet to authenticate.
+
+3. **Start the challenges**  
+   Complete the following levels:
+ Complete the following:
+   - 🟢 Level 0: 🧠 [Simple NFT](https://speedrunethereum.com/challenge/simple-nft-example)
+   - 🟡 Level 1: 📝 [Decentralized Staking App](https://speedrunethereum.com/challenge/decentralized-staking-app)
+   - 🟠 Level 2: 🧾 [Token Vendor](https://speedrunethereum.com/challenge/token-vendor)
+   - 🔵 Level 3: 🛂 [Dice Game](https://speedrunethereum.com/challenge/dice-game)
+
+4. **Follow the instructions on each challenge page**  
+   - Each page contains the **objective** and **workspace setup**.
+   - You will write, test, and deploy smart contracts as described.
+
+5. **Submit your work**  
+   - Create a public GitHub repository.  
+   - Upload the code and files for each challenge in separate folders.  
+   - Share the GitHub link as your final submission.
+
+---
+
+### 🔁 Navegación
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo3-cheatsheet">⬅️ Cheatsheet</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4">Módulo 4 ➡️</a>
+</div>
