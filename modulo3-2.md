@@ -1,456 +1,273 @@
 ---
-
 layout: page
 title: "Anatomía de un Contrato"
 nav_order: 2
 parent: "Módulo 3: Programando en Solidity"
+---
+
+## 🧬Anatomy of a Contract
+
+Now that you’ve explored a simple contract in the previous section, it's time to go deeper. This is your first **structured analysis** of a real Solidity contract, where we’ll break down each part to understand what it does, why it matters, and how it fits into the language’s design.
+
+We'll use a minimal but complete contract called `SimpleStorage.sol`, adapted from the official Ethereum documentation. This contract:
+- Stores a number on the blockchain
+- Allows updating that number via a public function
+- Provides a public getter function to read it
+- Includes basic documentation using NatSpec comments
+
+Our goal is to understand the **anatomy of a contract** and how Solidity handles:
+- State variables and storage
+- Public functions and visibility
+- Basic data types
+- Syntax and layout
+- NatSpec documentation
 
 ---
 
-## 🧬 Anatomy of a Smart Contract
+## 🧪 Example Contract: SimpleStorage.sol
 
-Now that you've seen what Solidity looks like, it's time to understand **how a complete smart contract is structured** and why each part matters.
-
-In this section, we’ll break down a contract into its fundamental components: state variables, constructor, functions, events, and custom errors. These are not just code elements — they represent the way your contract stores information, reacts to users, and communicates with the outside world.
-
----
-
-## 🧱 What makes a smart contract complete?
-
-A well-designed contract is clean, explicit, and modular. Let's begin with a practical example and analyze it piece by piece.
+Here is the full contract:
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-error Unauthorized();
-error EmptyMessage();
+/// @title SimpleStorage - Stores and retrieves a number
+contract SimpleStorage {
+    uint256 private data;
 
-contract MessageBoard {
-    address public owner;
-    string private message;
-
-    event MessageUpdated(address indexed sender, string newMessage);
-
-    constructor(string memory _initialMessage) {
-        if (bytes(_initialMessage).length == 0) revert EmptyMessage();
-        owner = msg.sender;
-        message = _initialMessage;
+    /// @notice Sets the value of `data`
+    /// @param _value The number to store
+    function set(uint256 _value) public {
+        data = _value;
     }
 
-    function updateMessage(string calldata _newMessage) external {
-        if (bytes(_newMessage).length == 0) revert EmptyMessage();
-        message = _newMessage;
-        emit MessageUpdated(msg.sender, _newMessage);
-    }
-
-    function readMessage() external view returns (string memory) {
-        return message;
-    }
-
-    function deleteMessage() external {
-        if (msg.sender != owner) revert Unauthorized();
-        message = "";
+    /// @notice Retrieves the stored value
+    /// @return The current value of `data`
+    function get() public view returns (uint256) {
+        return data;
     }
 }
 ```
-
 You can deploy and test this contract in Remix:
 
-[👉 Open in Remix](https://remix.ethereum.org/#url=https://onboardingethcr.github.io/Testing-Onboarding/contracts/MessageBoard.sol){:target="_blank" .btn}
+[👉 Open in Remix](https://remix.ethereum.org/#url=https://onboardingethcr.github.io/Testing-Onboarding/contracts/SimpleStorage.sol){:target="_blank" .btn}
 
 
 ---
 
-### 🔍 Key Highlights from the Contract
+### 🔍 Contract Overview
 
-| Section              | Description |
-|----------------------|-------------|
-| `SPDX + pragma`      | Declares license and compiler version |
-| `error` definitions  | Custom error types for efficient reverts |
-| `state variables`    | `owner` and `message`, with different visibility levels |
-| `event`              | Emitted when the message is updated |
-| `constructor`        | Initializes contract with validation |
-| `updateMessage()`    | Publicly callable write function with validation and event |
-| `readMessage()`      | View function for external reads |
-| `deleteMessage()`    | Restricted to owner, reverts otherwise |
-
-
-In the following sections, we'll analyze each of these parts in more depth: starting with **state variables** and why they matter in the context of gas, visibility, and security.
-
+| Section              | Description                                                               |
+|----------------------|---------------------------------------------------------------------------|
+| `SPDX + pragma`      | Declares license and minimum compiler version                             |
+| Contract name        | `SimpleStorage` defined using the `contract` keyword                      |
+| State variable       | `data` is a private `uint256` stored directly on the blockchain           |
+| `set()` function     | Public function to assign a new value to `data`                           |
+| `get()` function     | View function that returns the current stored value                       |
+| NatSpec comments     | Standardized documentation comments for tools and UIs                    |
 
 ---
 
-## 🧾 State Variables: Scope, Cost and Control
+## 🧾 State Variables: Persistent On-Chain Data
 
-State variables are the foundation of your contract's persistent data. They are stored **directly on the blockchain**, and their values remain consistent across function calls and transactions.
+State variables are stored directly on the blockchain and define the **long-term state** of your contract.  
+They are declared at the contract level (outside functions) and persist across all transactions.
 
-Unlike local variables, **state variables consume storage**, which is **one of the most expensive operations in Solidity**. Therefore, it’s essential to define them efficiently and explicitly.
-
-### 🔐 Visibility
-
-Solidity uses visibility keywords to define **who can access a variable**. If not declared explicitly, the compiler applies a default (`internal`).
-
-| Keyword     | Who can read/write it?                            |
-|-------------|----------------------------------------------------|
-| `public`    | Anyone — auto-generates a getter function         |
-| `private`   | Only this contract can access it                  |
-| `internal`  | This contract and derived contracts               |
-
-**Example:**
+In `SimpleStorage`, we have:
 
 ```solidity
-address public owner;       // Visible to all, generates a getter
-string private message;     // Only accessible inside this contract
+uint256 private data;
 ```
 
-> ✅ Avoid leaving visibility undefined. Solidity does not default to `private` — it defaults to `internal`.
+This creates a **persistent unsigned integer** that only this contract can access directly (because it’s `private`).
 
 ---
 
-### 💰 Storage Cost: Gas Implications
+### 🔐 Visibility and Access
 
-Each state variable occupies **one storage slot (256 bits)**, unless optimized through **packing**. Updates to storage are expensive (around 20,000 gas per write). Reading from storage is cheaper but still non-trivial.
+Visibility controls **who can read or modify** the variable — both inside and outside the contract.
 
-Keep this in mind:
-- Use `memory` for temporary variables inside functions
-- Consider using `calldata` for input arguments in external functions (especially strings and arrays)
+| Keyword     | Who can access it?                           |
+|-------------|-----------------------------------------------|
+| `public`    | Anyone — a getter function is auto-generated |
+| `private`   | Only this contract                           |
+| `internal`  | This contract and derived contracts          |
+
+> 💡 Always declare visibility explicitly. If you don’t, Solidity will default to `internal`.
 
 ---
 
-### 🔒 `constant` and `immutable`
+### 💸 Storage and Gas Considerations
 
-These are special modifiers that reduce gas costs and improve clarity.
+- State variables consume **storage**, the most expensive resource in Ethereum.
+- Reading is cheaper than writing.
+- Use types like `uint256`, `bool`, or `address` efficiently to reduce cost.
 
-| Modifier     | When is the value set? | Is it stored on-chain? | Gas cost |
-|--------------|-------------------------|--------------------------|----------|
-| `constant`   | At compile time         | No (hardcoded in bytecode)| Very low |
-| `immutable`  | At deployment (via constructor) | Yes (once)        | Low |
+---
 
-**Example:**
+> ✅ Tip: Organize state variables by access level and purpose — it improves clarity and auditability.
+
+---
+
+## ⚙️ Functions: Behavior and Visibility
+
+Functions define the **behavior** of your contract — how users and other contracts can interact with its data.
+
+In `SimpleStorage`, we have two functions:
 
 ```solidity
-uint256 public constant MAX_USERS = 1000;
-address public immutable deployer;
+function set(uint256 _value) public {
+    data = _value;
+}
 
-constructor() {
-    deployer = msg.sender;
+function get() public view returns (uint256) {
+    return data;
 }
 ```
 
-> 🔍 `constant` is best for values that will never change (like fees, limits).  
-> `immutable` is useful when the value must be dynamic at deploy time (like the deployer address), but never updated again.
+Let’s break them down.
 
 ---
 
+### 📥 `set()` – Writing to the Blockchain
 
-## 🏗️ The Constructor: One Shot Initialization
+This function accepts a `uint256` input and stores it in the `data` state variable:
 
-A **constructor** in Solidity is a special function that **runs only once**, immediately after the contract is deployed. It’s commonly used to initialize critical variables such as the owner, starting balances, or configuration values.
+- It’s `public`, so anyone can call it.
+- It **modifies contract state**, so it costs gas.
+- The parameter `_value` is stored in **memory** (by default for value types).
 
-The constructor **cannot be called again** after deployment — any state it sets becomes part of the contract's initial storage.
+> 🧠 Calling `set()` from an EOA (wallet) will create a new transaction and consume ETH.
 
-### 🧪 Syntax
+---
+
+### 📤 `get()` – Reading from the Blockchain
+
+This function returns the stored value without modifying anything:
+
+- It’s also `public`
+- It uses the `view` modifier, meaning **it doesn’t change state**
+- Calling it from outside (e.g., Remix) **is free** — no gas is spent
+
+---
+
+### 🔍 Function Visibility Summary
+
+| Modifier   | Can be called by | Notes                                  |
+|------------|------------------|----------------------------------------|
+| `public`   | Anyone            | Also accessible by internal functions |
+| `external` | Only outside      | Slightly more gas efficient in some cases |
+| `internal` | This + child contracts | Not visible outside                 |
+| `private`  | Only this contract | Hidden from derived contracts         |
+
+---
+
+> ✅ Best Practice: Declare visibility (`public`, `private`, etc.) **and mutability** (`view`, `pure`) explicitly for every function.
+
+---
+
+## 📝 NatSpec Documentation
+
+Solidity supports a special format for inline documentation called **NatSpec (Ethereum Natural Specification Format)**.  
+It helps explain what each function does, its parameters, and what it returns — and can be used by developer tools, interfaces, and auditors.
+
+---
+
+### ✍️ Example in `SimpleStorage.sol`
 
 ```solidity
-constructor(string memory _initialMessage) {
-    message = _initialMessage;
-    owner = msg.sender;
-}
-```
-
-No need to declare visibility (e.g., `public`) — the constructor is always internal by nature.
-
----
-
-### 🔐 Common Use Cases
-
-- Set the contract `owner`
-- Assign `immutable` values
-- Validate initial parameters
-- Emit initial events (if needed)
-
----
-
-### 🧱 Example with Error Handling
-
-```solidity
-error EmptyMessage();
-
-constructor(string memory _initialMessage) {
-    if (bytes(_initialMessage).length == 0) {
-        revert EmptyMessage();
-    }
-    message = _initialMessage;
-    owner = msg.sender;
-}
-```
-
-This constructor ensures:
-- The message is not empty (validated with `revert`)
-- The deployer address is captured and saved
-- It never runs again after deployment
-
----
-
-### ⚠️ Best Practices
-
-| Tip | Why it matters |
-|-----|----------------|
-| Validate inputs       | Prevent invalid state from the start |
-| Use `immutable` when possible | Saves gas and improves code clarity |
-| Avoid heavy logic     | Keep it simple — constructor gas is paid on deployment |
-| Don’t emit sensitive data | Remember: contract creation data is public |
-
-> 🧠 Constructors define the *initial state* — but **not access control**. Always combine with proper function restrictions like `require(msg.sender == owner)` or use modifiers.
-
----
-
-## 🛠️ Functions: Logic, Visibility and Behavior
-
-Functions are the **core units of behavior** in a smart contract. They define how your contract responds to users, modifies data, emits events, or sends Ether.
-
-Each function must have:
-- A **name**
-- **Input parameters**
-- (Optional) **return values**
-- (Optional) **modifiers** such as `view`, `payable`, etc.
-- A **visibility keyword** that defines who can call it
-
----
-
-### 🔭 Visibility Keywords
-
-| Keyword     | Who can call it?                      | Use case example |
-|-------------|----------------------------------------|------------------|
-| `public`    | Anyone — external or internal calls    | Most accessible functions |
-| `external`  | Only external callers (e.g., users, other contracts) | Saves gas for large arguments |
-| `internal`  | Only this contract or inherited ones  | For shared logic |
-| `private`   | Only this contract                    | For internal use only |
-
-```solidity
-function publicFunc() public returns (bool) { ... }
-function externalFunc() external view returns (uint) { ... }
-function internalFunc() internal { ... }
-function privateFunc() private pure { ... }
-```
-
-> 🔍 `external` functions are slightly more gas-efficient when accepting large structs or strings.
-
----
-
-### 🧭 Function Modifiers
-
-Solidity uses **modifiers** to declare function behavior:
-
-| Modifier    | Description |
-|-------------|-------------|
-| `view`      | Reads state, but doesn’t modify it |
-| `pure`      | Doesn’t read or modify state |
-| `payable`   | Allows function to receive ETH |
-| `virtual` / `override` | Used in inheritance contexts |
-
-```solidity
-function readData() public view returns (string memory) {
-    return message;
+/// @notice Sets the value of `data`
+/// @param _value The number to store
+function set(uint256 _value) public {
+    data = _value;
 }
 
-function calculate(uint a, uint b) public pure returns (uint) {
-    return a + b;
-}
-
-function donate() external payable {
-    // receives ETH
+/// @notice Retrieves the stored value
+/// @return The current value of `data`
+function get() public view returns (uint256) {
+    return data;
 }
 ```
+---
+
+### 🧠 Common NatSpec Tags
+
+| Tag         | Purpose                                      |
+|-------------|----------------------------------------------|
+| `@title`    | Brief title for the contract                 |
+| `@notice`   | What this function does (for end users)      |
+| `@dev`      | Developer-only notes                         |
+| `@param`    | Description of a function parameter          |
+| `@return`   | What the function returns                    |
+
+> ⚠️ These comments must be placed **immediately before** the function or contract they describe.
 
 ---
 
-### 💸 Receiving ETH: `payable`
-
-Only functions marked as `payable` can receive Ether. Attempting to send ETH to a non-`payable` function will fail.
-
-```solidity
-function contribute() external payable {
-    require(msg.value > 0, "Send ETH");
-}
-```
+NatSpec is optional but strongly recommended — especially when working in teams or building for public use.
 
 ---
 
-### 🔐 Access Control (Manual)
+## 🧠 Reflective Questions
 
-Functions often require access restrictions. You can implement it with `require()`:
-
-```solidity
-function resetMessage() public {
-    require(msg.sender == owner, "Not authorized");
-    message = "";
-}
-```
-
-For better structure, consider **custom errors** and **modifiers**, which we'll explore later.
+Take a moment to check your understanding. Try answering on your own before revealing the answer.
 
 ---
 
-## 📣 Events: Logging On-Chain Activity
+### 1. Why is the `data` variable marked as `private` in `SimpleStorage`?
 
-Events are a way for smart contracts to **emit logs** that can be read by external systems like UIs, backends, or analytics tools. They are not stored in contract state — instead, they’re kept in transaction logs (part of the Ethereum receipt layer).
+<details>
+<summary>💡 Reveal Answer</summary>
 
-Use events to:
-- Signal a meaningful change (e.g., transfer, update, approval)
-- Provide data to frontends
-- Track contract activity without storing extra state
+To prevent external contracts or users from accessing or modifying it directly.  
+This encourages controlled interaction through public functions like `get()` and `set()`, reducing the risk of accidental or unauthorized changes.
 
----
-
-### 🛎️ Declaring and Emitting Events
-
-```solidity
-event MessageUpdated(address indexed sender, string newMessage);
-```
-
-- `indexed` makes the parameter searchable (up to 3 per event)
-- Events are declared outside functions, like global declarations
-
-To **emit** an event:
-
-```solidity
-emit MessageUpdated(msg.sender, _newMessage);
-```
-
-This creates a log entry with the data and topic filter (`indexed`).
+</details>
 
 ---
 
-### 🧠 Example in Context
+### 2. What does the `view` keyword mean in the `get()` function?
 
-```solidity
-event MessageUpdated(address indexed sender, string newMessage);
+<details>
+<summary>💡 Reveal Answer</summary>
 
-function updateMessage(string calldata _newMessage) external {
-    message = _newMessage;
-    emit MessageUpdated(msg.sender, _newMessage);
-}
-```
+It indicates that the function does **not modify** the contract's state.  
+Functions marked `view` can **read** state variables but cannot write to them.
 
----
-
-### 📡 Why Use Events?
-
-| Reason | Benefit |
-|--------|---------|
-| Gas-efficient logging | Much cheaper than storing state |
-| UI triggers | Frontends listen for changes (e.g., Metamask, The Graph) |
-| Transparency | Helps users and devs track what happened and when |
-
-> 🔍 Events are not accessible *within Solidity*. You can’t read past logs on-chain. They’re for **external consumers only**.
+</details>
 
 ---
 
-### ⚠️ Best Practices
+### 3. What happens if you forget to declare visibility on a function?
 
-- Don’t emit too many events — keep them relevant
-- Avoid storing sensitive user data
-- Use `indexed` only when filtering is needed
+<details>
+<summary>💡 Reveal Answer</summary>
 
----
+The compiler will apply a default, which may not match your intention.  
+For functions, the default is `public` for interfaces and `internal` for contracts.  
+Not declaring it explicitly can lead to security or accessibility issues.
 
-## 🚫 Custom Errors: Gas-Efficient Reverts
-
-In Solidity, it's common to use `require()` with a string message when a condition fails. However, as contracts grow and gas becomes a concern, **custom errors** offer a cheaper and cleaner alternative.
-
----
-
-### ❌ Traditional `require` with string
-
-```solidity
-require(msg.sender == owner, "Not authorized");
-```
-
-- Simple and readable
-- But storing long strings increases **contract size and gas**
+</details>
 
 ---
 
-### ✅ Using `error` and `revert`
+### 4. Why is NatSpec useful in smart contracts?
 
-Instead of writing the message directly, you can define a **custom error** at the top of the contract:
+<details>
+<summary>💡 Reveal Answer</summary>
 
-```solidity
-error Unauthorized();
-error EmptyMessage();
-```
+NatSpec makes your contract easier to understand, test, and audit.  
+It improves developer experience, supports frontend integration, and provides clarity when others interact with your code through tools like Remix or Etherscan.
 
-Then use `revert`:
-
-```solidity
-function resetMessage() external {
-    if (msg.sender != owner) revert Unauthorized();
-    message = "";
-}
-```
-
-This approach:
-- Saves **deployment and runtime gas**
-- Encourages **standardized error naming**
-- Makes errors more readable in tools like Hardhat, Foundry, or Remix
+</details>
 
 ---
 
-### 📊 Gas Comparison (Approximate)
-
-| Approach | Avg. Gas Cost |
-|----------|----------------|
-| `require("message")` | High (string stored in bytecode) |
-| `revert CustomError()` | Low (no string stored) |
-
----
-
-### 🔍 When to use `require` vs `revert`?
-
-| Use `require` when... | Use `revert CustomError` when... |
-|------------------------|----------------------------------|
-| Quick checks with short messages | You want to optimize for gas |
-| You don’t reuse the error       | You plan to reuse the error across functions |
-| Readability matters for beginners | You build large or production-grade contracts |
-
----
-
-### 💡 Bonus: Error Parameters
-
-Custom errors can also take arguments:
-
-```solidity
-error InsufficientBalance(uint256 available, uint256 required);
-
-function withdraw(uint256 amount) external {
-    if (balance[msg.sender] < amount)
-        revert InsufficientBalance(balance[msg.sender], amount);
-}
-```
-
-This lets you surface more useful debugging info **without storing full strings**.
-
----
-
-## 🧠 Recap
-
-In this section, you've explored the complete anatomy of a smart contract:
-
-- State variables and their cost
-- The constructor and one-time setup logic
-- Functions with visibility, modifiers, and payability
-- Events for external communication
-- Errors for robust and gas-efficient validation
-
----
-
-### 🔁 Navegación
+### 🔁 Navigation
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3-1">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo3-3">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-1">⬅️ Previous</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-3">Next ➡️</a>
 </div>
-
 

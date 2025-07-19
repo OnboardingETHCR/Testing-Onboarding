@@ -5,270 +5,315 @@ title: "Fundamentos de Solidity"
 nav_order: 1
 parent: "Módulo 3: Programando en Solidity"
 
+---
+
+## 🧱 Solidity Fundamentals
+
+Welcome to your first deep dive into Solidity — the primary programming language used to build smart contracts on Ethereum. Since you’ve completed Modules 1 and 2, you already understand the foundations of blockchain and Ethereum. Now it’s time to learn how to express logic directly on-chain.
+
+This section is all about understanding the **language fundamentals** that power decentralized applications (dApps). We’ll explore:
+
+- What Solidity is and why it was created
+- Basic syntax and structure
+- Core data types and functions
+- How to read and write your first smart contract
+
+By the end of this section, you’ll be able to explain what Solidity is, recognize its key components, and start modifying simple contracts using Remix.
+
+Let’s begin!
 
 ---
 
-## 🧠 What is Solidity?
+## ❓ What is Solidity and Why It Matters
 
-Solidity is a high-level, statically-typed, contract-oriented programming language designed specifically for building smart contracts on Ethereum. Created in 2014 by Gavin Wood, it is the most widely adopted language in the Ethereum ecosystem.
-
-Solidity allows developers to encode business logic into self-executing contracts that live on the blockchain. These contracts can store data, enforce rules, and trigger actions — all without relying on a central authority.
+Solidity is a high-level, statically-typed, contract-oriented programming language designed specifically for building smart contracts on Ethereum. Created in 2014 by Gavin Wood, it is the most widely adopted language in the Ethereum ecosystem. 
 
 Solidity is inspired by several familiar languages such as **C++**, **JavaScript**, and **Python**, making it easier for developers with prior experience in those languages to get started. However, unlike general-purpose programming, Solidity is tightly coupled to Ethereum’s **execution model**, **gas mechanics**, and **security assumptions**, which makes it a unique domain-specific language.
 
-It is compiled to **EVM bytecode**, which is executed by every Ethereum node in a decentralized and deterministic manner.
+Solidity is:
 
-Solidity is best suited for:
+- 🛠️ **Statically typed** — every variable must declare its type
+- 💻 **Contract-oriented** — each file defines a smart contract (like a mini backend)
+- 🧱 **Storage-aware** — managing memory and storage explicitly matters
+- 🔒 **Security-focused** — mistakes are irreversible, so code must be precise
 
-- Developing decentralized applications (dApps)
-- Creating ERC-20 and ERC-721 tokens
-- Building DAOs, DeFi protocols, and NFT marketplaces
-- Writing reusable components via interfaces and libraries
+It compiles into **EVM bytecode** — low-level instructions executed by the Ethereum Virtual Machine.
 
-## 🕰️ History and Purpose
+---
 
-Solidity was proposed in 2014 by **Dr. Gavin Wood**, one of Ethereum’s co-founders and the author of the Ethereum Yellow Paper. The language was developed to meet the need for a contract-oriented language capable of expressing complex program logic on a decentralized, trustless network.
+### 🧠 Why learn Solidity?
 
-The Ethereum team recognized early on that developers would need a simple, expressive way to build smart contracts — programs that execute exactly as written, without relying on centralized servers.
+Because Solidity is:
+- The **standard** for building on Ethereum (and compatible chains)
+- A **gateway** to building Web3 applications (DeFi, NFTs, DAOs, etc.)
+- In-demand across the blockchain ecosystem
+- A bridge between traditional coding and decentralized infrastructure
 
-The Solidity language has since evolved under the stewardship of the **Solidity team at the Ethereum Foundation**, with regular updates and community contributions. It has become the **de facto standard** for building smart contracts on Ethereum and many **EVM-compatible** chains like Base, Arbitrum, Avalanche, Polygon, and Optimism.
+---
 
-### ✨ Why Solidity?
+### 🔁 How is it different from other languages?
 
-Solidity was designed with the following goals:
+| Feature         | Solidity                  | JavaScript / Python              |
+|----------------|---------------------------|----------------------------------|
+| Execution       | On-chain (Ethereum)       | On browser or server             |
+| Visibility      | Must declare (`public`, `private`) | Implicit                         |
+| Data Storage    | `storage`, `memory`, `calldata` | Mostly abstracted                |
+| Gas & Cost      | Every operation costs ETH | Free computation                 |
+| Errors          | `require`, `revert`, `assert` | `throw`, `try-catch`             |
 
-- ✅ Be familiar to developers from C-style backgrounds (e.g., JavaScript, C++, Java)
-- ✅ Enable **fine-grained control** over data structures, function visibility, and access control
-- ✅ Integrate tightly with the Ethereum Virtual Machine (EVM)
-- ✅ Offer a modular and extensible language for rapid dApp innovation
-- ✅ Support complex interactions between contracts, with event logs, function modifiers, and fallback logic
+---
 
-Solidity is constantly evolving, with improvements in **readability**, **security**, **gas optimization**, and **developer tooling**.
+> 🧪 Solidity is **not** beginner-friendly like Python, but it’s focused, powerful, and domain-specific.  
 
-## 🔄 General Comparison with Other Languages
+---
 
-While Solidity is the most widely used language for writing smart contracts on Ethereum, it's not the only one. Understanding how it compares to alternatives like **Vyper**, **Yul**, or traditional languages such as **Python** or **JavaScript** can help clarify its purpose and design choices.
+## 🧠 Language Philosophy
 
-### Solidity vs Traditional Languages
+Solidity was designed for a very specific and unforgiving environment: the **blockchain**.  
+Unlike traditional apps, smart contracts are:
 
-| Feature                   | Solidity                          | JavaScript / Python / C++           |
-|--------------------------|------------------------------------|--------------------------------------|
-| Runtime                  | Ethereum Virtual Machine (EVM)     | Local CPU                            |
-| Execution cost           | Gas fees (paid in ETH)             | Free                                 |
-| State persistence        | Blockchain storage (public, costly)| Local memory or databases            |
-| Determinism              | Strictly deterministic             | Often non-deterministic              |
-| Concurrency              | Not allowed (single-threaded EVM)  | Multithreaded possible               |
-| Security model           | Trustless, permissionless          | Centralized runtime enforcement      |
-| Data visibility          | Everything on-chain is public      | Local/private unless shared          |
-| Function calls           | Can trigger new transactions       | Limited to local calls               |
+- 🧱 **Immutable** — once deployed, their code cannot be changed
+- 🕒 **Permanent** — the state they write remains forever on-chain
+- ⚖️ **Transparent** — all users can inspect and interact with them
+- 💸 **Cost-sensitive** — every operation consumes gas (ETH)
 
-Solidity is **domain-specific** — it's designed specifically for programming logic that will be deployed on-chain, not for general-purpose backend or frontend applications.
+This changes everything about how we program:
 
-### Solidity vs Other Smart Contract Languages
+- There’s no backend server — **the contract is the backend**
+- There’s no database — **state is stored on the blockchain**
+- Bugs can’t be patched — **you must get it right the first time**
 
-| Language | Highlights                                  | Status         |
-|----------|---------------------------------------------|----------------|
-| **Solidity** | C-style syntax, most supported, full-featured | Mainstream     |
-| **Vyper**    | Python-like, focused on security and simplicity | Stable         |
-| **Yul**      | Low-level intermediate language, gas efficient | Advanced users |
-| **Fe**       | Rust-inspired experimental language          | In development |
+---
 
-💡 In this course, we’ll focus entirely on **Solidity**, as it is the most used and best supported language in the Ethereum ecosystem.
+### 🔐 Solidity prioritizes:
 
+- **Security** over convenience
+- **Explicitness** over automation
+- **Minimalism** over abstraction
 
-## ✍️ Basic Syntax in Solidity
+If you've used high-level languages like JavaScript or Python, Solidity might feel strict or verbose — but that’s intentional.
 
-Solidity uses a **curly-bracket syntax** similar to C++, JavaScript, or Java. A Solidity file is composed of several components that define the structure and logic of a smart contract.
+> 💡 Smart contracts handle money. Solidity helps you make that safe by design.
 
-### 🔹 File Structure Overview
+---
 
-A typical Solidity file contains:
+## 🧱 Basic Solidity File Structure
 
-- A license identifier (for open-source declarations)
-- A version pragma (to enforce compiler compatibility)
-- Contract definitions
-- Functions and state variables
-- Optional: events, errors, modifiers, structs, enums
+Every Solidity contract file follows a clear and rigid structure.  
+Let’s break down the essential components you’ll see in almost every contract:
 
-Example layout:
+---
+
+### 📂 Minimum structure
 
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
 contract HelloWorld {
-    string public message;
+    string public message = "Hello Web3!";
+}
+```
+
+---
+
+### 🧩 Line by line explained
+
+| Line                                | Purpose                                                                 |
+|-------------------------------------|-------------------------------------------------------------------------|
+| `// SPDX-License-Identifier`        | Declares the open-source license. Required by many compilers.          |
+| `pragma solidity ^0.8.20;`          | Sets the version of Solidity this code is compatible with.             |
+| `contract HelloWorld { ... }`      | Defines a smart contract named `HelloWorld`.                           |
+| `string public message = ...;`     | Declares a public variable stored on-chain.                            |
+
+> 📌 `public` automatically generates a getter function in Solidity.
+
+---
+
+### ⚠️ Versioning with `pragma`
+
+Solidity evolves fast. The line `^0.8.20` means:
+- ✅ Compatible with version 0.8.20 and above
+- ❌ But NOT 0.9.0 or higher (major versions are breaking)
+
+Always check the current version on [soliditylang.org](https://docs.soliditylang.org).
+
+---
+
+### 📁 A typical file layout may include:
+
+| Block               | Role                                         |
+|---------------------|----------------------------------------------|
+| SPDX License        | Legal declaration                            |
+| Pragma              | Version guard                                |
+| Contract declaration| Where your logic lives                       |
+| State variables     | Persistent data stored on-chain              |
+| Constructor         | One-time setup logic                         |
+| Functions           | Behavior and interaction                     |
+| Events              | Logging and frontend triggers                |
+| Errors              | Custom, gas-efficient error handling         |
+
+---
+
+## 🧪 Your First Contract – HelloWorld.sol
+
+Let’s walk through a complete smart contract — one that stores and updates a message on the blockchain.
+
+---
+
+### ✅ The contract
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract HelloWorld {
+    string private message;
 
     constructor(string memory _message) {
         message = _message;
     }
 
-    function update(string memory _newMessage) public {
-        message = _newMessage;
-    }
-}
-```
-
-### 🧱 Key Elements in a Simple Contract
-
-| Element       | Purpose                                             |
-|---------------|-----------------------------------------------------|
-| `SPDX`        | Declares license for source transparency            |
-| `pragma`      | Ensures compatibility with a specific compiler      |
-| `contract`    | Main building block — similar to a class in OOP     |
-| `state vars`  | Variables stored permanently on the blockchain      |
-| `constructor` | Initialization function when contract is deployed   |
-| `function`    | Encapsulates logic — can read/write contract state  |
-
----
-
-### 🔠 Common Data Types
-
-Solidity supports familiar types, but with Ethereum-specific behavior.
-
-| Type       | Description                      | Example                       |
-|------------|----------------------------------|-------------------------------|
-| `uint256`  | Unsigned integer                 | `uint256 count = 1;`          |
-| `bool`     | Boolean flag                     | `bool isActive = true;`       |
-| `address`  | Ethereum wallet/contract         | `address owner = msg.sender;`|
-| `string`   | UTF-8 encoded text               | `string name = "Alice";`      |
-
-### 📦 Visibility Keywords
-
-Solidity uses explicit visibility for functions and variables:
-
-| Keyword     | Who can access it?                             |
-|-------------|-------------------------------------------------|
-| `public`    | Anyone — including other contracts and users    |
-| `private`   | Only this contract                              |
-| `internal`  | This contract and contracts inheriting it       |
-| `external`  | Only external accounts or contracts             |
-
-
-✅ Solidity is strict with types and visibility, which improves security and reduces ambiguity — but it also requires the developer to be very clear about their intent.
-
----
-
-## 🚀 Your First Smart Contract
-
-Let’s walk through a simple yet functional smart contract in Solidity.
-
-This contract will allow users to store and retrieve a message — a classic “Hello World” example adapted to a blockchain context.
-
-```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-/// @title HelloWorld - A simple message storage contract
-contract HelloWorld {
-    
-    // State variable — stored permanently on-chain
-    string public message;
-
-    /// Constructor runs only once when the contract is deployed
-    constructor(string memory _initialMessage) {
-        message = _initialMessage;
-    }
-
-    /// Read-only function — returns the stored message
-    function getMessage() public view returns (string memory) {
+    function readMessage() public view returns (string memory) {
         return message;
     }
 
-    /// Write function — updates the message (modifies blockchain state)
-    function updateMessage(string memory _newMessage) public {
+    function updateMessage(string calldata _newMessage) public {
         message = _newMessage;
     }
 }
 ```
-You can deploy and test this contract in Remix:
+
+You can deploy and test this contract in Remix, the web-based IDE for Ethereum smart contracts.
 
 [👉 Open in Remix](https://remix.ethereum.org/#url=https://onboardingethcr.github.io/Testing-Onboarding/contracts/HelloWorld.sol){:target="_blank" .btn}
 
 ---
 
-### 🔍 What’s happening here?
+### 🧩 Explanation
 
-* `string public message`: Creates a public variable — Solidity automatically generates a getter.
-* `constructor`: Sets the initial message upon deployment.
-* `getMessage`: A **view** function, meaning it does not change state and consumes no gas when called externally.
-* `updateMessage`: A **write** function that modifies the blockchain, requiring a transaction (and gas).
+| Component                  | What it does                                                                 |
+|---------------------------|-------------------------------------------------------------------------------|
+| `string private message;` | Stores the message (not directly accessible from outside)                     |
+| `constructor(...)`        | Runs once when the contract is deployed; initializes the message              |
+| `readMessage()`           | Public read-only function that returns the message                            |
+| `updateMessage()`         | Public write function that updates the message                               |
+| `string memory / calldata`| Specifies data location (we'll cover this more deeply soon)                   |
+
+> 💡 Every function you call uses gas (ETH) — even if you’re just updating a string!
 
 ---
 
-### 💡 Key Learning
+## 🔢 Common Types in Solidity
 
-Unlike traditional applications, smart contracts:
+Solidity supports a variety of types, both simple (like `uint` and `bool`) and complex (like `arrays`, `structs`, and `mappings`).  
+For now, let’s focus on the **core types** you’ll use in almost every contract.
 
-* Store state **permanently** on-chain
-* Are **immutable** once deployed (unless specifically designed to be upgradeable)
-* Are **transparent** and auditable by anyone
+---
 
+### 📌 Basic Types
+
+| Type        | Description                               | Example                        |
+|-------------|-------------------------------------------|--------------------------------|
+| `uint`      | Unsigned integer (default: 256 bits)      | `uint age = 30;`               |
+| `bool`      | Boolean value                             | `bool isActive = true;`        |
+| `address`   | Ethereum address (wallet or contract)     | `address owner = msg.sender;`  |
+| `string`    | Dynamic UTF-8 encoded text                | `string name = "Alice";`       |
+| `bytes32`   | Fixed-size byte array (32 bytes)          | `bytes32 id = keccak256(...);` |
+
+> 🧠 Solidity has no floating point numbers (`float`, `double`). Use integers and scale manually (e.g. `amount * 10**18`).
+
+---
+
+### 🔄 Data Types in Action
+
+```solidity
+address public admin;
+uint public counter = 1;
+bool public isActive = true;
+string public greeting = "Hello!";
+```
+
+These variables will be stored **on-chain** and are readable by anyone, thanks to the `public` keyword.
+
+Later, we’ll explore more complex types like `arrays`, `enums`, `structs`, and `mapping` — but this is enough to get started.
 
 ---
 
 ## 🧠 Reflective Questions
 
-> Take a moment to reflect before revealing the answers. These are not absolute truths — but rather key insights to guide your understanding.
+> Try to answer each question yourself before expanding the answer. These reflections are meant to reinforce your understanding and uncover any confusion.
 
 ---
 
-### 1. Why does Solidity require developers to explicitly declare data types and visibility?
+### 1. Why does Solidity require explicit data types like `string memory`?
 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-Solidity is a statically-typed language that prioritizes **clarity, security, and predictability**. Explicit types prevent ambiguity and help the compiler catch errors early. Visibility (`public`, `private`, etc.) is crucial in a decentralized environment because **accidentally exposing a function or variable could result in loss of funds or security breaches**.
+Solidity runs in a low-level environment (the EVM), where memory management is manual and explicit.  
+Types like `string`, `array`, or `struct` need a **data location** (`memory`, `storage`, or `calldata`) to tell the compiler where the data lives and how it should be handled.
+
+If omitted, the compiler throws an error — this prevents bugs and improves gas efficiency.
 
 </details>
 
 ---
 
-### 2. What is the difference between a `view` and a `pure` function?
+### 2. What’s the difference between `public` and `private` in Solidity?
 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-- `view`: can read **state variables**, but cannot modify them.
-- `pure`: **cannot read or modify** any state — it uses only input arguments and internal logic.
+- `public` variables and functions can be accessed from **anywhere**, including external users and other contracts.  
+- `private` members are only accessible **within the contract itself**, not even by derived contracts.
 
-These distinctions help manage **gas efficiency**, security, and clarity in how contracts interact with the blockchain.
+Marking visibility explicitly helps secure your logic and control who can read or change data.
 
 </details>
 
 ---
 
-### 3. What does it mean for a smart contract to be *deterministic*?
+### 3. Why is `constructor()` important in a smart contract?
 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-A deterministic contract produces the **same output given the same inputs, across all nodes**. This is vital in Ethereum because every node must **reach consensus** — all must produce the same result to validate a transaction. Non-determinism could break consensus and threaten the entire network.
+The constructor runs **only once** — when the contract is deployed.  
+It’s the ideal place to set initial values, such as assigning the `owner`, setting a message, or configuring access control.
+
+After deployment, it can never be called again.
 
 </details>
 
 ---
 
-### 4. How does your mindset change knowing your code is immutable and public?
+### 4. What’s the purpose of `view` and `pure` functions?
 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-It encourages **rigorous testing, caution, and transparency**. There's no "hotfix" once deployed — every mistake costs gas and reputation. It also changes how developers handle **security, naming, and documentation**, knowing that **anyone can read and interact** with the contract indefinitely.
+- `view` functions can **read** state variables but cannot modify them.  
+- `pure` functions **cannot read or write** any state — they work only with inputs and internal logic.
+
+These modifiers signal intent to the compiler and to users, and they don’t cost gas when called externally.
 
 </details>
 
 ---
 
-### 5. What differences between Solidity and other languages might lead to mistakes?
+### 5. Why are contracts in Solidity often short and modular?
 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-Solidity introduces concepts like `storage` vs `memory`, gas costs, immutability, and visibility that **don't exist in most traditional languages**. Developers used to dynamic or garbage-collected languages may struggle with **manual data location handling** and the cost of each instruction. Forgetting visibility defaults or misunderstanding `msg.sender` can lead to critical vulnerabilities.
+Because **each operation costs gas**, and **upgradability is limited**.  
+Short, focused contracts reduce cost, risk, and make auditing easier.  
+Modular design also enables reuse via libraries or inheritance, improving maintainability.
 
 </details>
 
+---
 ---
 
 ### 🔁 Navegación
@@ -276,7 +321,3 @@ Solidity introduces concepts like `storage` vs `memory`, gas costs, immutability
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo3-2">Siguiente ➡️</a>
 </div>
-
-
-
-
