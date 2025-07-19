@@ -1,142 +1,272 @@
 ---
 layout: page
-title: "Tipos, Visibilidad y Flujo de Control"
-nav_order: 3
+title: "Librerías, Compilación y Mejores Prácticas"
+nav_order: 4
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 🔍Types, Visibility, and Control Flow
+## 📚 What Are Libraries in Solidity?
 
-In this section, we’ll expand your Solidity knowledge by diving into **how data moves, who can access it, and how decisions are made** within a smart contract.
+In Solidity, **libraries** are reusable pieces of code that can be deployed once and linked to multiple contracts.  
+They help you keep your contracts clean, modular, and secure.
 
-You’ve already seen basic types and functions. Now we’ll explore:
+Libraries:
+- Can contain **functions** that operate on data (just like in regular contracts)
+- Cannot hold state or receive Ether
+- Are typically used for **math, access control, validation, and reusable logic**
 
-- **Function visibility** and access restrictions
-- **Data locations** like `memory`, `storage`, and `calldata`
-- **Control structures** like `if`, `for`, `while`, and `require`
-- Common **patterns and best practices** for writing secure and clear logic
-
-These concepts are essential for writing efficient, readable, and secure contracts — and they’ll become even more important as you build more complex dApps.
-
-Let’s get started.
+> 🧠 Libraries are similar to utility modules in other programming languages — but with some blockchain-specific rules.
 
 ---
 
-## 🔐 Function Visibility in Solidity
+## 🔐 Why Use OpenZeppelin?
 
-> You've already seen how `public`, `private`, and `internal` affect **variable access** in the previous section.  
-> Functions follow similar rules — but also introduce `external`, which is unique to function calls. Let's explore what each means.
+Now that you understand what libraries are, let's look at the most important one in the Ethereum ecosystem.
 
-Every function in Solidity must declare **who can call it**. This is controlled through visibility modifiers:
+[OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/) is the most widely adopted library in Ethereum development.  
+It provides secure, audited implementations of common patterns and standards, such as:
 
-| Modifier     | Callable by...             | Used for...                                 |
-|--------------|-----------------------------|----------------------------------------------|
-| `public`     | Everyone                    | Default for external interaction             |
-| `external`   | Only from outside the contract | Slightly more gas-efficient in some cases  |
-| `internal`   | This contract and children  | Inheritance-based logic                     |
-| `private`    | Only this contract          | Helper logic, internal use only             |
+- ✅ **Ownable** – restricts access to the contract owner  
+- ✅ **ERC20 / ERC721** – token standards for fungible and non-fungible tokens  
+- ✅ **SafeMath** – safe arithmetic operations to avoid overflows/underflows (now obsolete in Solidity ≥0.8)  
+- ✅ **AccessControl** – granular role-based permissions
 
-> 🔎 Best Practice: Always declare function visibility explicitly. The compiler will warn you if you forget.
+Using OpenZeppelin helps you:
+- Save time and avoid reinventing the wheel  
+- Reduce bugs and security risks  
+- Follow battle-tested conventions and upgrade paths
 
-### 🧪 Example
+---
+
+### 🧪 Example: Using `Ownable`
 
 ```solidity
-contract VisibilityExample {
-    uint private secret = 42;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
 
-    function reveal() public view returns (uint) {
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract AdminTools is Ownable {
+    string private secret;
+
+    function updateSecret(string memory _newSecret) public onlyOwner {
+        secret = _newSecret;
+    }
+
+    function readSecret() public view returns (string memory) {
         return secret;
     }
-
-    function _internalLogic() internal pure returns (string memory) {
-        return "Used by internal calls";
-    }
-
-    function _privateHelper() private pure returns (bool) {
-        return true;
-    }
 }
 ```
 
-The function `reveal()` is public — anyone can call it.  
-The `_internalLogic()` function can only be called from within this contract or one that inherits it.  
-The `_privateHelper()` function is only accessible **within this contract**.
+This contract inherits from OpenZeppelin’s `Ownable`.  
+The modifier `onlyOwner` restricts the `updateSecret()` function to the deployer (owner).
 
 ---
 
-## 🧱 Control Flow: `require`, `revert`, `assert`
-
-Solidity uses control statements to manage logic, validation, and error handling.
-These help prevent invalid state changes and protect your contract.
+> 💡 Many dApps and DeFi protocols rely on OpenZeppelin for their core functionality. It's an industry standard.
 
 ---
 
-### ✅ `require()` — Input validation
+## ⚙️ Compilation: From Solidity to EVM
 
-Use `require(condition, "Error message")` to:
-- Check **user input**, **state validity**, or **access control**
-- Revert the transaction if the condition is false
-- Refund remaining gas to the caller
+When you compile a smart contract, Solidity transforms your human-readable code into two critical outputs:
+
+1. **Bytecode** — the low-level machine instructions that get deployed to the blockchain.
+2. **ABI (Application Binary Interface)** — the interface definition that allows dApps, wallets, or other contracts to interact with your contract.
+
+Both are essential to making your contract work on-chain.
+
+---
+
+### 🔹 Bytecode
+
+This is what actually gets stored on the blockchain. It’s generated by the Solidity compiler (`solc`) and contains:
+
+- Opcodes for the EVM
+- Metadata about the contract
+- Encoded constructor logic
+
+> 🔎 The bytecode is immutable and represents the contract’s actual behavior.
+
+---
+
+### 🔹 ABI
+
+The ABI is a JSON file that describes your contract’s:
+
+- Function names and parameters
+- Events
+- State variable accessors (getters)
+- Return types
+
+It’s like a public **menu** that lets frontends (like web apps) talk to your contract.
+
+Example ABI snippet:
+
+```json
+[
+  {
+    "name": "storeValue",
+    "type": "function",
+    "inputs": [{ "name": "_x", "type": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]
+```
+
+> 🧠 The ABI does **not** include any private variables or internal logic — it’s purely an interface.
+
+---
+
+### 🔧 Remix and `solc`
+
+In Remix, the compiler panel shows:
+
+* Solidity version used
+* Compiled bytecode preview
+* Generated ABI
+* Deployment interface
+
+When working locally (e.g., with Hardhat), `solc` does the same under the hood.
+
+---
+
+> ✅ Tip: Always compile with the correct Solidity version (`pragma`) to ensure compatibility and prevent deployment errors.
+
+---
+---
+
+## 🛡️ Best Practices and Security Considerations
+
+Smart contracts are **immutable** and often handle real value — that’s why security is a top priority.
+
+Let’s explore the most important practices to follow when writing Solidity code.
+
+---
+
+### ✅ Visibility and Access Control
+
+- Always declare function visibility (`public`, `private`, etc.)
+- Use access modifiers like `onlyOwner` (from OpenZeppelin) to protect sensitive functions
+- Don’t expose `state variables` unless necessary
+
+---
+
+### ⚠️ Avoid Common Pitfalls
+
+| Pitfall                         | Why it’s dangerous                           | Solution                        |
+|----------------------------------|-----------------------------------------------|----------------------------------|
+| Unbounded loops (`while`, `for`) | May exceed gas limit and block execution     | Use fixed-length logic          |
+| Reentrancy                       | Can allow attacker to re-enter before state update | Use checks-effects-interactions pattern |
+| Uninitialized storage pointers   | Can overwrite unexpected data                | Always initialize or use `memory` |
+| Using `tx.origin` for auth       | Can be spoofed via contracts                 | Use `msg.sender` instead         |
+
+---
+
+### 🧪 Use Modifiers for Reuse and Safety
+
+Modifiers help keep your code DRY and secure:
 
 ```solidity
-function setAge(uint _age) public {
-    require(_age > 0, "Age must be positive");
-    age = _age;
+modifier onlyAdmin() {
+    require(msg.sender == admin, "Not authorized");
+    _;
 }
 ```
 
----
-
-### ❌ `revert()` — Custom error handling
-
-Use when you want to explicitly stop execution, sometimes with custom logic:
+You can then apply it like this:
 
 ```solidity
-function doSomething(bool condition) public {
-    if (!condition) {
-        revert("Operation not allowed");
-    }
+function resetData() public onlyAdmin {
+    data = 0;
 }
 ```
 
 ---
 
-### ⚠️ `assert()` — Internal invariants only
+### 🔍 Auditing and Testing
 
-Use only when you believe **something should never fail** (developer assertions).
-If it fails, it **consumes all gas** — do not use it for input checks.
+- Always write tests (with Hardhat, Foundry, etc.)
+- Simulate edge cases and attack scenarios
+- Use formal verification tools for critical contracts
 
-```solidity
-function neverFails(uint x) public pure returns (uint) {
-    assert(x >= 0);
-    return x;
-}
-```
-
-> 🧠 Use `require()` for user input, `revert()` for explicit exits, and `assert()` for critical internal conditions.
+> 🧠 Even small mistakes in smart contracts can lead to major losses. Prioritize correctness over speed.
 
 ---
 
-### 🔁 Conditionals and Loops
+### 🔗 Resources
 
-Solidity supports standard control structures:
-
-```solidity
-if (x > 10) {
-    // do something
-} else {
-    // do something else
-}
-
-for (uint i = 0; i < 5; i++) {
-    // iterate
-}
-
-while (condition) {
-    // use with caution (gas)
-}
-```
-
-> ⚠️ Avoid unbounded loops in production — they may run out of gas and block the transaction.
+- [Solidity Security Best Practices](https://consensys.github.io/smart-contract-best-practices/)
+- [OpenZeppelin Defender](https://www.openzeppelin.com/defender)
+- [Solidity Docs – Security Considerations](https://docs.soliditylang.org/en/latest/security-considerations.html)
 
 ---
+
+
+## 🧠 Reflective Questions
+
+These questions help you internalize the key lessons of this section.  
+Try answering them before revealing the explanation.
+
+---
+
+### 1. Why is using libraries like OpenZeppelin a good idea?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+Because they offer **secure, audited, and reusable implementations** of common functionality (access control, token standards, etc.).  
+Using libraries helps reduce bugs, save time, and follow industry best practices.
+
+</details>
+
+---
+
+### 2. What is the ABI and why is it important?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+The ABI (Application Binary Interface) is a JSON representation of your contract’s interface.  
+It tells external apps how to **encode calls** and **decode responses**, allowing them to interact with your contract.  
+Without it, frontends wouldn’t know how to use your contract.
+
+</details>
+
+---
+
+### 3. Why should you avoid using unbounded loops in your smart contracts?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+Unbounded loops can consume too much gas and cause the transaction to fail.  
+Since gas is limited per block, such loops may make functions unusable or vulnerable to denial-of-service.
+
+</details>
+
+---
+
+### 4. What’s the difference between `msg.sender` and `tx.origin`, and why does it matter?
+
+<details>
+<summary>💡 Reveal Answer</summary>
+
+- `msg.sender` is the **direct caller** of a function (can be a user or contract).
+- `tx.origin` is the **original external account** that initiated the transaction.
+
+Using `tx.origin` for authentication is dangerous because it can be **spoofed** via intermediate contracts.  
+Always use `msg.sender` for safe access control.
+
+</details>
+
+---
+
+### 🔁 Navigation
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo3-3">⬅️ Previous</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-actividad">Next ➡️</a>
+</div>

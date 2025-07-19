@@ -260,3 +260,10 @@ Since every iteration consumes gas, an attacker or a bad input could cause denia
 
 ---
 
+### 🔁 Navigation
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo3-2">⬅️ Previous</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3-4">Next ➡️</a>
+</div>
+
