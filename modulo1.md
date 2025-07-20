@@ -27,16 +27,16 @@ Al finalizar este módulo, serás capaz de:
 
 Este módulo está dividido en cuatro secciones:
 
-1. **[Introducción a Bitcoin](modulo1-parte1.md)**  
+1. **[1.1 Introducción a Bitcoin](modulo1-parte1.md)**  
    Lectura introductoria y video explicativo sobre el origen y funcionamiento de Bitcoin.
 
-2. **[Fundamentos de Blockchain](modulo1-parte2.md)**  
+2. **[1.2 Fundamentos de Blockchain](modulo1-parte2.md)**  
    Conceptos clave como bloques, consenso, minería, seguridad y confianza distribuida.
 
-3. **[Introducción a Web3](modulo1-parte3.md)**  
+3. **[1.3 Introducción a Web3](modulo1-parte3.md)**  
    Evolución de la web, comparación entre Web2 y Web3, lectura aplicada y actividad práctica.
 
-4. **[Cierre del módulo](modulo1-parte4.md)**  
+4. **[1.4 Cierre del módulo](modulo1-parte4.md)**  
    Video de Ethereum en Costa Rica.
 
 ---
