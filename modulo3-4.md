@@ -5,7 +5,7 @@ nav_order: 4
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 📚 What Are Libraries in Solidity?
+# 📚 What Are Libraries in Solidity?
 
 In Solidity, **libraries** are reusable pieces of code that can be deployed once and linked to multiple contracts.  
 They help you keep your contracts clean, modular, and secure.

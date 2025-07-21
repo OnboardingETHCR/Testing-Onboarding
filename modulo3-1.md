@@ -7,7 +7,7 @@ parent: "Módulo 3: Programando en Solidity"
 
 ---
 
-## 🧱 Solidity Fundamentals
+# 🧱 Solidity Fundamentals
 
 Welcome to your first deep dive into Solidity — the primary programming language used to build smart contracts on Ethereum. Since you’ve completed Modules 1 and 2, you already understand the foundations of blockchain and Ethereum. Now it’s time to learn how to express logic directly on-chain.
 

@@ -5,7 +5,7 @@ nav_order: 3
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 🔍Types, Visibility, and Control Flow
+# 🔍Types, Visibility, and Control Flow
 
 In this section, we’ll expand your Solidity knowledge by diving into **how data moves, who can access it, and how decisions are made** within a smart contract.
 

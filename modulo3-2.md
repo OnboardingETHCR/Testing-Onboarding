@@ -5,7 +5,7 @@ nav_order: 2
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 🧬Anatomy of a Contract
+# 🧬Anatomy of a Contract
 
 Now that you’ve explored a simple contract in the previous section, it's time to go deeper. This is your first **structured analysis** of a real Solidity contract, where we’ll break down each part to understand what it does, why it matters, and how it fits into the language’s design.
 

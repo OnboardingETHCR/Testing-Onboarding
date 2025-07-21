@@ -5,7 +5,7 @@ nav_order: 5
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 🚀 Advanced Solidity
+# 🚀 Advanced Solidity
 
 This section explores intermediate and advanced features in Solidity — the tools that power more robust and reusable smart contracts.
 
