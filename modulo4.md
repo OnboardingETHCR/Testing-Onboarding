@@ -28,22 +28,22 @@ Al finalizar este módulo, serás capaz de:
 
 Este módulo está dividido en ocho secciones:
 
-1. **[4.1 Introducción a las dApps](modulo4-dapps.md)**  
+1. **[4.1 Introducción a las dApps](modulo4-1.md)**  
    Qué es una dApp, arquitectura, flujos y ejemplos.
 
-2. **[4.2 Frontend Setup con React + Vite](modulo4-frontend.md)**  
+2. **[4.2 Frontend Setup con React + Vite](modulo4-2.md)**  
    Creación del entorno de desarrollo para la interfaz Web3.
 
-3. **[4.3 Conexión de Wallet (MetaMask)](modulo4-wallet.md)**  
+3. **[4.3 Conexión de Wallet (MetaMask)](modulo4-3.md)**  
    Lectura de cuenta activa, red y balance mediante Ethers.js.
 
-4. **[4.4 Integración de Contrato Inteligente](modulo4-contracts.md)**  
+4. **[4.4 Integración de Contrato Inteligente](modulo4-4.md)**  
    Llamadas `read` y `write` al contrato desde la interfaz.
 
-5. **[4.5 Despliegue en Testnet con Hardhat](modulo4-deploy.md)**  
+5. **[4.5 Despliegue en Testnet con Hardhat](modulo4-5.md)**  
    Compilación, despliegue y verificación de contratos.
 
-6. **[4.6 Actividad Final: dApp Guiada](modulo4-actividad.md)**  
+6. **[4.6 Actividad Final: dApp Guiada](modulo4-6.md)**  
    Construcción de una aplicación completa paso a paso.
 
 7. **[4.7 Cheatsheet y Recursos](modulo4-cheatsheet.md)**  
