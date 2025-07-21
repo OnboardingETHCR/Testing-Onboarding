@@ -44,17 +44,17 @@ A **decentralized application (dApp)** is a software application that runs on a 
 
 A typical Ethereum dApp consists of the following components:
 
-
-+-------------------+        +------------------------+
+```
++-------------------+        +-------------------------+
 |    Frontend App   | <--->  |  Wallet (e.g. MetaMask) |
-+-------------------+        +------------------------+
++-------------------+        +-------------------------+
         |                             |
         |    JSON-RPC / Ethers.js     |
         v                             v
 +---------------------------------------------+
 |     Ethereum Smart Contracts (EVM)          |
 +---------------------------------------------+
-
+```
 
 - **Frontend**: Built using React, Vue, or similar. Deployed via IPFS or hosted server.
 - **Wallet**: Connects the user to the blockchain. Signs transactions.
