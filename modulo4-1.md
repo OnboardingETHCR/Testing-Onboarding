@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Introduction a las dApps"
+title: "Introducción a las dApps"
 parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 1
 ---
