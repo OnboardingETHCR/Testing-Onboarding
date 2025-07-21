@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Módulo 4 - Desarrollo de Aplicaciones Web3"
+title: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 4
 has_children: true
 ---
