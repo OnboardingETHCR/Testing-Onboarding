@@ -3,6 +3,7 @@ layout: page
 title: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 4
 has_children: true
+has_toc: false
 ---
 
 
@@ -67,8 +68,4 @@ La actividad evaluada principal del módulo será:
 
 ---
 
-### 🔄 Navegación
-
-<div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo4-1">Comenzar ➔</a>
-</div>
+📌 **Inicia con [Introducción a las dApps →](modulo4-1.md)**  

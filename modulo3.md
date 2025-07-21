@@ -3,6 +3,7 @@ layout: page
 title: "Módulo 3: Programando en Solidity"
 nav_order: 3
 has_children: true
+has_toc: false
 ---
 
 # Módulo 3: Programando en Solidity
@@ -58,8 +59,4 @@ La actividad evaluada principal del módulo será:
 - Subida del código fuente y archivos README para cada reto en tu repositorio personal.
 - Capturas o registros de pruebas realizadas.
 
-### 🔁 Navigation
-
-<div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3-5">Comenzar ➡️</a>
-</div>
+📌 **Inicia con [Fundamentos de Solidity →](modulo3-1.md)**  
