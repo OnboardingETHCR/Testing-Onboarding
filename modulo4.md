@@ -24,38 +24,39 @@ Al finalizar este módulo, serás capaz de:
 
 ---
 
-## 🧱 Estructura del módulo
+## 📂 Estructura del módulo
 
-Este módulo está dividido en seis secciones:
+Este módulo está dividido en ocho secciones:
 
-1. **[4.1 Frontend Setup con React + Vite](modulo4-1.md)**  
+1. **[4.1 Introducción a las dApps](modulo4-dapps.md)**  
+   Qué es una dApp, arquitectura, flujos y ejemplos.
+
+2. **[4.2 Frontend Setup con React + Vite](modulo4-frontend.md)**  
    Creación del entorno de desarrollo para la interfaz Web3.
 
-2. **[4.2 Conexión de Wallet (MetaMask)](modulo4-2.md)**  
+3. **[4.3 Conexión de Wallet (MetaMask)](modulo4-wallet.md)**  
    Lectura de cuenta activa, red y balance mediante Ethers.js.
 
-3. **[4.3 Integración de Contrato Inteligente](modulo4-3.md)**  
+4. **[4.4 Integración de Contrato Inteligente](modulo4-contracts.md)**  
    Llamadas `read` y `write` al contrato desde la interfaz.
 
-4. **[4.4 Despliegue en Testnet con Hardhat](modulo4-4.md)**  
+5. **[4.5 Despliegue en Testnet con Hardhat](modulo4-deploy.md)**  
    Compilación, despliegue y verificación de contratos.
 
-5. **[4.5 Actividad Final: dApp Guiada](modulo4-5.md)**  
+6. **[4.6 Actividad Final: dApp Guiada](modulo4-actividad.md)**  
    Construcción de una aplicación completa paso a paso.
 
-6. **[4.6 Cheatsheet y Recursos](modulo4-cheatsheet.md)**  
+7. **[4.7 Cheatsheet y Recursos](modulo4-cheatsheet.md)**  
    Comandos clave, referencias técnicas y enlaces de apoyo.
 
-7. **[4.7 Qué Sigue (What's Next)](modulo4-whatsnext.md)**  
+8. **[4.8 Qué Sigue (What's Next)](modulo4-whatsnext.md)**  
    Opciones para continuar explorando y construyendo en Web3.
-
----
 
 ---
 
 ## 📂 Entregables
 
-Durante las secciones 4.1 a 4.4 se te guiará con ejercicios prácticos. No requieren entrega formal, pero te recomendamos subir tu progreso a tu repositorio personal.
+Durante las secciones 4.2 a 4.5 se te guiará con ejercicios prácticos. No requieren entrega formal, pero te recomendamos subir tu progreso a tu repositorio personal.
 
 La actividad evaluada principal del módulo será:
 
