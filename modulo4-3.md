@@ -70,9 +70,16 @@ function App() {
     <div>
       <h1>My dApp</h1>
       {account ? (
-        <p>Connected: {account}</p>
+        <>
+          <p>Connected: {account}</p>
+          <button onClick={() => setAccount(null)}>
+            Disconnect
+          </button>
+        </>
       ) : (
-        <button onClick={connectWallet}>Connect Wallet</button>
+        <button onClick={connectWallet}>
+          Connect Wallet
+        </button>
       )}
     </div>
   );
@@ -82,6 +89,42 @@ export default App;
 ```
 
 Once you save the file and refresh your browser, you should see a “Connect Wallet” button.
+
+![Connect Wallet button](../assets/screenshots/modulo4/mydappconnect.png)
+
+If MetaMask is installed, it will prompt the user to connect their wallet:
+
+![MetaMask connection popup](../assets/screenshots/modulo4/wallet.png)
+
+After connecting, the wallet address should be displayed along with a “Disconnect” button:
+
+![Wallet connected](../assets/screenshots/modulo4/disconnect.png)
+
+---
+
+### 🔍 What’s happening in the code?
+
+- `window.ethereum`: This object is injected by MetaMask into the browser. It allows your dApp to request access to the wallet.
+- `ethers.BrowserProvider(window.ethereum)`: Wraps MetaMask’s provider into an object compatible with `ethers.js`.
+- `getSigner()`: Retrieves the wallet’s signer — a representation of the user’s Ethereum account.
+- `getAddress()`: Extracts the public address (e.g., `0xabc...`) of the connected wallet.
+- `setAccount(address)`: Updates the React state so the UI can reflect the connection.
+
+This is a minimal yet functional example of wallet connection using the official browser API.
+
+---
+
+## 📌 Understanding “Disconnect”
+
+When you click the **“Disconnect”** button, it clears the connected wallet address from your app’s state. This updates the interface and removes the wallet info from the screen.
+
+However, it’s important to understand that **MetaMask still considers your dApp connected** in the background. That’s why, if you refresh the page or connect again, MetaMask won’t show the popup — the connection is already authorized.
+
+This behavior is expected in most dApps. MetaMask manages trust on its side, and developers can't force a full disconnect programmatically. To fully revoke access, the user must go to:
+
+> **MetaMask → Settings → Connected Sites → \[Remove this site]**
+
+> 🧠 This is not a bug — it's part of MetaMask’s security model.
 
 ---
 
