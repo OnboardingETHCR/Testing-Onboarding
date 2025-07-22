@@ -95,7 +95,7 @@ npm run dev
 
 If successful, your app will run locally.
 
-![Initial UI](/assets/screenshots/modulo4/viteReact.png)
+![Initial UI](/assets/screenshots/modulo4/viteReactLocal.png)
 
 ---
 
