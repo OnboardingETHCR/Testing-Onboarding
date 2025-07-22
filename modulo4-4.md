@@ -201,11 +201,6 @@ export default App;
 > ⚠️ **Troubleshooting tip:**
 > If the UI stays on “Loading...”, try disconnecting and reconnecting your wallet in MetaMask. Previous test sessions might cause issues. Also, ensure you're connected to the **Sepolia** network and using the correct **contract address**.
 
-If your connection to the contract is successful and MetaMask is correctly connected to Sepolia, you should see something like this in your frontend:
-
-![Working dApp Screenshot](../assets/screenshots/modulo4/counterFrontend.png)
-
-
 ---
 
 ## ✍️ Writing Data with a Transaction (increment)
@@ -316,6 +311,14 @@ Once the user clicks **Increment**, MetaMask prompts to approve the transaction:
 After confirming the transaction in MetaMask:
 
 ![Confirmed TXN](../assets/screenshots/modulo4/confirmedTXN.png)
+
+### 8. Updated Value Displayed in the Frontend
+
+After confirming the transaction, the count value updates automatically:
+
+![Updated value after increment](../assets/screenshots/modulo4/updatedFrontend.png)
+
+> ✅ If everything is working properly, you should see something like this. Your frontend is now successfully reading **and writing** data to the blockchain!
 
 ---
 
