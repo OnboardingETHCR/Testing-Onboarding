@@ -153,7 +153,7 @@ import ABI from './CounterABI.json';
 
 export const CONTRACT_ADDRESS = "0xYourContractAddressHere";
 export const CONTRACT_ABI = ABI;
-````
+```
 
 > 🧠 This keeps your code clean and reusable. You can copy the ABI from Remix and save it in a separate file: `src/contracts/CounterABI.json`.
 
