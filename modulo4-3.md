@@ -13,17 +13,36 @@ Connecting a wallet is the entry point to user interaction in Web3 — without i
 
 ---
 
-## 🔌 What is MetaMask?
+## 🧩 Why MetaMask?
 
-[MetaMask](https://metamask.io/) is a browser extension (and mobile app) that allows users to manage their Ethereum accounts and interact with dApps. It injects a provider (`window.ethereum`) into the browser, which we can access using `ethers.js`.
+MetaMask is one of the most widely used wallets in the Ethereum ecosystem. It allows users to:
+
+- Manage their Ethereum accounts and sign transactions
+- Connect to dApps through browser extensions
+- Easily switch between networks like Mainnet, Goerli, or Sepolia
 
 > ✅ You should have MetaMask and a wallet created at this point before continuing.
 
 ---
 
-## 🧪 Step-by-Step: Detect and Connect
+## 📦 Installing Dependencies
 
-Let’s add basic wallet connection logic to your `App.jsx`:
+In order to interact with Ethereum wallets and smart contracts, we’ll use the [`ethers.js`](https://docs.ethers.org/) library.
+
+From your project directory (`my-dapp/`), run the following:
+
+```bash
+npm install ethers
+```
+
+> 🧩 `ethers` is the JavaScript library that allows your frontend to interact with Ethereum smart contracts and wallets.
+
+
+---
+
+## 🔌 Connecting to MetaMask
+
+Replace the content of your `App.jsx` file with the following example:
 
 ```jsx
 import { useState } from 'react';
@@ -61,6 +80,8 @@ function App() {
 
 export default App;
 ```
+
+Once you save the file and refresh your browser, you should see a “Connect Wallet” button.
 
 ---
 
