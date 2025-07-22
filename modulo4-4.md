@@ -94,6 +94,36 @@ Once deployed, keep your contract’s address and ABI ready — you’ll use the
 
 ---
 
+## 🖼️ Deployment Walkthrough (Screenshots)
+
+Here’s a quick visual guide to help you deploy your contract using Remix and MetaMask:
+
+1. **Compile the Contract**
+   ![Compile in Remix](../assets/screenshots/modulo4/remixCompiler.png)
+
+2. **Switch to "Injected Provider - MetaMask" and select Sepolia**
+   ![Injected Provider Selected](../assets/screenshots/modulo4/deployCounterRemix.png)
+
+3. **Deploy from Remix and Confirm in MetaMask**
+   ![MetaMask Confirm Deployment](../assets/screenshots/modulo4/deployMM.png)
+
+4. **Verify the contract was created on Sepolia using Etherscan**
+   ![Transaction on Etherscan](../assets/screenshots/modulo4/etherscanSepolia.png)
+
+5. **Interact with the Contract via getCount**
+   ![getCount Called](../assets/screenshots/modulo4/getcount.png)
+
+6. **Send a Transaction to increment**
+   ![Confirm Increment in MetaMask](../assets/screenshots/modulo4/increment.png)
+
+7. **Confirm transaction mined**
+   ![Increment Tx Confirmed](../assets/screenshots/modulo4/incrementTXN.png)
+
+8. **Final getCount shows updated value**
+   ![Updated getCount](../assets/screenshots/modulo4/updatedCount.png)
+
+---
+
 ## 📦 Preparing the Contract for Frontend
 
 To connect to the deployed contract, you need two things:
