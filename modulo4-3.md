@@ -44,6 +44,7 @@ npm install ethers
 
 Replace the content of your `App.jsx` file with the following example:
 
+{% raw %}
 ```jsx
 import { useState } from 'react';
 import { ethers } from 'ethers';
@@ -74,10 +75,7 @@ function App() {
           <p>Connected: {account}</p>
           <button
             onClick={() => setAccount(null)}
-            style={{
-              backgroundColor: '#e74c3c',
-              color: 'white'
-            }}
+            style={{ backgroundColor: '#e74c3c', color: 'white' }}
           >
             Disconnect
           </button>
@@ -92,7 +90,9 @@ function App() {
 }
 
 export default App;
+
 ```
+{% endraw %}
 
 Once you save the file and refresh your browser, you should see a “Connect Wallet” button.
 
