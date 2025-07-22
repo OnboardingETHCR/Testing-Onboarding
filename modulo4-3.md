@@ -72,7 +72,13 @@ function App() {
       {account ? (
         <>
           <p>Connected: {account}</p>
-          <button onClick={() => setAccount(null)}>
+          <button
+            onClick={() => setAccount(null)}
+            style={{
+              backgroundColor: '#e74c3c',
+              color: 'white'
+            }}
+          >
             Disconnect
           </button>
         </>
