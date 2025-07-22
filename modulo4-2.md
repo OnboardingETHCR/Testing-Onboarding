@@ -5,7 +5,7 @@ parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 2
 ---
 
-# 4.2 Frontend Setup with React + Vite
+# Frontend Setup with React + Vite
 
 Now that you understand how dApps work, it’s time to start building.
 
@@ -52,6 +52,7 @@ It’s now the standard choice for many Ethereum-based projects like Scaffold-ET
 - ✅ Fast startup and hot module replacement
 - ✅ Seamless integration with Ethers.js, TailwindCSS, and dotenv
 - ✅ Recommended by modern Web3 tooling ecosystems
+
 ---
 
 ### 🧰 Required Environment
@@ -81,7 +82,7 @@ Follow the prompts:
 
 You should see something like this:
 
-![Vite CLI creation](../assets/Screenshots/modulo4/vite-dev-ready.png)
+![Vite CLI creation](../assets/screenshots/modulo4/vite-dev-ready.png)
 
 Then run:
 
@@ -93,8 +94,7 @@ npm run dev
 
 If successful, your app will run locally.
 
-![Initial UI](../assets/screenshots/modulo4/vitereact.png)
-
+![Initial UI](../assets/screenshots/modulo4/vitereact.png) 
 ---
 
 ## 📁 Suggested Project Structure
@@ -115,6 +115,16 @@ my-dapp/
 ```
 
 You don’t need to create all folders right now, but this structure will help you stay organized.
+
+---
+
+## 🧠 Reflect
+
+> Why are we using Vite instead of tools like Create React App?
+
+<details><summary>See possible answer</summary>
+<p>Vite provides faster startup times and hot module replacement (HMR), which makes development smoother and faster. It's optimized for modern frontend tooling and is now widely adopted in the ecosystem.</p>
+</details>
 
 
 ---
