@@ -121,8 +121,7 @@ Here’s a quick visual guide to help you deploy your contract using Remix and M
 
 8. **Final `getCount()` shows updated value**
 
-![Updated count after increment](../assets/screenshots/modulo4/updatedCount.png)
-
+   ![Updated count after increment](../assets/screenshots/modulo4/updatedCount.png)
 
 ---
 
@@ -146,34 +145,23 @@ To connect to the deployed contract, you need two things:
 
 ## 🧱 Frontend Setup (contract.js)
 
-Now let’s prepare the contract info for React:
+Let’s now prepare your contract configuration for use in the frontend.
 
 ```js
 // src/contracts/contract.js
-export const CONTRACT_ADDRESS = "0xYourContractAddressHere";
+import ABI from './CounterABI.json';
 
-export const CONTRACT_ABI = [
-{
- "inputs": [],
- "name": "getCount",
- "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
- "stateMutability": "view",
- "type": "function"
-},
-{
- "inputs": [],
- "name": "increment",
- "outputs": [],
- "stateMutability": "nonpayable",
- "type": "function"
-}
-];
+export const CONTRACT_ADDRESS = "0xYourContractAddressHere";
+export const CONTRACT_ABI = ABI;
 ````
+
+> 🧠 This keeps your code clean and reusable. You can copy the ABI from Remix and save it in a separate file: `src/contracts/CounterABI.json`.
+
 ---
 
 ## 🧪 Reading Data from the Contract
 
-Update your `App.jsx` to read the current count using `getCount()`:
+Now that your contract address and ABI are defined in contract.js, you can import them and read data from the blockchain using getCount():
 
 ```jsx
 import { useEffect, useState } from 'react';
@@ -210,7 +198,7 @@ export default App;
 
 ---
 
-## ✍️ Writing Data with a Transaction
+## ✍️ Writing Data with a Transaction (increment)
 
 Let’s allow users to increment the counter. You’ll need:
 
@@ -235,11 +223,15 @@ async function incrementCount() {
 }
 ```
 
+> This uses the same import from `contract.js`, which includes both the contract address and ABI.
+
+
 And add a button to your component:
 
 ```jsx
 <button onClick={incrementCount}>➕ Increment</button>
 ```
+
 
 ---
 
