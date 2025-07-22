@@ -256,8 +256,6 @@ To interact with the contract, the ABI is saved as a `.json` file in your fronte
 
 ![ABI file](../assets/screenshots/modulo4/CounterABI.png)
 
----
-
 ### 2. contract.js: Preparing the Configuration
 
 This file holds your contract address and ABI reference.
@@ -272,15 +270,11 @@ export const CONTRACT_ABI = ABI;
 
 ![Contract config](../assets/screenshots/modulo4/contractJS.png)
 
----
-
 ### 3. Counter Frontend View (Reading)
 
 After successfully loading the count:
 
 ![Counter frontend](../assets/screenshots/modulo4/counterFrontend.png)
-
----
 
 ### 4. Increment Button in UI
 
@@ -288,23 +282,17 @@ The increment button now appears:
 
 ![Increment Button](../assets/screenshots/modulo4/incrementFrontEnd.png)
 
----
-
 ### 5. MetaMask Prompt to Connect
 
 If the dApp hasn't connected to MetaMask, you'll see this:
 
 ![MetaMask connect](../assets/screenshots/modulo4/connectFrontend.png)
 
----
-
 ### 6. MetaMask Transaction Request
 
 Once the user clicks **Increment**, MetaMask prompts to approve the transaction:
 
 ![Transaction Request](../assets/screenshots/modulo4/frontendtx.png)
-
----
 
 ### 7. Confirmed Transaction
 
