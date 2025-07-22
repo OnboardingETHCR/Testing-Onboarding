@@ -82,7 +82,8 @@ Follow the prompts:
 
 You should see something like this:
 
-![Vite CLI creation](../assets/screenshots/modulo4/vite-dev-ready.png)
+![Vite CLI creation](/assets/screenshots/modulo4/vite-dev-ready.png)
+
 
 Then run:
 
@@ -94,7 +95,8 @@ npm run dev
 
 If successful, your app will run locally.
 
-![Initial UI](../assets/screenshots/modulo4/vitereact.png) 
+![Initial UI](/assets/screenshots/modulo4/vitereact.png) 
+
 ---
 
 ## 📁 Suggested Project Structure
