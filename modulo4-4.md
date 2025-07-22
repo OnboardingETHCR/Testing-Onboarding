@@ -25,13 +25,47 @@ By the end of this section, you’ll be able to:
 
 ---
 
+## 🧾 Smart Contract: Counter.sol
+
+We’ll use a simple smart contract that allows reading and incrementing a number.
+
+This is the same contract you explored in Module 3 — here it is again for easy reference:
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract Counter {
+    uint256 private count;
+
+    event CountIncremented(uint256 newCount);
+
+    constructor() {
+        count = 0;
+    }
+
+    function getCount() public view returns (uint256) {
+        return count;
+    }
+
+    function increment() public {
+        count += 1;
+        emit CountIncremented(count);
+    }
+}
+```
+
+You’ll deploy this contract using Remix and then use its address and ABI to connect your frontend.
+
+---
+
 ## 🚀 Deploying the Smart Contract to Sepolia
 
 Before we can connect our frontend to a smart contract, we need to make sure the contract is actually deployed on a network — in this case, the **Sepolia testnet**.
 
 ### 📌 What You'll Deploy
 
-We'll use the same `Counter.sol` contract you explored in Module 3, which allows us to:
+The following deployment process uses the Counter.sol contract you've already worked with. If you need a quick copy, it’s included above.
 
 - Read a number (`getCount`)
 - Increment it (`increment`)
@@ -54,7 +88,7 @@ If you haven’t deployed it yet, follow the steps below using [Remix IDE](https
 5. Confirm the transaction in MetaMask.
 6. Copy and save the **contract address**.
 
-> 🧪 If you need test ETH for Sepolia, you can use [Alchemy’s Faucet](https://sepoliafaucet.com/).
+> 🧪 If you need test ETH for Sepolia, use the [Google Cloud Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia) — no mainnet ETH required.
 
 Once deployed, keep your contract’s address and ABI ready — you’ll use them in the next steps to connect your dApp.
 
