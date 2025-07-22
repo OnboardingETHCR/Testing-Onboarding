@@ -153,6 +153,6 @@ It could expose user addresses without consent. Always request connection explic
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo4-frontend">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo4-contracts">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4-2">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4-4">Siguiente ➡️</a>
 </div>

@@ -206,4 +206,41 @@ You can now:
 
 ---
 
+## 🧠 Reflect
+
+Take a moment to think through the following questions before moving on:
+
+### 1. Why do we need the ABI and contract address to interact with a deployed contract?
+
+<details>
+  <summary>💡 Show answer</summary>
+  The contract address tells your application where to find the smart contract on the blockchain. The ABI describes how to interact with it — what functions are available, their parameters, and return types. Without both, your app cannot communicate properly with the contract.
+</details>
+
+---
+
+### 2. What’s the difference between using a provider and a signer in `ethers.js`?
+
+<details>
+  <summary>💡 Show answer</summary>
+  A provider is read-only — it allows you to query the blockchain (e.g., call view functions). A signer is a special object that can sign transactions and send data that changes blockchain state (e.g., write functions like `increment()`).
+</details>
+
+---
+
+### 3. Why do we wait for the transaction to be mined with `await tx.wait()`?
+
+<details>
+  <summary>💡 Show answer</summary>
+  Transactions are not instantly confirmed on the blockchain. `await tx.wait()` ensures the transaction is mined (i.e., included in a block) before proceeding. This guarantees that the state has changed before you fetch the updated value or update the UI.
+</details>
+
+---
+
+### 🔁 Navegación
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo4-3">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4-5">Siguiente ➡️</a>
+</div>
 
