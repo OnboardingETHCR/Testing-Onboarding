@@ -119,8 +119,10 @@ Here’s a quick visual guide to help you deploy your contract using Remix and M
 7. **Confirm transaction mined**
    ![Increment Tx Confirmed](../assets/screenshots/modulo4/incrementTXN.png)
 
-8. **Final getCount shows updated value**
-   ![Updated getCount](../assets/screenshots/modulo4/updatedCount.png)
+8. **Final `getCount()` shows updated value**
+
+![Updated count after increment](../assets/screenshots/modulo4/updatedCount.png)
+
 
 ---
 
