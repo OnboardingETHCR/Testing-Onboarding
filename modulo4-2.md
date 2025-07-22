@@ -33,19 +33,6 @@ This setup is the foundation upon which we’ll build features like wallet conne
 
 ---
 
-### 🧰 Required Environment
-
-Before continuing, make sure you have the following installed:
-
-- <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> (version 18 or later)
-- npm (comes with Node.js)
-- A terminal or command line tool (Command Prompt, Terminal, or VS Code terminal)
-- A text editor (we recommend <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>)
-
-If you’re using an online IDE like Replit or Gitpod, some steps may differ.
-
----
-
 ## 🤔 Why React?
 
 We chose **React** because it's one of the most widely-used frameworks for building modern user interfaces — and it’s especially popular in the Web3 space. Many dApps, developer tools, and libraries are built with React or designed to integrate with it.
@@ -65,6 +52,18 @@ It’s now the standard choice for many Ethereum-based projects like Scaffold-ET
 - ✅ Fast startup and hot module replacement
 - ✅ Seamless integration with Ethers.js, TailwindCSS, and dotenv
 - ✅ Recommended by modern Web3 tooling ecosystems
+---
+
+### 🧰 Required Environment
+
+Before continuing, make sure you have the following installed:
+
+- <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> (version 18 or later)
+- npm (comes with Node.js)
+- A terminal or command line tool (Command Prompt, Terminal, or VS Code terminal)
+- A text editor 
+
+If you’re using an online IDE, some steps may differ.
 
 ---
 
@@ -74,26 +73,27 @@ Let’s scaffold a new project using Vite with React and JavaScript:
 
 ```bash
 npm create vite@latest my-dapp -- --template react
+```
+
+Follow the prompts:
+- Select **React** as the framework
+- Choose **JavaScript** as the variant
+
+You should see something like this:
+
+![Vite CLI creation](../assets/Screenshots/modulo4/vite-dev-ready.png)
+
+Then run:
+
+```bash
 cd my-dapp
 npm install
-```
-
-Then install essential dependencies:
-
-```bash
-npm install ethers dotenv
-```
-
-> 🧩 `ethers` is the library that allows you to interact with Ethereum.
-> 🧩 `dotenv` lets you manage environment variables (e.g., RPC URL).
-
-Now you can run your project:
-
-```bash
 npm run dev
 ```
 
-Your frontend should now be running locally at `http://localhost:5173`
+If successful, your app will run locally.
+
+![Initial UI](../assets/screenshots/modulo4/vitereact.png)
 
 ---
 
@@ -116,21 +116,6 @@ my-dapp/
 
 You don’t need to create all folders right now, but this structure will help you stay organized.
 
----
-
-## 🧠 Reflect
-
-**Why do we use a bundler like Vite instead of plain HTML/JS?**
-<details>
-<summary>💡 Show answer</summary>
-Vite offers fast module resolution, hot-reloading, and support for modern JavaScript features, making development faster and more maintainable.
-</details>
-
-**What is the purpose of separating logic into folders like `components/`, `contracts/`, and `utils/`?**
-<details>
-<summary>💡 Show answer</summary>
-Separation of concerns. It helps manage complexity by keeping UI, blockchain interactions, and helper functions organized and reusable.
-</details>
 
 ---
 
