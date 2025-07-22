@@ -161,7 +161,9 @@ export const CONTRACT_ABI = ABI;
 
 ## 🧪 Reading Data from the Contract
 
-Now that your contract address and ABI are defined in contract.js, you can import them and read data from the blockchain using getCount():
+Now that your contract address and ABI are defined in contract.js, you can import them and read data from the blockchain using getCount().
+
+Open your `src/App.jsx` file and update it as follows:
 
 ```jsx
 import { useEffect, useState } from 'react';
@@ -196,6 +198,14 @@ export default App;
 
 > 🧠 This function doesn’t need gas or MetaMask confirmation — it's a `view` function!
 
+> ⚠️ **Troubleshooting tip:**
+> If the UI stays on “Loading...”, try disconnecting and reconnecting your wallet in MetaMask. Previous test sessions might cause issues. Also, ensure you're connected to the **Sepolia** network and using the correct **contract address**.
+
+If your connection to the contract is successful and MetaMask is correctly connected to Sepolia, you should see something like this in your frontend:
+
+![Working dApp Screenshot](../assets/screenshots/modulo4/counterFrontend.png)
+
+
 ---
 
 ## ✍️ Writing Data with a Transaction (increment)
@@ -223,14 +233,13 @@ async function incrementCount() {
 }
 ```
 
-> This uses the same import from `contract.js`, which includes both the contract address and ABI.
-
-
 And add a button to your component:
 
 ```jsx
 <button onClick={incrementCount}>➕ Increment</button>
 ```
+
+> This uses the same import from `contract.js`, which includes both the contract address and ABI.
 
 
 ---
@@ -244,23 +253,69 @@ And add a button to your component:
 
 ---
 
-## 📸 UI Sample
+## 🖼️ Frontend Interaction Walkthrough
 
-![getCount Screenshot](../assets/screenshots/modulo4/getCount.png)
+### 1. ABI (Application Binary Interface)
 
-> Make sure your MetaMask is connected and on Sepolia network.
+To interact with the contract, the ABI is saved as a `.json` file in your frontend.
+
+![ABI file](../assets/screenshots/modulo4/CounterABI.png)
 
 ---
 
-## ✅ Recap: What You Just Did
+### 2. contract.js: Preparing the Configuration
 
-You’ve built a real connection between your dApp and the Ethereum blockchain.
+This file holds your contract address and ABI reference.
 
-You can now:
+```js
+// src/contracts/contract.js
+import ABI from './CounterABI.json';
 
-* Read and write from a live smart contract
-* Handle transaction signing and confirmation
-* Sync frontend state with on-chain data
+export const CONTRACT_ADDRESS = "0xYourContractAddressHere";
+export const CONTRACT_ABI = ABI;
+```
+
+![Contract config](../assets/screenshots/modulo4/contractJS.png)
+
+---
+
+### 3. Counter Frontend View (Reading)
+
+After successfully loading the count:
+
+![Counter frontend](../assets/screenshots/modulo4/counterFrontend.png)
+
+---
+
+### 4. Increment Button in UI
+
+The increment button now appears:
+
+![Increment Button](../assets/screenshots/modulo4/incrementFrontEnd.png)
+
+---
+
+### 5. MetaMask Prompt to Connect
+
+If the dApp hasn't connected to MetaMask, you'll see this:
+
+![MetaMask connect](../assets/screenshots/modulo4/connectFrontend.png)
+
+---
+
+### 6. MetaMask Transaction Request
+
+Once the user clicks **Increment**, MetaMask prompts to approve the transaction:
+
+![Transaction Request](../assets/screenshots/modulo4/frontendtx.png)
+
+---
+
+### 7. Confirmed Transaction
+
+After confirming the transaction in MetaMask:
+
+![Confirmed TXN](../assets/screenshots/modulo4/confirmedTXN.png)
 
 ---
 
