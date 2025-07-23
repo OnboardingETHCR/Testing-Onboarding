@@ -5,7 +5,7 @@ parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 5
 ---
 
-## 🧪 Módulo 4 - Actividad Final
+# 🧪 Módulo 4 - Actividad Final
 
 ### 🛠️ Construcción de una dApp de Mercado de Predicciones
 
@@ -80,8 +80,6 @@ El entregable debe incluir:
 > 🔐 Recordá mantener el repositorio público o permitir acceso a quienes deben evaluar tu entrega.
 
 ---
-
-## 🎉 ¡Felicitaciones!
 
 Con esta actividad completás el ciclo completo de desarrollo de una dApp: desde los conceptos básicos hasta la construcción e implementación de una aplicación funcional.
 
