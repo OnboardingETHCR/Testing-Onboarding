@@ -65,6 +65,9 @@ Most Ethereum wallets (like MetaMask, Ledger, or mobile apps) help you create an
 
 Ethereum uses the **ECDSA (Elliptic Curve Digital Signature Algorithm)** for signing transactions. Your wallet uses this algorithm to create a cryptographic signature that proves you own the private key controlling your address.
 
+> 🎥 Want a quick explainer on how ECDSA works?  
+> [Watch this quick intro](https://www.youtube.com/watch?v=GSIDS_lvRv4){:target="_blank"} (optional)
+
 ---
 
 ## ✅ What’s next?
