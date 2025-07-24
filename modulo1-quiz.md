@@ -14,7 +14,9 @@ Esta evaluación cubre los temas de:
 
 Responde todas las preguntas antes de continuar al siguiente módulo.
 
-### 📝 Quiz interactivo
+### 🧠 Comprobá tu aprendizaje
+
+Este quiz se completa en menos de 10 minutos. Asegurate de tener buena conexión y no cerrar la pestaña hasta finalizar.
 
 <iframe src="https://form.typeform.com/to/jyRkTk6Y" width="100%" height="600px" frameborder="0"></iframe>
 

@@ -32,5 +32,5 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
-<a class="btn" href="/Testing-Onboarding/modulo1-parte2">➡️ Continuá con los Fundamentos de Blockchain</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1-parte2">Siguiente ➡️</a>
 </div>
