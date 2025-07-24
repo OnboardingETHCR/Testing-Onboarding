@@ -26,7 +26,7 @@ Podés entregar esta tabla en cualquiera de los siguientes formatos:
 
 ---
 
-### 🎤 Parte 2 – Pitch del caso más relevante
+### 🎤 Parte 2 – Pitch de caso 
 
 Elegí uno de los proyectos analizados y elaborá un pitch breve para presentarlo. El pitch puede ser escrito, grabado o diseñado como una presentación. Debe responder:
 

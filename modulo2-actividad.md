@@ -23,7 +23,7 @@ Esta actividad te permitirá poner en práctica los conceptos aprendidos durante
 - Captura de pantalla de tu wallet activa y configurada con Sepolia.
 - Captura de pantalla del ETH recibido desde el faucet.
 
----
+
 
 ## 🔍 Parte 2: Leer datos desde un explorador de bloques
 
