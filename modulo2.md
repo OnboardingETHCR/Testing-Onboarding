@@ -40,14 +40,14 @@ Este módulo está dividido en siete secciones:
 3. **[La Máquina Virtual de Ethereum (EVM)](modulo2-evm.md)**  
    Qué es la EVM y por qué es el núcleo del procesamiento de contratos.
 
-4. **[Transacciones, Gas y Redes](modulo2-transacciones.md)**  
-   Cómo funciona el gas, redes de prueba, configuración de wallets.
+4. **Transacciones, Gas y Redes**  
+   Incluye: [Gas y tarifas](modulo2-gas.md), [Redes de Ethereum](modulo2-networks.md), [Nodos y Clientes](modulo2-nodos-clientes.md)
 
 5. **[Exploradores y Análisis de Datos](modulo2-exploradores.md)**  
    Uso de Etherscan, interpretación de bloques, tx, contratos.
 
-6. **[Gobernanza y Escalabilidad](modulo2-gobernanza.md)**  
-   Comunidad, cambios en Ethereum, Layer 2 y su impacto.
+6. **Gobernanza y Escalabilidad**  
+   Incluye: [Gobernanza](modulo2-gobernanza.md) y [Soluciones Layer 2](modulo2-layer2.md)
 
 7. **[Glosario](modulo2-glosario.md)**  
    Términos clave explicados brevemente.

@@ -9,7 +9,9 @@ nav_order: 1
 
 Ethereum is an open-source, decentralized blockchain platform that enables developers to build and deploy smart contracts and decentralized applications (dApps).
 
-Launched in 2015, Ethereum expands blockchain functionality beyond simple value transfers like Bitcoin, enabling programmable logic through code that lives on-chain.
+Ethereum was launched in 2015 and expanded blockchain functionality beyond simple value transfers like Bitcoin. It introduced programmable logic via smart contracts that run on-chain.
+
+📚 [Read more on Ethereum.org](https://ethereum.org/en/what-is-ethereum/){:target="_blank"}
 
 ---
 

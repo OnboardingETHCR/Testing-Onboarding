@@ -35,6 +35,9 @@ Key technical features:
 
 All this happens under the hood, ensuring trustless computation without third-party intervention.
 
+> 📘 Want to dive deeper into how gas works and how it affects smart contract execution?  
+> We'll explore it further in the upcoming section on [Gas and Transactions](modulo2-gas.md).
+
 ---
 
 ## 🧠 Why does it matter?
