@@ -10,7 +10,7 @@ has_toc: false
 
 Este módulo te brindará una comprensión inicial sobre qué es Bitcoin, cómo funciona la tecnología blockchain, qué implica la Web3 y cómo estas innovaciones están transformando la forma en que interactuamos con el internet, la información y el dinero.
 
-Está compuesto por cuatro secciones breves, con recursos multimedia, lecturas y una actividad práctica para reforzar tu aprendizaje.
+Este módulo se divide en cuatro secciones, cada una con recursos interactivos y actividades prácticas para reforzar tu aprendizaje.
 
 ---
 ## 🎯 Objetivos de aprendizaje
@@ -51,4 +51,4 @@ Ambos entregables son obligatorios y forman parte del cierre del módulo.
 
 ---
 
-📌 **Inicia con [Introducción a Bitcoin →](modulo1-parte1.md)**  
+👉 **Comenzá con la [Introducción a Bitcoin](modulo1-parte1.md)**

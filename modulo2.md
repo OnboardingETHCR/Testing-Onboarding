@@ -65,5 +65,5 @@ Ambos entregables deben subirse a tu repositorio personal de GitHub.
 
 ---
 
-📌 **Inicia con [Introducción a Ethereum →](modulo2-intro-ethereum.md)**  
+👉 **Comenzá con la [Introducción a Ethereum →](modulo2-intro-ethereum.md)**  
 
