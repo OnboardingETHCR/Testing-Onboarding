@@ -89,5 +89,5 @@ Con esta actividad completás el ciclo completo de desarrollo de una dApp: desde
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo4-4">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo4-6">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4-cierre">Siguiente ➡️</a>
 </div>
