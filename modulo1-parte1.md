@@ -39,18 +39,10 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 
 ---
 
-### 🔁 Navegación
-
-<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte2">Siguiente ➡️</a>
-</div>
-
----
-
 <!-- ✅ Marcar esta sección como completada -->
 <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ccc;">
   <label style="font-size: 1rem;">
-    <input type="checkbox" class="section-check" data-id="">
+    <input type="checkbox" class="section-check">
     ✅ Marcar esta sección del módulo como completada
   </label>
 </div>
@@ -101,4 +93,16 @@ function updateProgressBarModulo1() {
 // Ejecutar al cargar
 updateProgressBarModulo1();
 </script>
+
+
+---
+
+### 🔁 Navegación
+
+<div style="display: flex; justify-content: flex-end; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/modulo1-parte2">Siguiente ➡️</a>
+</div>
+
+---
+
 
