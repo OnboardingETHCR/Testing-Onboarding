@@ -41,10 +41,13 @@ Este módulo está dividido en seis secciones:
 4. **[3.4 Librerías, Compilación y Buenas Prácticas](modulo3-4.md)**  
    Uso de OpenZeppelin, compilación (`solc`, ABI), pruebas básicas y consideraciones de seguridad.
 
-5. **[3.5 Actividad – SpeedRunEthereum](modulo3-actividad.md)**  
+5. **[3.5 Solidity Avanzado](modulo3-5.md)**  
+   `struct`, `enum`, `mapping`, modifiers personalizados, herencia e interfaces.
+
+6. **[3.5 Actividad – SpeedRunEthereum](modulo3-actividad.md)**  
    Retos prácticos utilizando herramientas y contratos reales del ecosistema.
 
-6. **[Cheatsheet y Recursos de Referencia](modulo3-cheatsheet.md)**  
+7. **[Cheatsheet y Recursos de Referencia](modulo3-cheatsheet.md)**  
    Acceso rápido a sintaxis, comandos clave y enlaces útiles a documentación oficial.
 
 ---
