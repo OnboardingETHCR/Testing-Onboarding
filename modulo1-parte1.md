@@ -94,9 +94,6 @@ function updateProgressBarModulo1() {
 updateProgressBarModulo1();
 </script>
 
-
----
-
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
