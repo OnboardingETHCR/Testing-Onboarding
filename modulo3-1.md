@@ -1,7 +1,7 @@
 ---
 
 layout: page
-title: "Fundamentos de Solidity"
+title: "1. Fundamentos de Solidity"
 nav_order: 1
 parent: "Módulo 3: Programando en Solidity"
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Librerías, Compilación y Mejores Prácticas"
+title: "4. Librerías, Compilación y Mejores Prácticas"
 nav_order: 4
 parent: "Módulo 3: Programando en Solidity"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Conexión de Wallet (MetaMask)"
+title: "3. Conexión de Wallet (MetaMask)"
 parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 3
 ---

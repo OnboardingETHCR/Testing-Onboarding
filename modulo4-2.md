@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Frontend Setup con React + Vite"
+title: "2. Frontend Setup con React + Vite"
 parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 2
 ---

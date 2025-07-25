@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Integración de Contratos Inteligentes"
+title: "4. Integración de Contratos Inteligentes"
 parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 4
 ---

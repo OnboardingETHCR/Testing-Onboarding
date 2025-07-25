@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Tipos, Visibilidad y Flujo de Control"
+title: "3. Tipos, Visibilidad y Flujo de Control"
 nav_order: 3
 parent: "Módulo 3: Programando en Solidity"
 ---
