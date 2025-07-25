@@ -70,6 +70,8 @@ Most wallets like MetaMask allow you to:
 
 This flexibility is essential for developers and users interacting with multiple environments.
 
+> ⚠️ Always double-check the network you're on before sending transactions or deploying contracts.
+
 ---
 
 ## ✅ What’s next?

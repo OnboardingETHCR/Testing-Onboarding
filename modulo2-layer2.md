@@ -65,10 +65,14 @@ To use a Layer 2 network:
 2. Bridge ETH from Mainnet to the L2
 3. Use dApps just like on Mainnet — with faster and cheaper transactions
 
-Popular L2 bridges:
+Official L2 bridges:
 - [Arbitrum Bridge](https://bridge.arbitrum.io)
 - [Optimism Gateway](https://gateway.optimism.io)
 - [zkSync Portal](https://portal.zksync.io)
+
+In addition to official bridges, many reputable third-party bridges exist that offer support for multiple networks and additional features (like faster bridging or token swaps). However, these may charge additional fees and should be used with caution.
+
+> ⚠️ Always verify bridge URLs from official or trusted sources. Avoid using unknown links to prevent scams.
 
 ---
 

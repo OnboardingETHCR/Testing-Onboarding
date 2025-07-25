@@ -63,6 +63,11 @@ This glossary collects the key terms covered throughout the module. Use it as a 
 
 - **Rollup**: A type of L2 that aggregates many off-chain transactions and posts them as one on-chain.
 
+- **Bridge**: A protocol that allows users to move assets between different blockchains or layers (e.g., Mainnet to Layer 2). Bridges are essential for interoperability, but require caution due to potential security risks.
+
+- **Fork**: A change in Ethereum’s protocol rules. Forks can be soft (backward-compatible) or hard (resulting in chain splits). Major upgrades like “The Merge” were implemented via forks.
+
+
 ---
 
 ### 📲 Applications and Tokens

@@ -50,6 +50,9 @@ Since Ethereum transitioned to Proof of Stake:
 
 This system improves energy efficiency and helps Ethereum scale.
 
+> 📚 Learn more about block production in PoS from [Ethereum’s documentation](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/){:target="_blank"}
+
+
 ---
 
 ## 🕵️ How to explore blocks?

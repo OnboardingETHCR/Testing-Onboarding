@@ -34,6 +34,8 @@ With a block explorer, you can search for:
 - **Blocks**: See all transactions included, timestamp, miner/validator  
 - **Tokens and NFTs**: View ownership and metadata
 
+> ⚠️ Not all smart contracts are verified on block explorers. Always ensure the contract code matches what was publicly shared by the project before interacting.
+
 ---
 
 ## 🌐 Popular block explorers
@@ -58,6 +60,11 @@ Using block explorers empowers users to:
 - 👀 Watch what’s happening on-chain (in real time)
 
 Even if you use a wallet or dApp, a block explorer lets you **see what really happened** under the hood.
+
+---
+
+> 🧠 Reflect:  
+> Search for a recent transaction on Etherscan. What details can you find? What surprised you?
 
 ---
 

@@ -13,11 +13,17 @@ Esta actividad te permitirá poner en práctica los conceptos aprendidos durante
 
 ## 🦊 Parte 1: Crear una wallet en MetaMask
 
+📽️ Tutorial MetaMask  
+[▶️ Ver video: Cómo crear una wallet en MetaMask](https://www.youtube.com/watch?v=IO-7Q6W05Fo&t=16s){:target="_blank"}
+
+
 1. Instalá [MetaMask](https://metamask.io) en tu navegador o dispositivo móvil.  
 2. Creá una nueva cuenta (wallet).  
 3. Anotá y guardá tu frase de recuperación en un lugar seguro (no digital).  
 4. Cambiá la red a **Sepolia testnet** desde la configuración de MetaMask.  
-5. Solicitá ETH de prueba en [https://sepoliafaucet.com](https://sepoliafaucet.com).
+5. Solicitá ETH de prueba en el faucet oficial de Google Cloud:  
+   🔗 [https://cloud.google.com/application/web3/faucet/ethereum/sepolia](https://cloud.google.com/application/web3/faucet/ethereum/sepolia){:target="_blank"}
+
 
 📸 **Evidencia a entregar**:
 - Captura de pantalla de tu wallet activa y configurada con Sepolia.
@@ -26,6 +32,9 @@ Esta actividad te permitirá poner en práctica los conceptos aprendidos durante
 
 
 ## 🔍 Parte 2: Leer datos desde un explorador de bloques
+
+📽️ ¿Querés ver cómo funciona Etherscan?  
+[▶️ Ver tutorial rápido de Etherscan](https://www.youtube.com/watch?v=EGgY2LWmZ-g&t=52s){:target="_blank"}
 
 1. Copiá tu dirección pública de MetaMask.  
 2. Visitá [https://sepolia.etherscan.io](https://sepolia.etherscan.io).  
