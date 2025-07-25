@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Solidity Avanzado"
+title: "EXTRA: Solidity Avanzado"
 nav_order: 5
 parent: "Módulo 3: Programando en Solidity"
 ---

@@ -20,6 +20,8 @@ These concepts are essential for writing efficient, readable, and secure contrac
 
 Let’s get started.
 
+> 🧭 This section expands your understanding of Solidity by introducing **visibility**, **control flow**, and **data location** — the core rules behind how smart contracts work behind the scenes.
+
 ---
 
 ## 🔐 Function Visibility in Solidity

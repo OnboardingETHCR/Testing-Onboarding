@@ -5,7 +5,24 @@ nav_order: 7
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-## 🧾 Solidity Cheatsheet
+# 🧾 Solidity Cheatsheet
+
+### 📚 Table of Contents
+
+- [📂 File Structure & Syntax](#-file-structure--syntax)
+- [📌 Types & Literals](#-types--literals)
+- [🔐 Visibility & Mutability](#-visibility--mutability)
+- [🔧 Functions & Modifiers](#-functions--modifiers)
+- [💡 Special Functions](#-special-functions)
+- [🔁 Control Structures](#-control-structures)
+- [📦 Storage & Constants](#-storage--constants)
+- [📣 Events & Errors](#-events--errors)
+- [🏗️ Inheritance & Interfaces](#-inheritance--interfaces)
+- [📚 Import & Library Use](#-import--library-use)
+- [⛽ Gas & Optimization Tips](#-gas--optimization-tips)
+- [🧭 Common Patterns](#-common-patterns)
+- [🔤 Solidity Keywords (A–Z)](#-solidity-keywords-a-z)
+
 
 ## 📂 File Structure & Syntax
 

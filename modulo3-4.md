@@ -66,6 +66,8 @@ The modifier `onlyOwner` restricts the `updateSecret()` function to the deployer
 
 > 💡 Many dApps and DeFi protocols rely on OpenZeppelin for their core functionality. It's an industry standard.
 
+Now that you’ve seen how libraries enhance our contracts, let’s understand how smart contracts are actually turned into code that runs on the blockchain.
+
 ---
 
 ## ⚙️ Compilation: From Solidity to EVM

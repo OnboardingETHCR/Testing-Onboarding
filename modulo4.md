@@ -27,7 +27,7 @@ Al finalizar este módulo, serás capaz de:
 
 ## 📂 Estructura del módulo
 
-Este módulo está dividido en ocho secciones:
+Este módulo está dividido en seis secciones:
 
 1. **[4.1 Introducción a las dApps](modulo4-1.md)**  
    Qué es una dApp, arquitectura, flujos y ejemplos.
@@ -41,30 +41,22 @@ Este módulo está dividido en ocho secciones:
 4. **[4.4 Integración de Contrato Inteligente](modulo4-4.md)**  
    Llamadas `read` y `write` al contrato desde la interfaz.
 
-5. **[4.5 Despliegue en Testnet con Hardhat](modulo4-5.md)**  
-   Compilación, despliegue y verificación de contratos.
-
-6. **[4.6 Actividad Final: dApp Guiada](modulo4-6.md)**  
+5. **[4.5 Actividad Final: dApp Guiada](modulo4-actividad.md)**  
    Construcción de una aplicación completa paso a paso.
 
-7. **[4.7 Cheatsheet y Recursos](modulo4-cheatsheet.md)**  
-   Comandos clave, referencias técnicas y enlaces de apoyo.
-
-8. **[4.8 Qué Sigue (What's Next)](modulo4-whatsnext.md)**  
+6. **[4.6 Qué Sigue (What's Next)](modulo4-cierre.md)**  
    Opciones para continuar explorando y construyendo en Web3.
 
 ---
 
 ## 📂 Entregables
 
-Durante las secciones 4.2 a 4.5 se te guiará con ejercicios prácticos. No requieren entrega formal, pero te recomendamos subir tu progreso a tu repositorio personal.
+Durante las secciones 4.2 a 4.4 se incluyen ejercicios prácticos para fortalecer tu comprensión técnica. No es necesario entregar estos avances, pero te recomendamos subir tu progreso a tu repositorio personal de GitHub.
 
-La actividad evaluada principal del módulo será:
+### ✅ Actividad final evaluada
 
-- Construcción de una dApp funcional según la guía propuesta.
-- Repositorio en GitHub con el código completo del frontend y contrato.
-- Archivo `README.md` explicativo.
-- Enlace a testnet y video/capturas de funcionamiento.
+La entrega principal del módulo será una dApp funcional, construida a partir de un tutorial guiado.  
+Los detalles específicos sobre qué entregar y cómo hacerlo se encuentran en el archivo correspondiente a la actividad final (`modulo4-actividad.md`).
 
 ---
 
