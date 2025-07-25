@@ -116,6 +116,8 @@ my-dapp/
 └── vite.config.js
 ```
 
+> 💡 The `contracts/` folder will store the ABI and address of your deployed smart contracts later in this module.
+
 You don’t need to create all folders right now, but this structure will help you stay organized.
 
 ---
