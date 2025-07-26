@@ -24,8 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
     "modulo1-parte4"
   ];
 
+  // Detectar página actual con fallback robusto
   const parts = window.location.pathname.split("/").filter(Boolean);
-  const currentId = parts[parts.length - 1]; // ahora sí obtiene "modulo1-parte1"
+  const last = parts[parts.length - 1] || parts[parts.length - 2] || "";
+  const currentId = last.toLowerCase();
+  console.log("🔍 Página detectada como:", currentId);
+
   const checkbox = document.querySelector(".section-check");
 
   if (checkbox) {
