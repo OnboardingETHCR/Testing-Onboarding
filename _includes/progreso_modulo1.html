@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
     "modulo1-parte4"
   ];
 
-  const currentId = window.location.pathname.split("/").pop().replace(".html", "").replace(".md", "");
+  const parts = window.location.pathname.split("/").filter(Boolean);
+  const currentId = parts[parts.length - 1]; // ahora sí obtiene "modulo1-parte1"
   const checkbox = document.querySelector(".section-check");
 
   if (checkbox) {
