@@ -1,0 +1,61 @@
+<div id="progress-container" style="margin: 20px 0;">
+  <div style="font-weight: bold;">📈 Progreso en el Módulo 1:</div>
+  <div style="background-color: #eee; border-radius: 8px; height: 20px; width: 100%;">
+    <div id="progress-bar" style="width: 0%; height: 100%; background-color: #10b981; border-radius: 8px;"></div>
+  </div>
+  <div id="progress-text" style="margin-top: 5px;">0% completado</div>
+</div>
+
+<div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ccc;">
+  <label style="font-size: 1rem;">
+    <input type="checkbox" class="section-check">
+    ✅ Marcar esta sección como completada
+  </label>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const PAGES_MODULO1 = [
+    "modulo1-parte1",
+    "modulo1-parte2",
+    "modulo1-quiz",
+    "modulo1-parte3",
+    "modulo1-actividad",
+    "modulo1-parte4"
+  ];
+
+  const currentId = window.location.pathname.split("/").pop().replace(".html", "").replace(".md", "");
+  const checkbox = document.querySelector(".section-check");
+
+  if (checkbox) {
+    checkbox.dataset.id = currentId;
+    const saved = JSON.parse(localStorage.getItem("progressModulo1") || "[]");
+    if (saved.includes(currentId)) checkbox.checked = true;
+
+    checkbox.addEventListener("change", () => {
+      let updated = JSON.parse(localStorage.getItem("progressModulo1") || "[]");
+      if (checkbox.checked && !updated.includes(currentId)) {
+        updated.push(currentId);
+      } else {
+        updated = updated.filter(p => p !== currentId);
+      }
+      localStorage.setItem("progressModulo1", JSON.stringify(updated));
+      updateProgressBarModulo1();
+    });
+  }
+
+  function updateProgressBarModulo1() {
+    const done = JSON.parse(localStorage.getItem("progressModulo1") || "[]");
+    const valid = done.filter(p => PAGES_MODULO1.includes(p));
+    const percent = Math.round((valid.length / PAGES_MODULO1.length) * 100);
+    const bar = document.getElementById("progress-bar");
+    const text = document.getElementById("progress-text");
+    if (bar && text) {
+      bar.style.width = percent + "%";
+      text.innerText = `${percent}% completado (${valid.length} de ${PAGES_MODULO1.length} secciones completadas)`;
+    }
+  }
+
+  updateProgressBarModulo1();
+});
+</script>
