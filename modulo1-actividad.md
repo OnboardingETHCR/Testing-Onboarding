@@ -44,8 +44,9 @@ Una vez finalizada la actividad, debés subir los archivos solicitados a tu repo
 ### 📁 Estructura esperada:
 
 ```
-/onboardingETHCR/Nombre_Apellido/moduloX/
-└── actividad_Nombre_Apellido
+/onboardingETHCR/nombreApellido/moduloX/
+└── tablaComparativa_nombreApellido
+└── pitchCaso_nombreApellido
 ```
 
 📌 Asegurate de:

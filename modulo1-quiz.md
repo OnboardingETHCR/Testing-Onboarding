@@ -31,8 +31,8 @@ Una vez completado el quiz, debés subir una **captura de pantalla con el puntaj
 
 ```
 
-/onboardingETHCR/Nombre_Apellido/moduloX/
-└── quiz_Nombre_Apellido
+/onboardingETHCR/nombreApellido/moduloX/
+└── quiz1_nombreApellido
 
 ```
 
