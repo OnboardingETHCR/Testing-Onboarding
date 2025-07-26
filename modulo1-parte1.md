@@ -27,8 +27,6 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 - ¿Qué problema resuelve la tecnología blockchain según el video?
 - ¿Qué parte te pareció más compleja o interesante?
 
-{% include progreso_modulo1.html %}
-
 ---
 
 ### 🔁 Navegación

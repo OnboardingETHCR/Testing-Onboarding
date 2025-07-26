@@ -23,7 +23,6 @@ Podés entregar esta tabla en cualquiera de los siguientes formatos:
 
 - Documento en **PDF** generado desde **Word, Google Docs, Notion, Excel o Google Sheets**
 
-
 ---
 
 ### 🎤 Parte 2 – Pitch de caso 
@@ -38,25 +37,27 @@ Elegí uno de los proyectos analizados y elaborá un pitch breve para presentarl
 💡 Podés usar herramientas como Notion, Canva, PowerPoint o grabar un video corto.
 
 ---
-### 📝 Entrega de la Actividad
+## 📦 Entrega de la Actividad
 
-Una vez completadas ambas partes de la actividad (tabla comparativa y pitch), debés subir tus archivos a tu repositorio personal de GitHub relacionado al programa de onboarding.
+Una vez finalizada la actividad, debés subir los archivos solicitados a tu repositorio personal de GitHub.
 
-### 📂 ¿Cómo hacerlo?
+### 📁 Estructura esperada:
 
-1. Creá una carpeta específica dentro de tu repositorio (por ejemplo:/modulo1/actividades/).
-
-2. Subí los archivos generados, asegurándote de incluir tu nombre y apellido en cada uno. Por ejemplo:
 ```
-tabla_comparativa_web3_Juan_Perez.pdf
-pitch_defi_uniswap_Juan_Perez.pdf
+/onboardingETHCR/Nombre_Apellido/moduloX/
+└── actividad_Nombre_Apellido
 ```
 
-4. Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
+📌 Asegurate de:
 
-### 🔐 Recordá mantener el repositorio público o al menos accesible a quienes deban revisar tu trabajo.
+- Nombrar tus archivos claramente 
+- Subirlos a tu **repositorio personal** de GitHub.
+- Compartir el enlace con el equipo de Ethereum Costa Rica.
 
----
+🔐 **Recordá mantener tu repositorio público o accesible para quienes deban revisarlo.**
+
+
+------
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo1-parte3">⬅️ Anterior</a>

@@ -23,22 +23,26 @@ Este quiz se completa en menos de 10 minutos. Asegurate de tener buena conexión
 [🔗 Abrir quiz en una nueva pestaña](https://form.typeform.com/to/jyRkTk6Y){:target="_blank"}
 
 ---
-### 📝 Entrega de la Actividad
+## 📦 Entrega del Quiz
 
-Una vez completado el quiz, debés subir una **captura de pantalla con tu resultado final** a tu repositorio personal de GitHub relacionado al programa de onboarding.
+Una vez completado el quiz, debés subir una **captura de pantalla con el puntaje obtenido** a tu repositorio personal de GitHub.
 
-### 📂 ¿Cómo hacerlo?
-
-- Creá una carpeta específica dentro de tu repositorio (por ejemplo: `/modulo1/actividades/`).
-- Subí el archivo con tu nombre y apellido. Ejemplo:
+### 📁 Estructura esperada:
 
 ```
-resultado_quiz_modulo1_Juan_Perez.png
+
+/onboardingETHCR/Nombre_Apellido/moduloX/
+└── quiz_Nombre_Apellido
+
 ```
 
-- Compartí el enlace a tu carpeta al equipo de Ethereum Costa Rica.
+📌 Asegurate de:
 
-### 🔐 Recordá mantener el repositorio público o al menos accesible a quienes deban revisar tu trabajo.
+- Que la captura sea clara.
+- Subirla a tu **repositorio personal** (no al repositorio del curso).
+- Compartir el enlace con el equipo de Ethereum Costa Rica.
+
+🔐 **Recordá mantener tu repositorio público o accesible para quienes deban revisarlo.**
 
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
