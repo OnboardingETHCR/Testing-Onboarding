@@ -15,14 +15,13 @@ Este curso autodirigido ha sido diseñado para brindar una introducción estruct
 A lo largo del programa, adquirirás conocimientos teóricos y prácticos necesarios para comprender y desenvolverte en proyectos relacionados con entornos descentralizados, utilizando herramientas, lenguajes y marcos tecnológicos propios del ecosistema Ethereum.
 
 
----
+## 📚 ¿Qué incluye este programa?
 
-## ¿Qué incluye este programa?
-
-- 🧠 Lecturas en formato de artículos académicos, infogramas y documentos PDF  
+- 🧠 Lecturas en formato de artículos académicos, infografías y documentos PDF  
 - 🎥 Videos explicativos sobre temas clave  
-- 🧪 Actividades evaluativas para reforzar el aprendizaje  
-- 📁 Recursos prácticos para aplicar lo aprendido 
+- 🧪 Quizzes y actividades prácticas para reforzar el aprendizaje  
+- ⚒️ Herramientas reales del entorno Web3  
+- 📝 Instrucciones claras de entrega y documentación de resultados  
 
 ---
 
@@ -35,12 +34,13 @@ A lo largo del programa, adquirirás conocimientos teóricos y prácticos necesa
 
 ---
 
-## ¿Cómo avanzar?
+## 🧭 ¿Cómo avanzar?
 
 1. Recorre los módulos en el orden propuesto.  
-2. Realiza las actividades que acompañan cada sección.  
-3. Consultá los recursos adicionales cuando sea necesario.  
-4. Aplicá lo aprendido en entornos y herramientas reales.
+2. Completa cada actividad o quiz según las instrucciones.  
+3. Consultá los recursos adicionales si necesitás reforzar algún concepto.  
+4. Aplicá lo aprendido en entornos y herramientas reales.  
+5. Subí tus entregables a tu repositorio personal siguiendo el formato solicitado.
 
 ---
 
