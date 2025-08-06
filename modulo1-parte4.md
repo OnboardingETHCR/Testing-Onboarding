@@ -13,8 +13,9 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 Este video te brindará una mirada cercana sobre quiénes somos, qué hacemos y cómo podés formar parte de este movimiento.
 
-🎥 Video Ethereum Costa Rica  
-*(Insertar enlace cuando esté disponible)*
+🎥 **Video – Ethereum Costa Rica**
+
+<iframe src="https://www.loom.com/embed/21beef58c14e4c518adbb1861225fe1a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width:100%; height:400px;"></iframe>
 
 ---
 
