@@ -44,6 +44,9 @@ Una vez completado el quiz, debés subir una **captura de pantalla con el puntaj
 
 🔐 **Recordá mantener tu repositorio público o accesible para quienes deban revisarlo.**
 
+---
+
+### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo1-parte2">⬅️ Anterior</a>

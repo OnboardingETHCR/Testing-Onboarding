@@ -5,6 +5,8 @@ nav_order: 2
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
+# Módulo 1
+
 ## Fundamentos de Blockchain
 
 ### 📄 Lectura: Fundamentos de Blockchain
@@ -27,6 +29,8 @@ Una vez revisada la lectura y los videos, avanzá al siguiente paso para resolve
 El quiz incluye preguntas sobre consenso, descentralización e inmutabilidad. ¡Tomate tu tiempo para reflexionar!
 
 👉 **[Ir al Quiz](modulo1-quiz.md)**
+
+---
 
 ### 🔁 Navegación
 

@@ -5,6 +5,8 @@ nav_order: 4
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
+# Módulo 1
+
 ## Cierre del módulo
 
 ### 🌐 Ethereum Costa Rica 
@@ -25,6 +27,8 @@ Este video te brindará una mirada cercana sobre quiénes somos, qué hacemos y 
 - Explicar los fundamentos técnicos de Blockchain
 - Diferenciar los mecanismos de consenso PoW y PoS
 - Reconocer la evolución hacia Web3 y sus aplicaciones
+
+### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo1-actividad">⬅️ Anterior</a>
