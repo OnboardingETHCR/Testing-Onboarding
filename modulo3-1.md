@@ -314,7 +314,6 @@ Modular design also enables reuse via libraries or inheritance, improving mainta
 </details>
 
 ---
----
 
 ### 🔁 Navegación
 

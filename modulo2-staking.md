@@ -81,6 +81,8 @@ You're almost done! Time to check your understanding with the Módulo 2 quiz.
 
 ---
 
+### 🔁 Navegación
+
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2-gobernanza">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2-quiz">Siguiente ➡️</a>

@@ -35,6 +35,5 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
   <a class="btn" href="/Testing-Onboarding/modulo1-parte2">Siguiente ➡️</a>
 </div>
 
----
 
 

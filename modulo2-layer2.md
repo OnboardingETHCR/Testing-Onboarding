@@ -5,7 +5,7 @@ parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 7
 ---
 
-# Soluciones Layer 2
+# Layer 2 Solutions
 
 Ethereum is powerful but has limited capacity. To help scale the network, Layer 2 (L2) solutions process transactions off-chain, reducing congestion and gas costs on Mainnet.
 
@@ -81,6 +81,8 @@ In addition to official bridges, many reputable third-party bridges exist that o
 Now that you know how Ethereum can scale with Layer 2s, let's explore real-world applications like dApps, NFTs, and stablecoins.
 
 ---
+
+### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2-networks">⬅️ Anterior</a>
