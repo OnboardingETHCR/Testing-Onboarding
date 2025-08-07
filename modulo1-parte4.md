@@ -5,8 +5,6 @@ nav_order: 4
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
-# Módulo 1
-
 ## Cierre del módulo
 
 ### 🌐 Ethereum Costa Rica 

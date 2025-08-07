@@ -5,8 +5,6 @@ nav_order: 2
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
-# Módulo 1
-
 ## Fundamentos de Blockchain
 
 ### 📄 Lectura: Fundamentos de Blockchain

@@ -5,8 +5,6 @@ nav_order: 3
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
-# Módulo 1
-
 ## Introducción a Web3
 
 En esta sección aprenderás qué es Web3, cómo ha evolucionado desde la Web 1.0 y Web 2.0, y por qué representa un cambio fundamental en la forma en que interactuamos con internet, los datos y las finanzas.

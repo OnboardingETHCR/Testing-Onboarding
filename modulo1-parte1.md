@@ -5,8 +5,6 @@ nav_order: 1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
-# Módulo 1
-
 ## Introducción a Bitcoin
 
 ### 📄 Lectura: ¿Qué es Bitcoin?
