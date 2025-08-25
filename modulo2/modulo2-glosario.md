@@ -97,6 +97,6 @@ This glossary collects the key terms covered throughout the module. Use it as a 
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: flex-start; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-quiz">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-quiz">⬅️ Anterior</a>
 </div>
 

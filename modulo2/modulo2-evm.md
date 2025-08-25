@@ -73,7 +73,7 @@ In the next section, you’ll learn about **Ethereum accounts** — the building
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-intro-ethereum">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-cuentas">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-intro-ethereum">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-cuentas">Siguiente ➡️</a>
 </div>
 

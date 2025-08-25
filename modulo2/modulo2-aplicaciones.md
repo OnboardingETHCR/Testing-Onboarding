@@ -92,7 +92,7 @@ Now that you know what Ethereum enables, let’s learn about the nodes and clien
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-layer2">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-nodos-clientes">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-layer2">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-nodos-clientes">Siguiente ➡️</a>
 </div>
 

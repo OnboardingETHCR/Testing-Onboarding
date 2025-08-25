@@ -79,8 +79,8 @@ Now that you understand how Ethereum accounts work, let’s explore **how gas fe
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2-evm">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2-gas">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-evm">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-gas">Siguiente ➡️</a>
 </div>
 
 
