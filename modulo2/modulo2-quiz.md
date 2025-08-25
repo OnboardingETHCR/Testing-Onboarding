@@ -5,7 +5,7 @@ parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 15
 ---
 
-## 🧪 Evaluación – Módulo 2
+## 🧪 Evaluación Módulo 2
 
 Esta evaluación cubre los temas de:
 
