@@ -11,7 +11,7 @@ En esta actividad aplicarás lo aprendido sobre Web3 explorando casos de uso rea
 
 ---
 
-### 🧮 Parte 1 – Tabla comparativa
+### 🧮 Parte 1: Tabla comparativa
 
 Seleccioná al menos **tres proyectos Web3 reales** (de distintos sectores si es posible) e investigá la siguiente información clave para cada uno:
 
