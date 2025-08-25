@@ -49,7 +49,7 @@ Una vez completado el quiz, debés subir una **captura de pantalla con el puntaj
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte2">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte3">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-parte2">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-parte3">Siguiente ➡️</a>
 </div>
 

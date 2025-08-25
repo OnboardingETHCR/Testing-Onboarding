@@ -9,9 +9,9 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 ### 📄 Lectura: Fundamentos de Blockchain
 
-<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf" width="100%" height="600px"></iframe>
+<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf" width="100%" height="600px"></iframe>
 
-[📥 Descargar PDF – Fundamentos de Blockchain](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf){:target="_blank"}
+[📥 Descargar PDF – Fundamentos de Blockchain](https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/2.Introduccion-a-Blockchain/1.Lectura-Fundamentos-de-blockchain.pdf){:target="_blank"}
 
 ### 🎥 Videos
 
@@ -33,6 +33,6 @@ El quiz incluye preguntas sobre consenso, descentralización e inmutabilidad. ¡
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte1">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo1-quiz">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-parte1">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-quiz">Siguiente ➡️</a>
 </div>

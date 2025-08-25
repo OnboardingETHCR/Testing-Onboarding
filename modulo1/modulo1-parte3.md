@@ -14,17 +14,17 @@ Además, explorarás aplicaciones reales basadas en Web3, como DAOs, NFTs y plat
 
 ### 📄 Lectura: Evolución de la Web
 
-<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/1.Evolucion-web.pdf" width="100%" height="600px"></iframe>
+<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/3.Introduccion-a-Web-3/1.Evolucion-web.pdf" width="100%" height="600px"></iframe>
 
-[📥 Descargar PDF – Evolución de la Web](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/1.Evolucion-web.pdf){:target="_blank"}
+[📥 Descargar PDF – Evolución de la Web](https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/3.Introduccion-a-Web-3/1.Evolucion-web.pdf){:target="_blank"}
 
 ---
 
 ### 📄 Lectura: Aplicaciones y Casos de Uso
 
-<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/2.Aplicaciones-casos-de-uso.pdf" width="100%" height="600px"></iframe>
+<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/3.Introduccion-a-Web-3/2.Aplicaciones-casos-de-uso.pdf" width="100%" height="600px"></iframe>
 
-[📥 Descargar PDF – Aplicaciones y Casos de Uso](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/3.Introduccion-a-Web-3/2.Aplicaciones-casos-de-uso.pdf){:target="_blank"}
+[📥 Descargar PDF – Aplicaciones y Casos de Uso](https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/3.Introduccion-a-Web-3/2.Aplicaciones-casos-de-uso.pdf){:target="_blank"}
 
 ---
 
@@ -39,8 +39,8 @@ En la siguiente sección, vas a realizar una actividad práctica en dos partes: 
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-quiz">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo1-actividad">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-quiz">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-actividad">Siguiente ➡️</a>
 </div>
 
 

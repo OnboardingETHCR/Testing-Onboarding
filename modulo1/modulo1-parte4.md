@@ -29,7 +29,7 @@ Este video te brindará una mirada cercana sobre quiénes somos, qué hacemos y 
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-actividad">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-actividad">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio</a>
 </div>
 
