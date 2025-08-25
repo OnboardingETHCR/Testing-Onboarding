@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Actividad – Casos de Uso Web3"
+title: "Actividad: Casos de Uso Web3"
 nav_order: 4.1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
@@ -25,7 +25,7 @@ Podés entregar esta tabla en cualquiera de los siguientes formatos:
 
 ---
 
-### 🎤 Parte 2 – Pitch de caso 
+### 🎤 Parte 2: Pitch de caso 
 
 Elegí uno de los proyectos analizados y elaborá un pitch breve para presentarlo. El pitch puede ser escrito, grabado o diseñado como una presentación. Debe responder:
 
