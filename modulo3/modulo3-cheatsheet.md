@@ -40,7 +40,7 @@ contract MyContract {
 | Element              | Purpose                                                  |
 |----------------------|----------------------------------------------------------|
 | `SPDX-License`       | Declares the software license (MIT, GPL-3.0, etc.)       |
-| `pragma solidity`    | Compiler version directive — avoids incompatibility      |
+| `pragma solidity`    | Compiler version directive, avoids incompatibility      |
 | `contract`           | Defines the contract scope                               |
 
 > 🧠 Always use a fixed version (`^0.8.20`) to avoid unexpected behavior from compiler updates.

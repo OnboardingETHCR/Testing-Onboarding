@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Cierre del Módulo 4"
+title: "6. Cierre del Módulo 4"
 parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 6
 ---
@@ -44,7 +44,7 @@ Si querés seguir profundizando en el ecosistema Web3, te dejamos una lista cura
 
 ---
 
-Ahora contás con una base sólida para seguir creciendo. Ya no sos un principiante — tenés las herramientas para entender, contribuir y crear en Ethereum y más allá.
+Ahora contás con una base sólida para seguir creciendo. Ya no sos un principiante, tenés las herramientas para entender, contribuir y crear en Ethereum y más allá.
 
 > 🫱🏽‍🫲🏼 *Nos emociona pensar que podrías estar construyendo con nosotros pronto.*  
 > ¡Gracias por tu esfuerzo y compromiso en este programa de onboarding!

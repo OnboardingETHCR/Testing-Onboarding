@@ -9,7 +9,7 @@ nav_order: 4
 
 In this section, you’ll connect your **React** frontend to a smart contract deployed on a testnet (such as **Sepolia**) using `ethers.js`.
 
-This is where the magic of dApps happens — reading blockchain data and writing new information based on user interaction. Now that you have a running frontend and a connected wallet, it’s time to **talk to the blockchain**.
+This is where the magic of dApps happens, reading blockchain data and writing new information based on user interaction. Now that you have a running frontend and a connected wallet, it’s time to **talk to the blockchain**.
 
 ---
 
@@ -29,7 +29,7 @@ By the end of this section, you’ll be able to:
 
 We’ll use a simple smart contract that allows reading and incrementing a number.
 
-This is the same contract you explored in Module 3 — here it is again for easy reference:
+This is the same contract you explored in Module 3, here it is again for easy reference:
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -318,7 +318,7 @@ Take a moment to think through the following questions before moving on:
 
 <details>
   <summary>💡 Show answer</summary>
-  The contract address tells your application where to find the smart contract on the blockchain. The ABI describes how to interact with it — what functions are available, their parameters, and return types. Without both, your app cannot communicate properly with the contract.
+  The contract address tells your application where to find the smart contract on the blockchain. The ABI describes how to interact with it, what functions are available, their parameters, and return types. Without both, your app cannot communicate properly with the contract.
 </details>
 
 ---
@@ -327,7 +327,7 @@ Take a moment to think through the following questions before moving on:
 
 <details>
   <summary>💡 Show answer</summary>
-  A provider is read-only — it allows you to query the blockchain (e.g., call view functions). A signer is a special object that can sign transactions and send data that changes blockchain state (e.g., write functions like `increment()`).
+  A provider is read-only, it allows you to query the blockchain (e.g., call view functions). A signer is a special object that can sign transactions and send data that changes blockchain state (e.g., write functions like `increment()`).
 </details>
 
 ---

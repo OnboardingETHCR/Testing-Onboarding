@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Actividad Módulo 4"
+title: "5. Actividad Módulo 4"
 parent: "Módulo 4: Desarrollo de Aplicaciones Web3"
 nav_order: 5
 ---
@@ -9,7 +9,7 @@ nav_order: 5
 
 ### 🛠️ Construcción de una dApp de Mercado de Predicciones
 
-Esta es la actividad final del Módulo 4 — un proyecto práctico y guiado en el que construirás una aplicación descentralizada real: una **dApp de Mercado de Predicciones** utilizando contratos inteligentes y un frontend basado en React.
+Esta es la actividad final del Módulo 4, un proyecto práctico y guiado en el que construirás una aplicación descentralizada real: una **dApp de Mercado de Predicciones** utilizando contratos inteligentes y un frontend basado en React.
 
 No comenzarás desde cero. Seguirás un proyecto completo de código abierto, desarrollado con herramientas Web3 modernas, acompañado de un tutorial en video paso a paso.
 
