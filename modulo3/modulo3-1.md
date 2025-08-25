@@ -318,5 +318,5 @@ Modular design also enables reuse via libraries or inheritance, improving mainta
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3-2">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-2">Siguiente ➡️</a>
 </div>

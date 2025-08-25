@@ -557,6 +557,6 @@ A short alphabetical list of important Solidity keywords.
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3-actividad">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-actividad">⬅️ Anterior</a>
 </div>
 

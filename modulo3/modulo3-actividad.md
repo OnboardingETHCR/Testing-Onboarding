@@ -55,6 +55,6 @@ By the end of this activity, you should feel confident building and deploying ba
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3-cheatsheet">⬅️ Cheatsheet</a>
-  <a class="btn" href="/Testing-Onboarding/modulo4">Módulo 4 ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-cheatsheet">⬅️ Cheatsheet</a>
+  <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio</a>
 </div>
