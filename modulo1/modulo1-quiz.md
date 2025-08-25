@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "Evaluación – Blockchain y Web3"
+title: "Evaluación: Blockchain y Web3"
 nav_order: 2.1
 parent: "Módulo 1: Introducción a Blockchain y Web3"
 ---
 
-## 🧪 Evaluación – Módulo 1
+## 🧪 Evaluación Módulo 1
 
 Esta evaluación cubre los temas de:
 
