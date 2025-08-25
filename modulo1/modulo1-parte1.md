@@ -9,9 +9,9 @@ parent: "Módulo 1: Introducción a Blockchain y Web3"
 
 ### 📄 Lectura: ¿Qué es Bitcoin?
 
-<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf" width="100%" height="600px"></iframe>
+<iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf" width="100%" height="600px"></iframe>
 
-[📥 Descargar PDF – ¿Qué es Bitcoin?](https://onboardingethcr.github.io/Testing-Onboarding/assets/Modulo%201%20-%20Introduccion%20al%20Blockchain%20y%20Web3/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf){:target="_blank"}
+[📥 Descargar PDF – ¿Qué es Bitcoin?](https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/1.Introduccion-a-Bitcoin/1.Lectura_1_Que_es_Bitcoin.pdf){:target="_blank"}
 
 ### 🎥 Video explicativo
 

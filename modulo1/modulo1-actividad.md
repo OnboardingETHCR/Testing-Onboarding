@@ -63,6 +63,6 @@ Una vez finalizada la actividad, debés subir los archivos solicitados a tu repo
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte3">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo1-parte4">Siguiente ➡️</a>
+  <a class="btn" href="/modulo1-parte3">⬅️ Anterior</a>
+  <a class="btn" href="/modulo1-parte4">Siguiente ➡️</a>
 </div>
