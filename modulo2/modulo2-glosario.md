@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "16. Glosario de Ethereum"
+title: "7.3. Glosario de Ethereum"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 16
 ---
