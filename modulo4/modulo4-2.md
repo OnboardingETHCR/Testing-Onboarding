@@ -136,6 +136,6 @@ You don’t need to create all folders right now, but this structure will help y
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo4-1">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo4-3">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4/modulo4-1">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4/modulo4-3">Siguiente ➡️</a>
 </div>

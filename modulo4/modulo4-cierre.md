@@ -48,3 +48,10 @@ Ahora contás con una base sólida para seguir creciendo. Ya no sos un principia
 
 > 🫱🏽‍🫲🏼 *Nos emociona pensar que podrías estar construyendo con nosotros pronto.*  
 > ¡Gracias por tu esfuerzo y compromiso en este programa de onboarding!
+
+### 🔁 Navegación
+
+<div style="display: flex; justify-content: space-between; margin-top: 2em;">
+  <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio</a>
+</div>
+

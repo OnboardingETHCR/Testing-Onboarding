@@ -344,7 +344,7 @@ Take a moment to think through the following questions before moving on:
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo4-3">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo4-actividad">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4/modulo4-3">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4/modulo4-actividad">Siguiente ➡️</a>
 </div>
 

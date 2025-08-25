@@ -117,6 +117,6 @@ Now that you understand how dApps work, it's time to start building your own. In
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo4-2">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo4/modulo4-2">Siguiente ➡️</a>
 </div>
 
