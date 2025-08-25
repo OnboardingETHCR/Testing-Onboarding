@@ -77,7 +77,7 @@ Protocols like Lido issue **staking derivatives** (e.g., stETH) which represent 
 
 ## ✅ What’s next?
 
-You're almost done! Time to check your understanding with a quiz.
+You're almost done! Time put your knowledge into practice with a **hands-on activity**.
 
 ---
 
@@ -85,6 +85,6 @@ You're almost done! Time to check your understanding with a quiz.
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-gobernanza">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-quiz">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-actividad">Siguiente ➡️</a>
 </div>
 

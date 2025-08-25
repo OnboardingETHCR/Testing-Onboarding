@@ -68,13 +68,13 @@ You can run a node:
 - Using cloud services
 - With simplified tools like [eth-docker](https://eth-docker.net/) or [DAppNode](https://dappnode.io/)
 
-> ⚠️ You don’t need to run a node to use Ethereum — but you help the network tremendously if you do.
+> ⚠️ You don’t need to run a node to use Ethereum, but you help the network tremendously if you do.
 
 ---
 
 ## ✅ What’s next?
 
-Next, we’ll look at **block explorers** — tools that let users inspect Ethereum data such as transactions, addresses, and contracts.
+Now that you know how Ethereum nodes and clients work, let’s explore the **Ethereum networks**, including mainnet and testnets.
 
 ---
 

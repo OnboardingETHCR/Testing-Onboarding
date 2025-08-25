@@ -63,7 +63,7 @@ To use a Layer 2 network:
 
 1. Add the network to your wallet (e.g. via [Chainlist](https://chainlist.org))
 2. Bridge ETH from Mainnet to the L2
-3. Use dApps just like on Mainnet — with faster and cheaper transactions
+3. Use dApps just like on Mainnet, with faster and cheaper transactions
 
 Official L2 bridges:
 - [Arbitrum Bridge](https://bridge.arbitrum.io)
@@ -78,7 +78,7 @@ In addition to official bridges, many reputable third-party bridges exist that o
 
 ## ✅ What’s next?
 
-Now that you know how Ethereum can scale with Layer 2s, let's explore real-world applications like dApps, NFTs, and stablecoins.
+Now that you know how Ethereum can scale with Layer 2 solutions, next up are the **block explorers**, tools that let you inspect transactions, addresses, and smart contracts on the network.
 
 ---
 

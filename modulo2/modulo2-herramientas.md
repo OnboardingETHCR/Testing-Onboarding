@@ -7,7 +7,7 @@ nav_order: 10
 
 # Development Tools
 
-To build on Ethereum, you need the right tools — from wallets and IDEs to testing frameworks and APIs. In this section, you'll get familiar with the essential components used to interact with and build on the Ethereum network.
+To build on Ethereum, you need the right tools, from wallets and IDEs to testing frameworks and APIs. In this section, you'll get familiar with the essential components used to interact with and build on the Ethereum network.
 
 ---
 
@@ -27,7 +27,7 @@ Here are some of the most widely used tools in the Ethereum ecosystem:
 ### 🛠️ Remix IDE
 - Web-based integrated development environment for writing, testing, and deploying smart contracts
 - Supports Solidity, unit testing, and static analysis
-- No installation required — perfect for beginners
+- No installation required, perfect for beginners
 
 👉 [Remix IDE](https://remix.ethereum.org)
 
@@ -82,7 +82,8 @@ Libraries simplify interacting with Ethereum through code:
 
 ## ✅ What’s next?
 
-You’re now equipped with knowledge of the tools used to build on Ethereum. Next, you’ll complete a hands-on activity to apply these concepts in practice.
+You’re now equipped with knowledge of the core tools developers use on Ethereum.  
+Next, let’s explore some **real-world applications** built on Ethereum, including dApps, NFTs, DAOs, and more.
 
 ---
 

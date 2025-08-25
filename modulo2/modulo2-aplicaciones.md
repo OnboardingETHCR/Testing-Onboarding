@@ -7,7 +7,7 @@ nav_order: 11
 
 # Aplicaciones en Ethereum
 
-Ethereum is more than a blockchain — it’s a platform for building decentralized applications (dApps) that run on smart contracts. These apps are open, transparent, and censorship-resistant.
+Ethereum is more than a blockchain, it’s a platform for building decentralized applications (dApps) that run on smart contracts. These apps are open, transparent, and censorship-resistant.
 
 ---
 
@@ -85,7 +85,7 @@ Most dApps require:
 
 ## ✅ What’s next?
 
-Now that you know what Ethereum enables, let’s learn about the nodes and clients that power the network behind the scenes.
+Now that you’ve seen the kinds of applications built on Ethereum, let’s learn about **governance**, how decisions are made and improvements are proposed in the Ethereum ecosystem.
 
 ---
 

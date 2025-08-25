@@ -7,7 +7,7 @@ nav_order: 12
 
 # Gobernanza en Ethereum
 
-Ethereum is a decentralized protocol, but it still needs to evolve — through upgrades, standards, and collective decisions. This is where **governance** comes in.
+Ethereum is a decentralized protocol, but it still needs to evolve, through upgrades, standards, and collective decisions. This is where **governance** comes in.
 
 Ethereum’s governance is unique: it’s transparent, open to anyone, and community-driven.
 
@@ -21,7 +21,7 @@ Governance is how changes are made to Ethereum. It involves:
 - Reaching rough consensus  
 - Implementing upgrades in clients and nodes
 
-Unlike traditional organizations, Ethereum has no central authority — decisions emerge from collaboration.
+Unlike traditional organizations, Ethereum has no central authority, decisions emerge from collaboration.
 
 ---
 
@@ -73,7 +73,7 @@ In a DAO:
 
 ## 🌱 Ongoing evolution
 
-Ethereum is always changing — through major upgrades like:
+Ethereum is always changing through major upgrades like:
 
 - The Merge (PoS)
 - Shanghai (withdrawals)
@@ -88,7 +88,7 @@ And future proposals like:
 
 ## ✅ What’s next?
 
-Now let’s look at one of the most impactful forms of participation: **staking** — where users help secure Ethereum and earn rewards.
+Now let’s look at one of the most impactful forms of participation: **staking**, where users help secure Ethereum and earn rewards.
 
 ---
 

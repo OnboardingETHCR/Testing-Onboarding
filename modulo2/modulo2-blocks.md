@@ -7,7 +7,7 @@ nav_order: 5
 
 # Bloques en Ethereum
 
-A blockchain is made of blocks — and Ethereum is no exception. Every transaction, smart contract deployment, or balance update happens inside a block.
+A blockchain is made of blocks, and Ethereum is no exception. Every transaction, smart contract deployment, or balance update happens inside a block.
 
 ---
 
@@ -68,7 +68,7 @@ You can explore block contents using public tools like [Etherscan](https://ether
 
 ## ✅ What’s next?
 
-Now that you understand blocks, let’s explore the different **Ethereum networks** — mainnet, testnets, and more.
+Now that you understand blocks, let’s explore the **nodes and clients** that make the Ethereum network function.
 
 ---
 
