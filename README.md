@@ -27,7 +27,7 @@ A lo largo del programa, adquirirás conocimientos teóricos y prácticos necesa
 
 ## Módulos disponibles
 
-- [Módulo 1: Introducción a Blockchain y Web3](/Testing-Onboarding/modulo1/modulo1.md)
+- [Módulo 1: Introducción a Blockchain y Web3](modulo1/modulo1.md)
 - [Módulo 2: Ecosistema Ethereum](modulo2/modulo2.md)
 - [Módulo 3: Programación con Solidity](modulo3/modulo3.md)
 - [Módulo 4: Desarrollo de Aplicaciones Web3](modulo4/modulo4.md)
