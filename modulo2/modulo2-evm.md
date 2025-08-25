@@ -66,7 +66,7 @@ This cross-compatibility is a major reason for Ethereum’s wide adoption and th
 
 ## ✅ What’s next?
 
-In the next section, you’ll learn about **Ethereum accounts** — the building blocks that users and contracts use to interact with the network.
+In the next section, you’ll learn about **Ethereum accounts**, the building blocks that users and contracts use to interact with the network.
 
 ---
 

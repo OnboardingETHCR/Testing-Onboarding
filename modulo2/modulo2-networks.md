@@ -7,7 +7,7 @@ nav_order: 7
 
 # Redes de Ethereum
 
-Ethereum runs on multiple networks — each with its own use case, purpose, and level of security. Understanding these networks is essential for development, testing, and interacting with Ethereum safely.
+Ethereum runs on multiple networks, each with its own use case, purpose, and level of security. Understanding these networks is essential for development, testing, and interacting with Ethereum safely.
 
 ---
 
@@ -19,7 +19,7 @@ A **network** is a version of the Ethereum blockchain that follows the same rule
 
 ## 🔒 Mainnet
 
-**Mainnet** is the primary Ethereum network — the one where real assets live and transactions are final.
+**Mainnet** is the primary Ethereum network, the one where real assets live and transactions are final.
 
 - 🟢 Real ETH and tokens
 - 🧠 Smart contracts with real value

@@ -5,7 +5,7 @@ parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 13
 ---
 
-# Participación y Staking en Ethereum
+# Staking on Ethereum
 
 Ethereum transitioned to Proof of Stake (PoS) in 2022. Instead of mining, blocks are now created and secured by **validators** who participate by staking ETH.
 

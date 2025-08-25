@@ -7,7 +7,7 @@ nav_order: 4
 
 # Gas and Fees
 
-Every action on Ethereum — sending ETH, interacting with contracts, deploying dApps — consumes computational resources. To ensure fair use of the network, Ethereum introduces a cost mechanism called **gas**.
+Every action on Ethereum, sending ETH, interacting with contracts and deploying dApps consumes computational resources. To ensure fair use of the network, Ethereum introduces a cost mechanism called **gas**.
 
 ---
 
@@ -37,7 +37,7 @@ Gas fees are paid in **ETH**, not in gas units directly.
 - **Gas limit**: The maximum amount of gas you’re willing to use
 - **Gas price**: The amount of ETH you’re willing to pay per unit of gas
 
-> ⚠️ If your transaction runs out of gas before it finishes, it will fail — and you’ll still lose the gas used up to that point.
+> ⚠️ If your transaction runs out of gas before it finishes, it will fail and you’ll still lose the gas used up to that point.
 
 ---
 

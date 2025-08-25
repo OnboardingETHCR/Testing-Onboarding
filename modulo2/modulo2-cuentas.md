@@ -7,7 +7,7 @@ nav_order: 3
 
 # Ethereum Accounts
 
-Everything on Ethereum — sending ETH, deploying a contract, interacting with a dApp — requires an **account**. Accounts are the foundation of identity and interaction on the network.
+Everything on Ethereum, from sending ETH, deploying a contract and interacting with a dApp requires an **account**. Accounts are the foundation of identity and interaction on the network.
 
 ---
 
@@ -34,7 +34,7 @@ There are two types of accounts in Ethereum:
 ## 🔄 How do accounts interact?
 
 - EOAs can send ETH or data to any other account (EOA or contract).
-- Contract accounts can interact with other contracts — but **only in response to incoming transactions**.
+- Contract accounts can interact with other contracts but **only in response to incoming transactions**.
 - EOAs pay gas for any transaction they initiate. Contract accounts **never pay gas directly**.
 
 ---

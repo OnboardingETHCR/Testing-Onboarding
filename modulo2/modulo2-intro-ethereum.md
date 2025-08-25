@@ -17,7 +17,7 @@ Ethereum was launched in 2015 and expanded blockchain functionality beyond simpl
 
 ## 💡 Why is Ethereum important?
 
-Ethereum is the foundation of Web3 — a more open, permissionless, and censorship-resistant internet.
+Ethereum is the foundation of Web3, a more open, permissionless, and censorship-resistant internet.
 
 Its key characteristics include:
 
@@ -48,7 +48,7 @@ As a user or developer, you can:
 
 ## ⚡ The Merge and Ethereum’s evolution
 
-In 2022, Ethereum transitioned from Proof of Work (PoW) to **Proof of Stake (PoS)** — a major upgrade known as **The Merge**.
+In 2022, Ethereum transitioned from Proof of Work (PoW) to **Proof of Stake (PoS)**, a major upgrade known as **The Merge**.
 
 As a result:
 - 🔋 Energy usage dropped by over 99%
@@ -67,7 +67,7 @@ As a result:
 
 ## ✅ What’s next?
 
-In the next section, you’ll explore the **Ethereum Virtual Machine (EVM)** — the computation layer that powers all smart contracts and on-chain logic.
+In the next section, you’ll explore the **Ethereum Virtual Machine (EVM)**, the computation layer that powers all smart contracts and on-chain logic.
 
 ---
 

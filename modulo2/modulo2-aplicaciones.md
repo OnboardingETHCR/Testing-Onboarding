@@ -31,7 +31,7 @@ Common categories:
 
 ## 🧩 NFTs (Non-Fungible Tokens)
 
-An NFT is a unique token that represents ownership of something — digital or physical.
+An NFT is a unique token that represents ownership of something digital or physical.
 
 Key features:
 - 🎨 Digital art, music, identity, certificates
@@ -77,7 +77,7 @@ Most dApps require:
 
 > ⚠️ Always double-check that you’re on the official website before connecting your wallet. Avoid signing unknown transactions from unverified dApps.
 
-> 🧠 Reflect: Based on what you’ve learned, which category of dApps would you be most interested in exploring — and why?
+> 🧠 Reflect: Based on what you’ve learned, which category of dApps would you be most interested in exploring and why?
 
 📚 [Read more about dApps on Ethereum.org](https://ethereum.org/en/dapps/){:target="_blank"}
 
