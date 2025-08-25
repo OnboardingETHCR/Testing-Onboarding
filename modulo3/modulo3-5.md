@@ -7,7 +7,7 @@ parent: "Módulo 3: Programando en Solidity"
 
 # 🚀 Advanced Solidity
 
-This section explores intermediate and advanced features in Solidity — the tools that power more robust and reusable smart contracts.
+This section explores intermediate and advanced features in Solidity, the tools that power more robust and reusable smart contracts.
 
 If you've completed sections 3.1 to 3.4, you already know how to write and test simple contracts. Now, you'll deepen your understanding with more expressive patterns and data types, including:
 
@@ -31,7 +31,7 @@ These three are often used together to manage state, define models, and map data
 
 ### 📦 `struct`
 
-A `struct` lets you group variables under a single name — perfect for modeling custom data types like users, items, or records.
+A `struct` lets you group variables under a single name, perfect for modeling custom data types like users, items, or records.
 
 ```solidity
 struct Task {
@@ -209,7 +209,7 @@ They are designed to help you test your understanding of more advanced Solidity 
 <details>
 <summary>💡 Reveal Answer</summary>
 
-Use a `struct` when you want to group related data into a single logical unit — for example, a `User` or `Task`.  
+Use a `struct` when you want to group related data into a single logical unit, for example, a `User` or `Task`.  
 This makes your code cleaner and easier to manage, especially in arrays or mappings.
 
 </details>
@@ -248,7 +248,7 @@ This improves both **readability** and **security** in your contracts.
 <summary>💡 Reveal Answer</summary>
 
 Inheritance allows a contract to reuse both **code and logic** from another contract.  
-Interfaces only define **function signatures** — they do not contain logic and are used for contract interoperability.
+Interfaces only define **function signatures** they do not contain logic and are used for contract interoperability.
 
 </details>
 

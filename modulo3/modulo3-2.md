@@ -86,11 +86,11 @@ This creates a **persistent unsigned integer** that only this contract can acces
 
 ### 🔐 Visibility and Access
 
-Visibility controls **who can read or modify** the variable — both inside and outside the contract.
+Visibility controls **who can read or modify** the variable, both inside and outside the contract.
 
 | Keyword     | Who can access it?                           |
 |-------------|-----------------------------------------------|
-| `public`    | Anyone — a getter function is auto-generated |
+| `public`    | Anyone, a getter function is auto-generated |
 | `private`   | Only this contract                           |
 | `internal`  | This contract and derived contracts          |
 
@@ -106,13 +106,13 @@ Visibility controls **who can read or modify** the variable — both inside and 
 
 ---
 
-> ✅ Tip: Organize state variables by access level and purpose — it improves clarity and auditability.
+> ✅ Tip: Organize state variables by access level and purpose, it improves clarity and auditability.
 
 ---
 
 ## ⚙️ Functions: Behavior and Visibility
 
-Functions define the **behavior** of your contract — how users and other contracts can interact with its data.
+Functions define the **behavior** of your contract, how users and other contracts can interact with its data.
 
 In `SimpleStorage`, we have two functions:
 
@@ -148,7 +148,7 @@ This function returns the stored value without modifying anything:
 
 - It’s also `public`
 - It uses the `view` modifier, meaning **it doesn’t change state**
-- Calling it from outside (e.g., Remix) **is free** — no gas is spent
+- Calling it from outside (e.g., Remix) **is free**, no gas is spent
 
 ---
 
@@ -170,7 +170,7 @@ This function returns the stored value without modifying anything:
 ## 📝 NatSpec Documentation
 
 Solidity supports a special format for inline documentation called **NatSpec (Ethereum Natural Specification Format)**.  
-It helps explain what each function does, its parameters, and what it returns — and can be used by developer tools, interfaces, and auditors.
+It helps explain what each function does, its parameters, and what it returns, and can be used by developer tools, interfaces, and auditors.
 
 ---
 
@@ -205,7 +205,7 @@ function get() public view returns (uint256) {
 
 ---
 
-NatSpec is optional but strongly recommended — especially when working in teams or building for public use.
+NatSpec is optional but strongly recommended, especially when working in teams or building for public use.
 
 ---
 

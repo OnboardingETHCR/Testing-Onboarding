@@ -14,7 +14,7 @@ You’ll complete a set of progressively harder levels designed to build practic
 ---
 ## 🎯 Activity Objective
 
-To demonstrate your understanding of smart contract development in Solidity by solving practical challenges from the [SpeedRunEthereum](https://speedrunethereum.com/) platform. You’ll write, test, and deploy contracts that simulate real-world tasks — from basic storage to NFT minting.
+To demonstrate your understanding of smart contract development in Solidity by solving practical challenges from the [SpeedRunEthereum](https://speedrunethereum.com/) platform. You’ll write, test, and deploy contracts that simulate real-world tasks from basic storage to NFT minting.
 
 You will:
 - Solve core Solidity challenges (levels 0 to 3)

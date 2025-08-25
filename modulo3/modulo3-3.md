@@ -16,18 +16,18 @@ You’ve already seen basic types and functions. Now we’ll explore:
 - **Control structures** like `if`, `for`, `while`, and `require`
 - Common **patterns and best practices** for writing secure and clear logic
 
-These concepts are essential for writing efficient, readable, and secure contracts — and they’ll become even more important as you build more complex dApps.
+These concepts are essential for writing efficient, readable, and secure contracts, and they’ll become even more important as you build more complex dApps.
 
 Let’s get started.
 
-> 🧭 This section expands your understanding of Solidity by introducing **visibility**, **control flow**, and **data location** — the core rules behind how smart contracts work behind the scenes.
+> 🧭 This section expands your understanding of Solidity by introducing **visibility**, **control flow**, and **data location**, the core rules behind how smart contracts work behind the scenes.
 
 ---
 
 ## 🔐 Function Visibility in Solidity
 
 > You've already seen how `public`, `private`, and `internal` affect **variable access** in the previous section.  
-> Functions follow similar rules — but also introduce `external`, which is unique to function calls. Let's explore what each means.
+> Functions follow similar rules, but also introduce `external`, which is unique to function calls. Let's explore what each means.
 
 Every function in Solidity must declare **who can call it**. This is controlled through visibility modifiers:
 
@@ -60,7 +60,7 @@ contract VisibilityExample {
 }
 ```
 
-The function `reveal()` is public — anyone can call it.  
+The function `reveal()` is public, anyone can call it.  
 The `_internalLogic()` function can only be called from within this contract or one that inherits it.  
 The `_privateHelper()` function is only accessible **within this contract**.
 
@@ -73,7 +73,7 @@ These help prevent invalid state changes and protect your contract.
 
 ---
 
-### ✅ `require()` — Input validation
+### ✅ `require()` Input validation
 
 Use `require(condition, "Error message")` to:
 - Check **user input**, **state validity**, or **access control**
@@ -89,7 +89,7 @@ function setAge(uint _age) public {
 
 ---
 
-### ❌ `revert()` — Custom error handling
+### ❌ `revert()` Custom error handling
 
 Use when you want to explicitly stop execution, sometimes with custom logic:
 
@@ -103,10 +103,10 @@ function doSomething(bool condition) public {
 
 ---
 
-### ⚠️ `assert()` — Internal invariants only
+### ⚠️ `assert()` Internal invariants only
 
 Use only when you believe **something should never fail** (developer assertions).
-If it fails, it **consumes all gas** — do not use it for input checks.
+If it fails, it **consumes all gas**, do not use it for input checks.
 
 ```solidity
 function neverFails(uint x) public pure returns (uint) {
@@ -139,7 +139,7 @@ while (condition) {
 }
 ```
 
-> ⚠️ Avoid unbounded loops in production — they may run out of gas and block the transaction.
+> ⚠️ Avoid unbounded loops in production, they may run out of gas and block the transaction.
 
 ---
 
@@ -220,7 +220,7 @@ These are meant to reinforce the logic and architecture you're learning.
 Use `require()` for **validating user input, state conditions, and access control**.  
 It provides clear error messages and refunds unused gas.
 
-Use `assert()` only for internal checks that should never fail — to catch bugs, not user errors.
+Use `assert()` only for internal checks that should never fail, to catch bugs, not user errors.
 
 </details>
 

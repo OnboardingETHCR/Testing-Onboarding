@@ -15,7 +15,7 @@ Libraries:
 - Cannot hold state or receive Ether
 - Are typically used for **math, access control, validation, and reusable logic**
 
-> 🧠 Libraries are similar to utility modules in other programming languages — but with some blockchain-specific rules.
+> 🧠 Libraries are similar to utility modules in other programming languages but with some blockchain-specific rules.
 
 ---
 
@@ -74,8 +74,8 @@ Now that you’ve seen how libraries enhance our contracts, let’s understand h
 
 When you compile a smart contract, Solidity transforms your human-readable code into two critical outputs:
 
-1. **Bytecode** — the low-level machine instructions that get deployed to the blockchain.
-2. **ABI (Application Binary Interface)** — the interface definition that allows dApps, wallets, or other contracts to interact with your contract.
+1. **Bytecode** the low-level machine instructions that get deployed to the blockchain.
+2. **ABI (Application Binary Interface)** the interface definition that allows dApps, wallets, or other contracts to interact with your contract.
 
 Both are essential to making your contract work on-chain.
 
@@ -118,7 +118,7 @@ Example ABI snippet:
 ]
 ```
 
-> 🧠 The ABI does **not** include any private variables or internal logic — it’s purely an interface.
+> 🧠 The ABI does **not** include any private variables or internal logic, it’s purely an interface.
 
 ---
 
@@ -142,7 +142,7 @@ When working locally (e.g., with Hardhat), `solc` does the same under the hood.
 
 ## 🛡️ Best Practices and Security Considerations
 
-Smart contracts are **immutable** and often handle real value — that’s why security is a top priority.
+Smart contracts are **immutable** and often handle real value, that’s why security is a top priority.
 
 Let’s explore the most important practices to follow when writing Solidity code.
 

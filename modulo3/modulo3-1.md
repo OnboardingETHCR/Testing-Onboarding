@@ -9,7 +9,7 @@ parent: "Módulo 3: Programando en Solidity"
 
 # 🧱 Solidity Fundamentals
 
-Welcome to your first deep dive into Solidity — the primary programming language used to build smart contracts on Ethereum. Since you’ve completed Modules 1 and 2, you already understand the foundations of blockchain and Ethereum. Now it’s time to learn how to express logic directly on-chain.
+Welcome to your first deep dive into Solidity, the primary programming language used to build smart contracts on Ethereum. Since you’ve completed Modules 1 and 2, you already understand the foundations of blockchain and Ethereum. Now it’s time to learn how to express logic directly on-chain.
 
 This section is all about understanding the **language fundamentals** that power decentralized applications (dApps). We’ll explore:
 
@@ -32,12 +32,12 @@ Solidity is inspired by several familiar languages such as **C++**, **JavaScript
 
 Solidity is:
 
-- 🛠️ **Statically typed** — every variable must declare its type
-- 💻 **Contract-oriented** — each file defines a smart contract (like a mini backend)
-- 🧱 **Storage-aware** — managing memory and storage explicitly matters
-- 🔒 **Security-focused** — mistakes are irreversible, so code must be precise
+- 🛠️ **Statically typed** : every variable must declare its type
+- 💻 **Contract-oriented** : each file defines a smart contract (like a mini backend)
+- 🧱 **Storage-aware** : managing memory and storage explicitly matters
+- 🔒 **Security-focused** : mistakes are irreversible, so code must be precise
 
-It compiles into **EVM bytecode** — low-level instructions executed by the Ethereum Virtual Machine.
+It compiles into **EVM bytecode**, low-level instructions executed by the Ethereum Virtual Machine.
 
 ---
 
@@ -72,16 +72,16 @@ Because Solidity is:
 Solidity was designed for a very specific and unforgiving environment: the **blockchain**.  
 Unlike traditional apps, smart contracts are:
 
-- 🧱 **Immutable** — once deployed, their code cannot be changed
-- 🕒 **Permanent** — the state they write remains forever on-chain
-- ⚖️ **Transparent** — all users can inspect and interact with them
-- 💸 **Cost-sensitive** — every operation consumes gas (ETH)
+- 🧱 **Immutable** : once deployed, their code cannot be changed
+- 🕒 **Permanent** : the state they write remains forever on-chain
+- ⚖️ **Transparent** : all users can inspect and interact with them
+- 💸 **Cost-sensitive** : every operation consumes gas (ETH)
 
 This changes everything about how we program:
 
-- There’s no backend server — **the contract is the backend**
-- There’s no database — **state is stored on the blockchain**
-- Bugs can’t be patched — **you must get it right the first time**
+- There’s no backend server, **the contract is the backend**
+- There’s no database, **state is stored on the blockchain**
+- Bugs can’t be patched, **you must get it right the first time**
 
 ---
 
@@ -91,7 +91,7 @@ This changes everything about how we program:
 - **Explicitness** over automation
 - **Minimalism** over abstraction
 
-If you've used high-level languages like JavaScript or Python, Solidity might feel strict or verbose — but that’s intentional.
+If you've used high-level languages like JavaScript or Python, Solidity might feel strict or verbose, but that’s intentional.
 
 > 💡 Smart contracts handle money. Solidity helps you make that safe by design.
 
@@ -157,7 +157,7 @@ Always check the current version on [soliditylang.org](https://docs.soliditylang
 
 ## 🧪 Your First Contract – HelloWorld.sol
 
-Let’s walk through a complete smart contract — one that stores and updates a message on the blockchain.
+Let’s walk through a complete smart contract, one that stores and updates a message on the blockchain.
 
 ---
 
@@ -200,7 +200,7 @@ You can deploy and test this contract in Remix, the web-based IDE for Ethereum s
 | `updateMessage()`         | Public write function that updates the message                               |
 | `string memory / calldata`| Specifies data location (we'll cover this more deeply soon)                   |
 
-> 💡 Every function you call uses gas (ETH) — even if you’re just updating a string!
+> 💡 Every function you call uses gas (ETH), even if you’re just updating a string!
 
 ---
 
@@ -236,7 +236,7 @@ string public greeting = "Hello!";
 
 These variables will be stored **on-chain** and are readable by anyone, thanks to the `public` keyword.
 
-Later, we’ll explore more complex types like `arrays`, `enums`, `structs`, and `mapping` — but this is enough to get started.
+Later, we’ll explore more complex types like `arrays`, `enums`, `structs`, and `mapping`, but this is enough to get started.
 
 ---
 
@@ -254,7 +254,7 @@ Later, we’ll explore more complex types like `arrays`, `enums`, `structs`, and
 Solidity runs in a low-level environment (the EVM), where memory management is manual and explicit.  
 Types like `string`, `array`, or `struct` need a **data location** (`memory`, `storage`, or `calldata`) to tell the compiler where the data lives and how it should be handled.
 
-If omitted, the compiler throws an error — this prevents bugs and improves gas efficiency.
+If omitted, the compiler throws an error, this prevents bugs and improves gas efficiency.
 
 </details>
 
@@ -279,7 +279,7 @@ Marking visibility explicitly helps secure your logic and control who can read o
 <details>
 <summary>💡 Reveal Answer</summary>
 
-The constructor runs **only once** — when the contract is deployed.  
+The constructor runs **only once**, when the contract is deployed.  
 It’s the ideal place to set initial values, such as assigning the `owner`, setting a message, or configuring access control.
 
 After deployment, it can never be called again.
@@ -294,7 +294,7 @@ After deployment, it can never be called again.
 <summary>💡 Reveal Answer</summary>
 
 - `view` functions can **read** state variables but cannot modify them.  
-- `pure` functions **cannot read or write** any state — they work only with inputs and internal logic.
+- `pure` functions **cannot read or write** any state, they work only with inputs and internal logic.
 
 These modifiers signal intent to the compiler and to users, and they don’t cost gas when called externally.
 
