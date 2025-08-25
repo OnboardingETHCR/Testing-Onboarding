@@ -228,7 +228,7 @@ while (condition) {
 | `break`      | Exit loop early        |
 | `continue`   | Skip to next iteration |
 
-> ⚠️ Avoid unbounded loops — they risk running out of gas.
+> ⚠️ Avoid unbounded loops, they risk running out of gas.
 
 ### 🔙 Returns
 
@@ -299,7 +299,7 @@ emit Transfer(msg.sender, recipient, amount);
 | `emit`    | Triggers/logs the event   |
 | `indexed` | Enables filtering in logs |
 
-> Events don’t affect contract logic — they’re for off-chain observers (e.g., UIs, indexers).
+> Events don’t affect contract logic, they’re for off-chain observers (e.g., UIs, indexers).
 
 ---
 
@@ -424,10 +424,10 @@ Gas is the cost of computation on Ethereum. Smart contracts should be optimized 
 
 | Operation            | Notes                                         |
 |----------------------|-----------------------------------------------|
-| Writing to storage   | Most expensive — avoid unnecessary writes     |
+| Writing to storage   | Most expensive, avoid unnecessary writes     |
 | Dynamic arrays       | Growing them repeatedly costs gas             |
 | Loops                | Unbounded loops can run out of gas            |
-| `assert()` failure   | Consumes all gas — use sparingly              |
+| `assert()` failure   | Consumes all gas, use sparingly              |
 
 ---
 
@@ -450,7 +450,7 @@ Gas is the cost of computation on Ethereum. Smart contracts should be optimized 
 - Writing to storage in loops.
 - Reentrancy without proper protection.
 
-> 🧠 Optimizing gas is important for cost and scalability — especially in dApps used by many.
+> 🧠 Optimizing gas is important for cost and scalability, especially in dApps used by many.
 
 ---
 
@@ -511,7 +511,7 @@ A short alphabetical list of important Solidity keywords.
 | Keyword        | Description                                       |
 |----------------|---------------------------------------------------|
 | `address`      | Ethereum account or contract address type         |
-| `assert`       | Internal check — uses all gas on failure          |
+| `assert`       | Internal check, uses all gas on failure          |
 | `break`        | Exit a loop early                                 |
 | `calldata`     | External read-only data location                  |
 | `constructor`  | Runs once at deployment                           |
