@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "7. Actividad – SpeedRunEthereum"
+title: "7. Actividad: SpeedRunEthereum"
 nav_order: 7
 parent: "Módulo 3: Programando en Solidity"
 ---
 
-# 🕹️ Activity – SpeedRunEthereum Challenges
+# 🕹️ Activity: SpeedRunEthereum Challenges
 
 Welcome to your final activity for Module 3! This is your chance to apply everything you've learned about Solidity and smart contract development in a series of guided challenges.
 
