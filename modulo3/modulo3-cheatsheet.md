@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Solidity Cheatsheet"
-nav_order: 7
+title: "6. Solidity Cheatsheet"
+nav_order: 6
 parent: "Módulo 3: Programando en Solidity"
 ---
 
@@ -557,8 +557,8 @@ A short alphabetical list of important Solidity keywords.
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-actividad">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio del programa</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-5">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-actividad">Siguiente ➡️</a>
 
 </div>
 

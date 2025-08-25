@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Actividad – SpeedRunEthereum"
-nav_order: 6
+title: "7. Actividad – SpeedRunEthereum"
+nav_order: 7
 parent: "Módulo 3: Programando en Solidity"
 ---
 

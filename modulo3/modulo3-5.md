@@ -258,5 +258,5 @@ Interfaces only define **function signatures** — they do not contain logic and
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-4">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-actividad">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo3/modulo3-cheatsheet">Siguiente ➡️</a>
 </div>
