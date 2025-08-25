@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "7. Soluciones Layer 2"
+title: "4.3. Soluciones Layer 2"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
-nav_order: 7
+nav_order: 8
 ---
 
 # Layer 2 Solutions
@@ -86,7 +86,7 @@ Now that you know how Ethereum can scale with Layer 2s, let's explore real-world
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-networks">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-aplicaciones">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-exploradores">Siguiente ➡️</a>
 </div>
 
 

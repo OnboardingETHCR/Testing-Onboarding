@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "3. Cuentas en Ethereum"
+title: "3.1. Cuentas en Ethereum"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 3
 ---

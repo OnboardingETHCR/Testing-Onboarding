@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "5. Nodos y Clientes"
+title: "4.1. Nodos y Clientes"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
-nav_order: 5
+nav_order: 6
 ---
 
 # Ethereum Nodes and Clients
@@ -81,7 +81,7 @@ Next, we’ll look at **block explorers** — tools that let users inspect Ether
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-aplicaciones">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-exploradores">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-blocks">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-networks">Siguiente ➡️</a>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "4. Gas y Tarifas"
+title: "3.2. Gas y Tarifas"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 4
 ---
@@ -82,7 +82,7 @@ MEV refers to profits that validators can earn by reordering, including, or excl
 
 ## ✅ What’s next?
 
-You’ve learned how computation is paid for on Ethereum. Next, we’ll look at the **nodes and clients** that make the Ethereum network function.
+You’ve learned how computation is paid for on Ethereum. Next, we’ll look at the **blocks** that make up the Ethereum blockchain.
 
 ---
 

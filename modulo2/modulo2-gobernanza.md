@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "12. Gobernanza en Ethereum"
+title: "6.2. Gobernanza en Ethereum"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 12
 ---
@@ -95,7 +95,7 @@ Now let’s look at one of the most impactful forms of participation: **staking*
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-herramientas">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-aplicaciones">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-staking">Siguiente ➡️</a>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "15. Actividad práctica – Ethereum en acción"
+title: "7.1. Actividad práctica – Ethereum en acción"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 14
 ---

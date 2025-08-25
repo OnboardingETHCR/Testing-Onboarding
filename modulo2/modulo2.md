@@ -1,9 +1,10 @@
 ---
 layout: page
 title: "Módulo 2: Ethereum, Ecosistema y Herramientas"
-nav_order: 3
+nav_order: 2
 has_children: true
 has_toc: false
+permalink: /modulo2/
 ---
 
 # Módulo 2: Ethereum, Ecosistema y Herramientas
@@ -34,23 +35,23 @@ Este módulo está dividido en siete secciones:
 1. **[Introducción a Ethereum](modulo2-intro-ethereum.md)**  
    Qué es Ethereum, visión general, diferencias con Bitcoin.
 
-2. **[Cuentas, Wallets y Direcciones](modulo2-cuentas.md)**  
-   Tipos de cuentas, uso de MetaMask, claves públicas y privadas.
-
-3. **[La Máquina Virtual de Ethereum (EVM)](modulo2-evm.md)**  
+2. **[La Máquina Virtual de Ethereum (EVM)](modulo2-evm.md)**  
    Qué es la EVM y por qué es el núcleo del procesamiento de contratos.
 
-4. **Transacciones, Gas y Redes**  
-   Incluye: [Gas y tarifas](modulo2-gas.md), [Redes de Ethereum](modulo2-networks.md), [Nodos y Clientes](modulo2-nodos-clientes.md)
+3. **Cuentas y Transacciones**  
+   Incluye: [Cuentas](modulo2-cuentas), [Gas](modulo2-gas) y [Bloques](modulo2-blocks).
 
-5. **[Exploradores y Análisis de Datos](modulo2-exploradores.md)**  
-   Uso de Etherscan, interpretación de bloques, tx, contratos.
+4. **Infraestructura de la Red**  
+   Incluye: [Nodos y Clientes](modulo2-nodos-clientes.md), [Redes de Ethereum](modulo2-networks.md), [Soluciones Layer 2](modulo2-layer2.md)
 
-6. **Gobernanza y Escalabilidad**  
-   Incluye: [Gobernanza](modulo2-gobernanza.md) y [Soluciones Layer 2](modulo2-layer2.md)
+5. **Herramientas y Exploración**  
+   Incluye: [Exploradores de Bloques](modulo2-exploradores.md) y [Herramientas de Desarrollo](modulo2-networks.md)
 
-7. **[Glosario](modulo2-glosario.md)**  
-   Términos clave explicados brevemente.
+6. **Ecosistema, Gobernanza y Escalabilidad**  
+   Incluye: [Aplicaciones en Ethereum](modulo2-aplicaciones.md), [Gobernanza](modulo2-gobernanza.md) y [Participación y Staking](modulo2-staking.md)
+
+7. **Cierre del Módulo**  
+   Incluye [Actividad práctica](modulo2-actividad.md), [Evaluación](modulo2-quiz.md) y [Glosario](modulo2-glosario.md)
 
 ---
 

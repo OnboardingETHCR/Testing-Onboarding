@@ -52,6 +52,6 @@ Ahora contás con una base sólida para seguir creciendo. Ya no sos un principia
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio</a>
+  <a class="btn" href="/Testing-Onboarding/">🏠 Volver al inicio del programa</a>
 </div>
 

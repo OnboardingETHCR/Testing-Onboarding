@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "6. Redes de Ethereum"
+title: "4.2. Redes de Ethereum"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
-nav_order: 6
+nav_order: 7
 ---
 
 # Redes de Ethereum
@@ -83,7 +83,7 @@ Next, we’ll explore **Layer 2 solutions**, which help Ethereum scale by proces
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-blocks">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-nodos-clientes">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-layer2">Siguiente ➡️</a>
 </div>
 

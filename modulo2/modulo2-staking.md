@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "13. Participación y Staking"
+title: "6.3. Participación y Staking"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 13
 ---
@@ -77,7 +77,7 @@ Protocols like Lido issue **staking derivatives** (e.g., stETH) which represent 
 
 ## ✅ What’s next?
 
-You're almost done! Time to check your understanding with the Módulo 2 quiz.
+You're almost done! Time to check your understanding with a quiz.
 
 ---
 

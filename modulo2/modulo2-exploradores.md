@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "6. Exploradores de Bloques"
+title: "5.1. Exploradores de Bloques"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
-nav_order: 6
+nav_order: 9
 ---
 
 # Block Explorers
@@ -77,7 +77,7 @@ Now that you can inspect blockchain data, it’s time to explore the **developer
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-nodos-clientes">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-layer2">⬅️ Anterior</a>
   <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-herramientas">Siguiente ➡️</a>
 </div>
 

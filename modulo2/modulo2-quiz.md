@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Evaluación – Ethereum y su Ecosistema"
-nav_order: 15
+title: "7.2. Evaluación: Ethereum y su Ecosistema"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
+nav_order: 15
 ---
 
 ## 🧪 Evaluación – Módulo 2

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "8. Aplicaciones en Ethereum"
+title: "6.1. Aplicaciones en Ethereum"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
-nav_order: 8
+nav_order: 11
 ---
 
 # Aplicaciones en Ethereum
@@ -92,7 +92,7 @@ Now that you know what Ethereum enables, let’s learn about the nodes and clien
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-layer2">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-nodos-clientes">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-herramientas">⬅️ Anterior</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-gobernanza">Siguiente ➡️</a>
 </div>
 

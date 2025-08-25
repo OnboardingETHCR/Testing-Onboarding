@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "5. Bloques en Ethereum"
+title: "3.3. Bloques en Ethereum"
 parent: "Módulo 2: Ethereum, Ecosistema y Herramientas"
 nav_order: 5
 ---
@@ -76,6 +76,6 @@ Now that you understand blocks, let’s explore the different **Ethereum network
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">
   <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-gas">⬅️ Anterior</a>
-  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-networks">Siguiente ➡️</a>
+  <a class="btn" href="/Testing-Onboarding/modulo2/modulo2-nodos-clientes">Siguiente ➡️</a>
 </div>
 
