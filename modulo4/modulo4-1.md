@@ -7,7 +7,7 @@ nav_order: 1
 
 # Introduction to dApps
 
-Before writing a single line of code, it's essential to understand what you're about to build — and why.
+Before writing a single line of code, it's essential to understand what you're about to build and why.
 
 Decentralized Applications, or **dApps**, are the heart of Web3. They combine smart contracts deployed on a blockchain with frontend interfaces that allow users to interact with those contracts in a secure, transparent, and permissionless way.
 
@@ -17,7 +17,7 @@ In this section, you'll explore the core concepts behind dApps, how they differ 
 
 ## 🌐 What is a dApp?
 
-A **decentralized application (dApp)** is a software application that runs on a blockchain network instead of a centralized server. While the frontend may look and behave like any modern web app, the backend logic — the core business rules and data — are handled by smart contracts on a decentralized network.
+A **decentralized application (dApp)** is a software application that runs on a blockchain network instead of a centralized server. While the frontend may look and behave like any modern web app, the backend logic, the core business rules and data, are handled by smart contracts on a decentralized network.
 
 **Key characteristics:**
 
@@ -72,7 +72,7 @@ Let’s take a simplified version of a token swap app like **Uniswap**:
 - The frontend uses **Ethers.js** to call the `swap()` function of a smart contract.
 - The smart contract executes the trade logic and emits an event.
 
-Each layer is crucial and has its own responsibilities — as a Web3 developer, you’ll be working across all of them.
+Each layer is crucial and has its own responsibilities, as a Web3 developer, you’ll be working across all of them.
 
 ---
 
