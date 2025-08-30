@@ -248,7 +248,7 @@ Later, we’ll explore more complex types like `arrays`, `enums`, `structs`, and
 
 ### 1. Why does Solidity require explicit data types like `string memory`?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Solidity runs in a low-level environment (the EVM), where memory management is manual and explicit.  
@@ -262,7 +262,7 @@ If omitted, the compiler throws an error, this prevents bugs and improves gas ef
 
 ### 2. What’s the difference between `public` and `private` in Solidity?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 - `public` variables and functions can be accessed from **anywhere**, including external users and other contracts.  
@@ -276,7 +276,7 @@ Marking visibility explicitly helps secure your logic and control who can read o
 
 ### 3. Why is `constructor()` important in a smart contract?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 The constructor runs **only once**, when the contract is deployed.  
@@ -290,7 +290,7 @@ After deployment, it can never be called again.
 
 ### 4. What’s the purpose of `view` and `pure` functions?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 - `view` functions can **read** state variables but cannot modify them.  
@@ -304,7 +304,7 @@ These modifiers signal intent to the compiler and to users, and they don’t cos
 
 ### 5. Why are contracts in Solidity often short and modular?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Because **each operation costs gas**, and **upgradability is limited**.  
