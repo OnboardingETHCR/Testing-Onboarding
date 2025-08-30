@@ -217,7 +217,7 @@ Take a moment to check your understanding. Try answering on your own before reve
 
 ### 1. Why is the `data` variable marked as `private` in `SimpleStorage`?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 To prevent external contracts or users from accessing or modifying it directly.  
@@ -229,7 +229,7 @@ This encourages controlled interaction through public functions like `get()` and
 
 ### 2. What does the `view` keyword mean in the `get()` function?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 It indicates that the function does **not modify** the contract's state.  
@@ -241,7 +241,7 @@ Functions marked `view` can **read** state variables but cannot write to them.
 
 ### 3. What happens if you forget to declare visibility on a function?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 The compiler will apply a default, which may not match your intention.  
@@ -254,7 +254,7 @@ Not declaring it explicitly can lead to security or accessibility issues.
 
 ### 4. Why is NatSpec useful in smart contracts?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 NatSpec makes your contract easier to understand, test, and audit.  

@@ -122,17 +122,6 @@ You don’t need to create all folders right now, but this structure will help y
 
 ---
 
-## 🧠 Reflect
-
-> Why are we using Vite instead of tools like Create React App?
-
-<details><summary>See possible answer</summary>
-<p>Vite provides faster startup times and hot module replacement (HMR), which makes development smoother and faster. It's optimized for modern frontend tooling and is now widely adopted in the ecosystem.</p>
-</details>
-
-
----
-
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">

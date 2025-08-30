@@ -89,20 +89,20 @@ Understanding these early will help you avoid bad design decisions later.
 ## 🧠 Reflect
 
 **1. How is user identity managed differently in dApps?**
-<details>
-<summary>💡 Show answer</summary>
+<details markdown="1">
+<summary>💡 Reveal answer</summary>
 In dApps, identity is tied to the wallet address, and authentication occurs through digital signatures. There are no usernames or passwords stored on a centralized server.
 </details>
 
 **2. What trade-offs do we face when designing decentralized systems?**
-<details>
-<summary>💡 Show answer</summary>
+<details markdown="1">
+<summary>💡 Reveal answer</summary>
 Decentralized systems offer security and transparency but come with higher complexity, limited upgradeability, potential performance issues, and reliance on blockchain fees.
 </details>
 
 **3. Which components would you need to build a basic voting dApp?**
-<details>
-<summary>💡 Show answer</summary>
+<details markdown="1">
+<summary>💡 Reveal answer</summary>
 You’d need: (1) a frontend (e.g., React), (2) a smart contract to manage proposals and votes, (3) wallet integration for user authentication and transactions, and (4) a testnet or mainnet to deploy the contract.
 </details>
 

@@ -214,7 +214,7 @@ These are meant to reinforce the logic and architecture you're learning.
 
 ### 1. When should you use `require()` instead of `assert()`?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Use `require()` for **validating user input, state conditions, and access control**.  
@@ -228,7 +228,7 @@ Use `assert()` only for internal checks that should never fail, to catch bugs, n
 
 ### 2. What happens if you forget to specify a data location for a reference type?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 The Solidity compiler will throw an error.  
@@ -240,7 +240,7 @@ Reference types like `string`, `array`, and `struct` **must** include a data loc
 
 ### 3. Why is `calldata` more gas-efficient than `memory` for function inputs?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Because `calldata` is read-only and directly references the input without copying it into memory.  
@@ -252,7 +252,7 @@ It avoids allocation and copying, which saves gas when you don’t need to modif
 
 ### 4. What's the danger of using unbounded loops in a smart contract?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Unbounded loops can run out of gas and cause the entire transaction to revert.  

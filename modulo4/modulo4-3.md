@@ -137,14 +137,14 @@ This behavior is expected in most dApps. MetaMask manages trust on its side, and
 ## 🧠 Reflect
 
 **Why is user authentication different in Web3 compared to Web2?**
-<details>
-<summary>💡 Show answer</summary>
+<details markdown="1">
+<summary>💡 Reveal answer</summary>
 Web3 uses public-private key pairs instead of email/password. Users prove ownership by signing data with their wallet.
 </details>
 
 **What security risks arise if you automatically connect wallets without user interaction?**
-<details>
-<summary>💡 Show answer</summary>
+<details markdown="1">
+<summary>💡 Reveal answer</summary>
 It could expose user addresses without consent. Always request connection explicitly to respect privacy and avoid phishing.
 </details>
 

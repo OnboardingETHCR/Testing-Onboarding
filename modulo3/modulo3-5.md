@@ -206,7 +206,7 @@ They are designed to help you test your understanding of more advanced Solidity 
 
 ### 1. When would you use a `struct` instead of multiple variables?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Use a `struct` when you want to group related data into a single logical unit, for example, a `User` or `Task`.  
@@ -218,7 +218,7 @@ This makes your code cleaner and easier to manage, especially in arrays or mappi
 
 ### 2. Why are `mappings` not iterable?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Mappings are implemented as hash tables with no internal ordering or storage of keys.  
@@ -230,7 +230,7 @@ Solidity does not store keys in mappings, so you cannot loop through them. You m
 
 ### 3. How do modifiers improve code quality and security?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Modifiers help you avoid code duplication by centralizing checks like access control or preconditions.  
@@ -244,7 +244,7 @@ This improves both **readability** and **security** in your contracts.
 
 ### 4. What's the difference between inheritance and interfaces?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Inheritance allows a contract to reuse both **code and logic** from another contract.  

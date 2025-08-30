@@ -216,7 +216,7 @@ Try answering them before revealing the explanation.
 
 ### 1. Why is using libraries like OpenZeppelin a good idea?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Because they offer **secure, audited, and reusable implementations** of common functionality (access control, token standards, etc.).  
@@ -228,7 +228,7 @@ Using libraries helps reduce bugs, save time, and follow industry best practices
 
 ### 2. What is the ABI and why is it important?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 The ABI (Application Binary Interface) is a JSON representation of your contract’s interface.  
@@ -241,7 +241,7 @@ Without it, frontends wouldn’t know how to use your contract.
 
 ### 3. Why should you avoid using unbounded loops in your smart contracts?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 Unbounded loops can consume too much gas and cause the transaction to fail.  
@@ -253,7 +253,7 @@ Since gas is limited per block, such loops may make functions unusable or vulner
 
 ### 4. What’s the difference between `msg.sender` and `tx.origin`, and why does it matter?
 
-<details>
+<details markdown="1">
 <summary>💡 Reveal Answer</summary>
 
 - `msg.sender` is the **direct caller** of a function (can be a user or contract).
