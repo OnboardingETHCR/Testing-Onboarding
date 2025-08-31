@@ -13,7 +13,7 @@ A continuación puede ver el whitepaper original de Bitcoin:
 
 <iframe src="https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/1.Introduccion-a-Bitcoin/bitcoin-whitepaper.pdf" width="100%" height="600px"></iframe>
 
-[📥 Descargar PDF – ¿Qué es Bitcoin?](https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/bitcoin-whitepaper.pdf){:target="_blank"}
+[📥 Descargar PDF – ¿Qué es Bitcoin?](https://onboardingethcr.github.io/Testing-Onboarding/assets/modulo1/1.Introduccion-a-Bitcoin/bitcoin-whitepaper.pdf){:target="_blank"}
 
 ### 📄 Lectura: ¿Qué es Bitcoin?
 
