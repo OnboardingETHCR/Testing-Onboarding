@@ -37,6 +37,65 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 
 ---
 
+<!-- === PROGRESO DEL MÓDULO + CHECK DE ESTA PÁGINA (pegar antes de la navegación) === -->
+<div class="module-progress" data-scopes="mod1-bitcoin,mod1-blockchain,mod1-web3,mod1-cierre">
+  <div class="mp-header">
+    <strong>Módulo 1 – Progreso</strong> · <span class="mp-percent">0%</span>
+  </div>
+  <div class="mp-bar"><div class="mp-bar-fill" style="width:0%"></div></div>
+</div>
+
+<div class="progress-widget" data-scope="mod1-bitcoin" style="margin:.75rem 0 1.25rem">
+  <label style="font-weight:600;"><input type="checkbox" class="done-check"> ✅ Completado</label>
+</div>
+
+<script>
+(function(){
+  // Actualiza todas las barras globales presentes en la página
+  function updateModuleProgress() {
+    document.querySelectorAll('.module-progress').forEach(box => {
+      const scopes = (box.dataset.scopes || '').split(',').map(s => s.trim()).filter(Boolean);
+      let total = scopes.length, done = 0;
+      scopes.forEach(scope => { if (localStorage.getItem('done:'+scope) === 'true') done++; });
+      const pct = total ? Math.round((done/total)*100) : 0;
+      box.querySelector('.mp-percent').textContent = pct + '%';
+      box.querySelector('.mp-bar-fill').style.width = pct + '%';
+    });
+  }
+
+  // Checkbox de esta página
+  const widget = document.querySelector('.progress-widget');
+  if (widget){
+    const scope = widget.dataset.scope;
+    const check = widget.querySelector('.done-check');
+    // Restaurar estado
+    if (localStorage.getItem('done:'+scope) === 'true') check.checked = true;
+    // Guardar y refrescar barra al cambiar
+    check.addEventListener('change', () => {
+      localStorage.setItem('done:'+scope, check.checked);
+      updateModuleProgress();
+    });
+  }
+
+  // Inicializar barra al cargar
+  updateModuleProgress();
+})();
+</script>
+
+<style>
+.module-progress{border:1px solid #d1d5db;border-radius:12px;padding:1rem;margin:1rem 0;background:#f9fafb}
+.mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem}
+.mp-bar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+.mp-bar-fill{height:100%;width:0;transition:width .3s ease;background:#4caf50}
+@media (prefers-color-scheme: dark){
+  .module-progress{background:#0b0e13;border-color:#2b2f36}
+  .mp-bar{background:#2b2f36}
+}
+</style>
+
+
+---
+
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: flex-end; margin-top: 2em;">
@@ -44,50 +103,3 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 </div>
 
 ---
-
-<!-- ✅ Checkbox de esta página -->
-<div class="progress-widget" data-scope="mod1-bitcoin">
-  <label><input type="checkbox" class="done-check"> ✅ Completado</label>
-</div>
-
-<script>
-(function(){
-  // --- función que actualiza barra global ---
-  function updateModuleProgress() {
-    document.querySelectorAll('.module-progress').forEach(box => {
-      const scopes = (box.dataset.scopes || '').split(',').map(s => s.trim()).filter(Boolean);
-      let total = scopes.length, done = 0;
-      scopes.forEach(scope => {
-        if(localStorage.getItem('done:'+scope)==='true') done++;
-      });
-      const pct = total ? Math.round((done/total)*100) : 0;
-      box.querySelector('.mp-percent').textContent = pct + '%';
-      box.querySelector('.mp-bar-fill').style.width = pct + '%';
-    });
-  }
-
-  // --- widget de esta página ---
-  const widget = document.querySelector('.progress-widget');
-  if(widget){
-    const scope = widget.dataset.scope;
-    const check = widget.querySelector('.done-check');
-    // cargar estado
-    if(localStorage.getItem('done:'+scope)==='true') check.checked = true;
-    check.addEventListener('change', ()=>{
-      localStorage.setItem('done:'+scope, check.checked);
-      updateModuleProgress();
-    });
-  }
-
-  // inicializar
-  updateModuleProgress();
-})();
-</script>
-
-<style>
-.module-progress{border:1px solid #d1d5db;border-radius:12px;padding:1rem;margin:1rem 0;background:#f9fafb}
-.mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.25rem}
-.mp-bar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:.4rem 0 .5rem}
-.mp-bar-fill{height:100%;width:0;transition:width .3s ease;background:#4caf50}
-.progress-widget{margin:1em 0;font-weight:bold}
-</style>
