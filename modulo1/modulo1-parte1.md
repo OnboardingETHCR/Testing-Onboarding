@@ -37,62 +37,71 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 
 ---
 
-<!-- === PROGRESO DEL MÓDULO + CHECK DE ESTA PÁGINA (pegar antes de la navegación) === -->
-<div class="module-progress" data-scopes="mod1-bitcoin,mod1-blockchain,mod1-web3,mod1-cierre">
+<!-- === PROGRESO DEL MÓDULO + CHECK DE ESTA PÁGINA === -->
+<div class="module-progress" id="mp-mod1"
+     data-scopes='["mod1-bitcoin","mod1-blockchain","mod1-web3","mod1-cierre"]'>
   <div class="mp-header">
     <strong>Módulo 1 – Progreso</strong> · <span class="mp-percent">0%</span>
   </div>
   <div class="mp-bar"><div class="mp-bar-fill" style="width:0%"></div></div>
 </div>
 
-<div class="progress-widget" data-scope="mod1-bitcoin" style="margin:.75rem 0 1.25rem">
-  <label style="font-weight:600;"><input type="checkbox" class="done-check"> ✅ Completado</label>
+<div class="page-done" data-scope="mod1-bitcoin" style="margin:.75rem 0 1.25rem">
+  <label style="font-weight:600;">
+    <input type="checkbox" id="done-mod1-bitcoin"> Completado
+  </label>
 </div>
 
 <script>
 (function(){
-  // Actualiza todas las barras globales presentes en la página
-  function updateModuleProgress() {
-    document.querySelectorAll('.module-progress').forEach(box => {
-      const scopes = (box.dataset.scopes || '').split(',').map(s => s.trim()).filter(Boolean);
-      let total = scopes.length, done = 0;
-      scopes.forEach(scope => { if (localStorage.getItem('done:'+scope) === 'true') done++; });
-      const pct = total ? Math.round((done/total)*100) : 0;
-      box.querySelector('.mp-percent').textContent = pct + '%';
-      box.querySelector('.mp-bar-fill').style.width = pct + '%';
+  function parseScopes(el){
+    try{
+      const raw = el.dataset.scopes || "[]";
+      return raw.trim().startsWith('[') ? JSON.parse(raw)
+        : raw.split(',').map(s=>s.trim()).filter(Boolean);
+    }catch(e){ return []; }
+  }
+
+  function renderModuleBar(barId){
+    const box = document.getElementById(barId);
+    if(!box) return;
+    const scopes = parseScopes(box);
+    let total = scopes.length, done = 0;
+    scopes.forEach(s => { if (localStorage.getItem('done:'+s) === 'true') done++; });
+    const pct = total ? Math.round(done/total*100) : 0;
+    const pctEl = box.querySelector('.mp-percent');
+    const fillEl = box.querySelector('.mp-bar-fill');
+    if(pctEl) pctEl.textContent = pct + '%';
+    if(fillEl) fillEl.style.width = pct + '%';
+  }
+
+  // init checkbox for THIS page
+  const pg = document.querySelector('.page-done');
+  if(pg){
+    const scope = pg.dataset.scope;
+    const input = document.getElementById('done-'+scope);
+    if (localStorage.getItem('done:'+scope) === 'true') input.checked = true;
+    input.addEventListener('change', ()=>{
+      localStorage.setItem('done:'+scope, input.checked);
+      renderModuleBar('mp-mod1');
     });
   }
 
-  // Checkbox de esta página
-  const widget = document.querySelector('.progress-widget');
-  if (widget){
-    const scope = widget.dataset.scope;
-    const check = widget.querySelector('.done-check');
-    // Restaurar estado
-    if (localStorage.getItem('done:'+scope) === 'true') check.checked = true;
-    // Guardar y refrescar barra al cambiar
-    check.addEventListener('change', () => {
-      localStorage.setItem('done:'+scope, check.checked);
-      updateModuleProgress();
-    });
-  }
-
-  // Inicializar barra al cargar
-  updateModuleProgress();
+  // initial render
+  renderModuleBar('mp-mod1');
 })();
 </script>
 
 <style>
 .module-progress{border:1px solid #d1d5db;border-radius:12px;padding:1rem;margin:1rem 0;background:#f9fafb}
-.mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem}
+.mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem}
 .mp-bar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden}
-.mp-bar-fill{height:100%;width:0;transition:width .3s ease;background:#4caf50}
+.mp-bar-fill{height:100%;width:0;transition:width .3s ease}
 @media (prefers-color-scheme: dark){
   .module-progress{background:#0b0e13;border-color:#2b2f36}
   .mp-bar{background:#2b2f36}
 }
 </style>
-
 
 ---
 
