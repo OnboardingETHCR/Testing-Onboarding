@@ -7,7 +7,20 @@ nav_order: 2
 
 # Ethereum Virtual Machine (EVM)
 
-The Ethereum Virtual Machine (EVM) is the core engine of Ethereum. It powers everything from smart contracts to dApps by providing a secure, decentralized runtime for on-chain code.
+The **Ethereum Virtual Machine (EVM)** is the decentralized computation engine that powers Ethereum.  
+It ensures that every smart contract and transaction is executed in a consistent and secure way across all nodes in the network.  
+You can think of it as the *brain of Ethereum*, where all code is processed, gas is consumed, and states are updated.
+
+To help you visualize how it works, watch the following video:
+
+## 📺 Video: Introduction to the EVM
+
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/sTOcqS4msoU" 
+title="EVM Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[🔗 Watch on YouTube](https://www.youtube.com/watch?v=sTOcqS4msoU){:target="_blank"}
+
 
 ---
 
