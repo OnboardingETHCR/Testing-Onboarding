@@ -43,5 +43,47 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
   <a class="btn" href="/Testing-Onboarding/modulo1/modulo1-parte2">Siguiente ➡️</a>
 </div>
 
+---
+
+<div id="progress-container" style="margin: 2em 0;">
+  <h3>✅ Marca tu progreso</h3>
+  <label><input type="checkbox" class="task"> 📄 Leí el whitepaper</label><br>
+  <label><input type="checkbox" class="task"> 📄 Completé la lectura “¿Qué es Bitcoin?”</label><br>
+  <label><input type="checkbox" class="task"> 🎥 Vi el video explicativo</label><br>
+  <label><input type="checkbox" class="task"> 🧠 Respondí la reflexión</label><br>
+
+  <div style="background:#eee; border-radius:8px; width:100%; height:20px; margin-top:10px;">
+    <div id="progress-bar" style="background:#4caf50; height:100%; width:0%; border-radius:8px;"></div>
+  </div>
+  <p id="progress-text" style="margin-top:5px; font-weight:bold;">0% completado</p>
+</div>
+
+<script>
+  const checkboxes = document.querySelectorAll('.task');
+  const progressBar = document.getElementById('progress-bar');
+  const progressText = document.getElementById('progress-text');
+
+  function updateProgress() {
+    const total = checkboxes.length;
+    const checked = document.querySelectorAll('.task:checked').length;
+    const percent = Math.round((checked / total) * 100);
+    progressBar.style.width = percent + '%';
+    progressText.textContent = percent + '% completado';
+    // ✅ Persistencia con localStorage
+    const state = {};
+    checkboxes.forEach(cb => state[cb.nextSibling.textContent.trim()] = cb.checked);
+    localStorage.setItem('mod1-bitcoin', JSON.stringify(state));
+  }
+
+  // Cargar estado guardado
+  const saved = JSON.parse(localStorage.getItem('mod1-bitcoin') || '{}');
+  checkboxes.forEach(cb => {
+    if (saved[cb.nextSibling.textContent.trim()]) cb.checked = true;
+  });
+
+  checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+  updateProgress();
+</script>
+
 
 
