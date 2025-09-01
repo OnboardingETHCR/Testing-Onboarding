@@ -66,7 +66,6 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 
 <script defer src="{{ '/assets/js/progreso.js?v=1.2' | relative_url }}"></script>
 
-
 ---
 
 ### 🔁 Navegación
