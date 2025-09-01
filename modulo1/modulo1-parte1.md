@@ -52,7 +52,6 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
     <input type="checkbox">
     <span class="pd-text">Marcar esta página como completada</span>
   </label>
-  <small class="pd-help">Se guarda en este navegador.</small>
 </div>
 
 <style>
