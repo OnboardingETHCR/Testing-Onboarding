@@ -38,16 +38,21 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 ---
 
 <div class="module-progress"
+     role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
      data-scopes='["mod1-bitcoin","mod1-blockchain","mod1-quiz","mod1-web3","mod1-cierre","mod1-actividad"]'>
   <div class="mp-header">
     <strong>Módulo 1: Progreso</strong>
-    <span class="mp-percent">0%</span>
+    <span class="mp-percent" aria-live="polite">0%</span>
   </div>
   <div class="mp-bar"><div class="mp-bar-fill" style="width:0%"></div></div>
 </div>
 
 <div class="page-done" data-scope="mod1-bitcoin" style="margin:.75rem 0 1.25rem">
-  <label class="pd-label"><input type="checkbox"> Completado</label>
+  <label class="pd-label">
+    <input type="checkbox">
+    <span class="pd-text">Marcar esta página como completada</span>
+  </label>
+  <small class="pd-help">Se guarda en este navegador.</small>
 </div>
 
 <style>
@@ -57,9 +62,10 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
   .mp-bar{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden}
   .mp-bar-fill{height:100%;width:0;transition:width .25s ease;background:#22c55e}
   .pd-label{font-weight:600;color:#374151}
+  .pd-help{color:#6b7280;font-size:.875rem;display:block;margin-top:.25rem}
 </style>
 
-<script defer src="{{ '/assets/js/progreso.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/progreso.js?v=1.2' | relative_url }}"></script>
 
 
 ---
