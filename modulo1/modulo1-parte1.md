@@ -45,45 +45,49 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 
 ---
 
-<div id="progress-container" style="margin: 2em 0;">
-  <h3>✅ Marca tu progreso</h3>
-  <label><input type="checkbox" class="task"> 📄 Leí el whitepaper</label><br>
-  <label><input type="checkbox" class="task"> 📄 Completé la lectura “¿Qué es Bitcoin?”</label><br>
-  <label><input type="checkbox" class="task"> 🎥 Vi el video explicativo</label><br>
-  <label><input type="checkbox" class="task"> 🧠 Respondí la reflexión</label><br>
-
-  <div style="background:#eee; border-radius:8px; width:100%; height:20px; margin-top:10px;">
-    <div id="progress-bar" style="background:#4caf50; height:100%; width:0%; border-radius:8px;"></div>
-  </div>
-  <p id="progress-text" style="margin-top:5px; font-weight:bold;">0% completado</p>
+<!-- ✅ Checkbox de esta página -->
+<div class="progress-widget" data-scope="mod1-bitcoin">
+  <label><input type="checkbox" class="done-check"> ✅ Completado</label>
 </div>
 
 <script>
-  const checkboxes = document.querySelectorAll('.task');
-  const progressBar = document.getElementById('progress-bar');
-  const progressText = document.getElementById('progress-text');
-
-  function updateProgress() {
-    const total = checkboxes.length;
-    const checked = document.querySelectorAll('.task:checked').length;
-    const percent = Math.round((checked / total) * 100);
-    progressBar.style.width = percent + '%';
-    progressText.textContent = percent + '% completado';
-    // ✅ Persistencia con localStorage
-    const state = {};
-    checkboxes.forEach(cb => state[cb.nextSibling.textContent.trim()] = cb.checked);
-    localStorage.setItem('mod1-bitcoin', JSON.stringify(state));
+(function(){
+  // --- función que actualiza barra global ---
+  function updateModuleProgress() {
+    document.querySelectorAll('.module-progress').forEach(box => {
+      const scopes = (box.dataset.scopes || '').split(',').map(s => s.trim()).filter(Boolean);
+      let total = scopes.length, done = 0;
+      scopes.forEach(scope => {
+        if(localStorage.getItem('done:'+scope)==='true') done++;
+      });
+      const pct = total ? Math.round((done/total)*100) : 0;
+      box.querySelector('.mp-percent').textContent = pct + '%';
+      box.querySelector('.mp-bar-fill').style.width = pct + '%';
+    });
   }
 
-  // Cargar estado guardado
-  const saved = JSON.parse(localStorage.getItem('mod1-bitcoin') || '{}');
-  checkboxes.forEach(cb => {
-    if (saved[cb.nextSibling.textContent.trim()]) cb.checked = true;
-  });
+  // --- widget de esta página ---
+  const widget = document.querySelector('.progress-widget');
+  if(widget){
+    const scope = widget.dataset.scope;
+    const check = widget.querySelector('.done-check');
+    // cargar estado
+    if(localStorage.getItem('done:'+scope)==='true') check.checked = true;
+    check.addEventListener('change', ()=>{
+      localStorage.setItem('done:'+scope, check.checked);
+      updateModuleProgress();
+    });
+  }
 
-  checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
-  updateProgress();
+  // inicializar
+  updateModuleProgress();
+})();
 </script>
 
-
-
+<style>
+.module-progress{border:1px solid #d1d5db;border-radius:12px;padding:1rem;margin:1rem 0;background:#f9fafb}
+.mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.25rem}
+.mp-bar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin:.4rem 0 .5rem}
+.mp-bar-fill{height:100%;width:0;transition:width .3s ease;background:#4caf50}
+.progress-widget{margin:1em 0;font-weight:bold}
+</style>
