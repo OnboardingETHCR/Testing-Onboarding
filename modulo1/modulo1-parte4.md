@@ -26,6 +26,34 @@ Este video te brindará una mirada cercana sobre quiénes somos, qué hacemos y 
 - Diferenciar los mecanismos de consenso PoW y PoS
 - Reconocer la evolución hacia Web3 y sus aplicaciones
 
+---
+
+<div class="module-progress"
+     data-scopes='["mod1-bitcoin","mod1-blockchain","mod1-quiz","mod1-web3","mod1-cierre","mod1-actividad"]'>
+  <div class="mp-header">
+    <strong>Módulo 1: Progreso</strong>
+    <span class="mp-percent">0%</span>
+  </div>
+  <div class="mp-bar"><div class="mp-bar-fill" style="width:0%"></div></div>
+</div>
+
+<div class="page-done" data-scope="mod1-cierre" style="margin:.75rem 0 1.25rem">
+  <label class="pd-label"><input type="checkbox"> Completado</label>
+</div>
+
+<style>
+  .module-progress{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1rem;margin:1rem 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem;color:#374151;font-weight:600}
+  .mp-percent{color:#6b7280;font-weight:600}
+  .mp-bar{height:12px;background:#e5e7eb;border-radius:999px;overflow:hidden}
+  .mp-bar-fill{height:100%;width:0;transition:width .25s ease;background:#22c55e}
+  .pd-label{font-weight:600;color:#374151}
+</style>
+
+<script defer src="{{ '/assets/js/progreso.js' | relative_url }}"></script>
+
+---
+
 ### 🔁 Navegación
 
 <div style="display: flex; justify-content: space-between; margin-top: 2em;">

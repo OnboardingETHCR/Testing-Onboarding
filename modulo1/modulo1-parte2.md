@@ -33,7 +33,7 @@ El quiz incluye preguntas sobre consenso, descentralización e inmutabilidad. ¡
 <div class="module-progress"
      data-scopes='["mod1-bitcoin","mod1-blockchain","mod1-quiz","mod1-web3","mod1-cierre","mod1-actividad"]'>
   <div class="mp-header">
-    <strong>Módulo 1 – Progreso</strong>
+    <strong>Módulo 1: Progreso</strong>
     <span class="mp-percent">0%</span>
   </div>
   <div class="mp-bar"><div class="mp-bar-fill" style="width:0%"></div></div>
@@ -53,8 +53,6 @@ El quiz incluye preguntas sobre consenso, descentralización e inmutabilidad. ¡
 </style>
 
 <script defer src="{{ '/assets/js/progreso.js' | relative_url }}"></script>
-
-
 
 ---
 
