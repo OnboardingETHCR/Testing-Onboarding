@@ -60,40 +60,52 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 </style>
 
 <script>
-window.addEventListener('DOMContentLoaded', function(){
-  function parseScopes(el){
-    try{
-      const raw = el.dataset.scopes || "[]";
-      return raw.trim().startsWith('[') ? JSON.parse(raw)
-           : raw.split(',').map(s=>s.trim()).filter(Boolean);
-    }catch(e){ return []; }
-  }
-  function renderAllBars(){
-    document.querySelectorAll('.module-progress').forEach(box=>{
-      const scopes = parseScopes(box);
-      let total = scopes.length, done = 0;
-      scopes.forEach(s => { if (localStorage.getItem('done:'+s) === 'true') done++; });
-      const pct = total ? Math.round(done/total*100) : 0;
-      const pctEl = box.querySelector('.mp-percent');
-      const fillEl = box.querySelector('.mp-bar-fill');
-      if (pctEl) pctEl.textContent = pct + '%';
-      if (fillEl) fillEl.style.width = pct + '%';
+(function(){
+  function init(){
+    function parseScopes(el){
+      try{
+        const raw = el.dataset.scopes || "[]";
+        return raw.trim().startsWith('[') ? JSON.parse(raw)
+             : raw.split(',').map(s=>s.trim()).filter(Boolean);
+      }catch(e){ return []; }
+    }
+
+    function renderAllBars(){
+      document.querySelectorAll('.module-progress').forEach(box=>{
+        const scopes = parseScopes(box);
+        let total = scopes.length, done = 0;
+        scopes.forEach(s => { if (localStorage.getItem('done:'+s) === 'true') done++; });
+        const pct = total ? Math.round(done/total*100) : 0;
+        const pctEl = box.querySelector('.mp-percent');
+        const fillEl = box.querySelector('.mp-bar-fill');
+        if (pctEl) pctEl.textContent = pct + '%';
+        if (fillEl) fillEl.style.width = pct + '%';
+      });
+    }
+
+    // checkbox de esta página
+    document.querySelectorAll('.page-done').forEach(pg=>{
+      const scope = pg.dataset.scope;
+      const cb = pg.querySelector('input[type="checkbox"]');
+      if (!cb) return;
+      if (localStorage.getItem('done:'+scope) === 'true') cb.checked = true;
+      cb.addEventListener('change', ()=>{
+        localStorage.setItem('done:'+scope, cb.checked);
+        renderAllBars();
+      });
     });
+
+    renderAllBars();
   }
-  // Restaurar/escuchar el checkbox de esta página
-  document.querySelectorAll('.page-done').forEach(pg=>{
-    const scope = pg.dataset.scope;
-    const cb = pg.querySelector('input[type="checkbox"]');
-    if (!cb) return;
-    if (localStorage.getItem('done:'+scope) === 'true') cb.checked = true;
-    cb.addEventListener('change', ()=>{
-      localStorage.setItem('done:'+scope, cb.checked);
-      renderAllBars();
-    });
-  });
-  renderAllBars();
-});
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init(); // DOM ya listo -> corre ahora
+  }
+})();
 </script>
+
 
 
 ---
