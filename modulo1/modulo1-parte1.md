@@ -37,18 +37,18 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
 
 ---
 
-<!-- === PROGRESO DEL MÓDULO + CHECK DE ESTA PÁGINA === -->
 <div class="module-progress" id="mp-mod1"
-     data-scopes='["mod1-bitcoin","mod1-blockchain","mod1-web3","mod1-cierre"]'>
+     data-scopes='["mod1-bitcoin","mod1-blockchain","mod1-quiz","mod1-web3","mod1-cierre","mod1-actividad"]'>
   <div class="mp-header">
-    <strong>Módulo 1 – Progreso</strong> · <span class="mp-percent">0%</span>
+    <strong>Módulo 1 – Progreso</strong>
+    <span class="mp-percent">0%</span>
   </div>
   <div class="mp-bar"><div class="mp-bar-fill" style="width:0%"></div></div>
 </div>
 
-<div class="page-done" data-scope="mod1-bitcoin" style="margin:.75rem 0 1.25rem">
-  <label style="font-weight:600;">
-    <input type="checkbox" id="done-mod1-bitcoin"> Completado
+<div class="page-done" data-scope="mod1-bitcoin" style="margin:.75rem 1px 1.25rem 1px;">
+  <label class="pd-label">
+    <input type="checkbox"> Completado
   </label>
 </div>
 
@@ -62,46 +62,50 @@ Luego de revisar la lectura y el video, tomá unos minutos para reflexionar:
     }catch(e){ return []; }
   }
 
-  function renderModuleBar(barId){
-    const box = document.getElementById(barId);
-    if(!box) return;
-    const scopes = parseScopes(box);
-    let total = scopes.length, done = 0;
-    scopes.forEach(s => { if (localStorage.getItem('done:'+s) === 'true') done++; });
-    const pct = total ? Math.round(done/total*100) : 0;
-    const pctEl = box.querySelector('.mp-percent');
-    const fillEl = box.querySelector('.mp-bar-fill');
-    if(pctEl) pctEl.textContent = pct + '%';
-    if(fillEl) fillEl.style.width = pct + '%';
-  }
-
-  // init checkbox for THIS page
-  const pg = document.querySelector('.page-done');
-  if(pg){
-    const scope = pg.dataset.scope;
-    const input = document.getElementById('done-'+scope);
-    if (localStorage.getItem('done:'+scope) === 'true') input.checked = true;
-    input.addEventListener('change', ()=>{
-      localStorage.setItem('done:'+scope, input.checked);
-      renderModuleBar('mp-mod1');
+  function renderAllBars(){
+    document.querySelectorAll('.module-progress').forEach(box=>{
+      const scopes = parseScopes(box);
+      let total = scopes.length, done = 0;
+      scopes.forEach(s => { if (localStorage.getItem('done:'+s) === 'true') done++; });
+      const pct = total ? Math.round(done/total*100) : 0;
+      box.querySelector('.mp-percent').textContent = pct + '%';
+      box.querySelector('.mp-bar-fill').style.width = pct + '%';
     });
   }
 
-  // initial render
-  renderModuleBar('mp-mod1');
+  // Restaurar y escuchar el checkbox de ESTA página (no dependemos de un id)
+  document.querySelectorAll('.page-done').forEach(pg=>{
+    const scope = pg.dataset.scope;
+    const cb = pg.querySelector('input[type="checkbox"]');
+    if (localStorage.getItem('done:'+scope) === 'true') cb.checked = true;
+    cb.addEventListener('change', ()=>{
+      localStorage.setItem('done:'+scope, cb.checked);
+      renderAllBars();
+    });
+  });
+
+  // primer pintado
+  renderAllBars();
 })();
 </script>
 
 <style>
-.module-progress{border:1px solid #d1d5db;border-radius:12px;padding:1rem;margin:1rem 0;background:#f9fafb}
-.mp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem}
-.mp-bar{height:10px;background:#e5e7eb;border-radius:999px;overflow:hidden}
-.mp-bar-fill{height:100%;width:0;transition:width .3s ease}
-@media (prefers-color-scheme: dark){
-  .module-progress{background:#0b0e13;border-color:#2b2f36}
-  .mp-bar{background:#2b2f36}
+/* LIGHT THEME ONLY (forzamos claro) */
+.module-progress{
+  background:#ffffff !important; border:1px solid #e5e7eb; border-radius:12px;
+  padding:1rem; margin:1rem 0;
 }
+.mp-header{
+  display:flex; justify-content:space-between; align-items:center;
+  margin-bottom:.5rem; color:#374151 !important; font-weight:600;
+}
+.mp-percent{ color:#6b7280 !important; font-weight:600; }
+.mp-bar{ height:12px; background:#e5e7eb !important; border-radius:999px; overflow:hidden; }
+.mp-bar-fill{ height:100%; width:0; transition:width .25s ease; background:#22c55e !important; }
+.pd-label{ font-weight:600; color:#374151 !important; }
 </style>
+
+
 
 ---
 
